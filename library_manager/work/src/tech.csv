@@ -1,0 +1,39 @@
+EHP_SPECIALITY;Специализация
+EHP_TYPE;Тип элемента
+EHP_SYSTEM_TAG;Обозначение системы
+EHP_SEGMENT_N;Номер участка трубопровода
+EHP_PIPE_DN;Диаметр условный (Dу)
+EHP_PIPE_DIAM;Наружный диаметр трубопровода
+EHP_PIPE_TH;Толщина стенки трубы
+EHP_NAME;Наименование
+EHP_TAG;Обозначение
+EHP_STANDARD;Нормативный документ
+EHP_M_CLASS;Класс материала
+EHP_MATERIAL;Материал
+EHP_M_STANDARD;Нормативный документ на материал
+EHP_LENGTH;Длина
+EHP_WEIGHT;Масса
+EHP_PIPE_E_ANGLE;Угол изгиба отвода
+EHP_RADIUS_BEND;Радиус гиба
+EHP_PIPE_DN2;Диаметр условный 2 (Dу)
+EHP_PIPE_DIAM2;Наружный диаметр трубопровода 2
+EHP_PIPE_TH2;Толщина стенки трубы 2
+EHP_PN;Давление условное (PN)
+EHP_DIAM;Диаметр
+EHP_THICKNESS;Толщина
+EHP_FLOW_KVS;Пропускная способность (Kvs)
+EHP_REFERENCE;Артикул производителя
+EHP_MANUFACTURER;Производитель
+EHP_WIDTH;Ширина
+EHP_HEIGHT;Высота
+EHP_DP;Перепад давления
+EHP_PRJCT_MARK;Проектная марка
+EHP_HEAT_POWER;Тепловая мощность
+EHP_PRESS_MAX;Максимальное рабочее давление
+EHP_N_PLATES;Число пластин теплообменника
+EHP_EQ_SQUARE;Эффективная площадь теплообменника
+EHP_EL_ANOM_PW;Электрическая номинальная мощность
+EHP_EL_VOLTAGE;Номинальное напряжение
+EHP_PUMP_THRUST;Напор насоса
+EHP_PUMP_CPCTY;Производительность насоса
+EHP_VOLUME;Объем

@@ -1,5 +1,6 @@
 import xml.etree.ElementTree as ET
 import csv
+import os
 
 
 def indent(elem, level=0):
@@ -42,8 +43,8 @@ def new_parameter(attr_name, attr_comment):
     return parameter
 
 
-def csv_input():  # указать в дальнейшем переменную
-    filepath = r'../work/src/stroika.csv'
+def csv_input(name):  # указать в дальнейшем переменную
+    filepath = fr'work/src/{name}'
     result = []
 
     with open(filepath, 'r', encoding='cp1251', newline='') as file:
@@ -55,11 +56,39 @@ def csv_input():  # указать в дальнейшем переменную
 
 
 if __name__ == '__main__':
-    tree = ET.parse(r'../work/LIBR_DEFAULT.xml')
-    root = tree.getroot()
+    while True:
+        print(f'{"#"*30}\nCкрипт для создания xml для Менеджера библиотек\n{"#"*30}\n')
 
-    for par in csv_input():
-        res = new_parameter(par[0], par[1])
-        root.append(res)
+        print(f'Выбери csv-файл для работы\n'
+              f'Список файлов в папке "/library_manager/work/src":')
+        [print(f'{i+1}. {e}') for i, e in enumerate(os.listdir('work/src'))]
 
-    tree.write('res.xml', encoding='utf-8')
+        print(f'\nВведи порядковый номер нужного файла:')
+        src_csv_name = os.listdir('work/src')[int(input())-1]
+        print(f'Выбран файл "{src_csv_name}"\n')
+
+        print(f'Выбери исходную xml-базу параметров\n'
+              f'Список файлов в папке "/library_manager/work":')
+        [print(f'{i+1}. {e}') for i, e in enumerate(os.listdir('work'))]
+
+        print(f'\nВведи порядковый номер нужного файла:')
+        src_xml_name = os.listdir('work')[int(input())-1]
+        print(f'Выбран файл "{src_xml_name}"\n')
+
+        print('Нажми enter, чтобы создать xml')
+        input()
+
+        tree = ET.parse(fr'work/{src_xml_name}')
+        root = tree.getroot()
+
+        for par in csv_input(src_csv_name):
+            res = new_parameter(par[0], par[1])
+            root.append(res)
+
+        tree.write(fr'work\results\{src_csv_name.split(".")[0]}.xml', encoding='utf-8')
+
+        print(fr'Файл {src_csv_name.split(".")[0]}.xml создан по адресу "\library_manager\work\results\"')
+        print('Окно нужно закрыть')
+
+        while True:
+            input()

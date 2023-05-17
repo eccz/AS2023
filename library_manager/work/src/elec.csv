@@ -1,0 +1,41 @@
+EHP_SPECIALITY;Специализация
+EHP_TYPE;Тип элемента
+EHP_PRJCT_MARK;Проектная марка
+EHP_NAME;Наименование
+EHP_TAG;Обозначение
+EHP_QUANTITY;Количество
+EHP_EL_NOM_PW;Полная электрическая номинальная мощность
+EHP_WEIGHT;Масса
+EHP_LENGTH;Длина
+EHP_WIDTH;Ширина
+EHP_HEIGHT;Высота
+EHP_EL_ACALC_PW;Электрическая расчетная мощность
+EHP_EL_VOLTAGE;Номинальное напряжение
+EHP_EL_PHASE_QTY;Количество фаз
+EHP_EL_PF;Коэффициент мощности
+EHP_MNT_TYPE;Способ установки
+EHP_IP;Степень защиты IP
+EHP_CLIMATE_CLSS;Климатическое исполнение
+EHP_EL_NOM_CUR;Номинальный ток
+EHP_BUTTON_QTY;Количество кнопок
+EHP_CONTR_VALUE;Параметры управляющего сигнала
+EHP_EL_LINE_TAG;Обозначение электрической линии
+EHP_STANDARD;Нормативный документ
+EHP_REFERENCE;Артикул производителя
+EHP_MANUFACTURER;Производитель
+EHP_CABLE_NVOLT;Номинальное напряжение кабеля
+EHP_CABLE_C_QTY;Число жил кабеля
+EHP_CABLE_C_CSEC;Сечение жилы кабеля
+EHP_CABLE_DIAM;Внешний диаметр кабеля
+EHP_CABLE_RADIUS;Радиус изгиба кабеля
+EHP_M_CLASS;Класс материала
+EHP_LUM_FLUX;Световой поток, лм
+EHP_EL_ANOM_PW;Электрическая номинальная мощность
+EHP_LIGHT_PP;Назначение освещения
+EHP_EUI_PE;Наличие защитного контакта
+EHP_ASSMBLY_TYPE;Тип группы
+EHP_ASMBLY_MARK;Марка группы
+EHP_MLENGTH;Длина секции
+EHP_THICKNESS;Толщина
+EHP_DIAM;Диаметр
+EHP_DIAM2;Диаметр 2
