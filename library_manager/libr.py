@@ -55,24 +55,24 @@ def csv_input(name):
     return result
 
 
-if __name__ == '__main__':
+def main():
     while True:
-        print(f'{"#"*30}\nCкрипт для создания xml для Менеджера библиотек\n{"#"*30}\n')
+        print(f'{"#" * 30}\nCкрипт для создания xml для Менеджера библиотек\n{"#" * 30}\n')
 
         print(f'Выбери csv-файл для работы\n'
               f'Список файлов в папке "/library_manager/work/src":')
-        [print(f'{i+1}. {e}') for i, e in enumerate(os.listdir('work/src'))]
+        [print(f'{i + 1}. {e}') for i, e in enumerate(os.listdir('work/src'))]
 
         print(f'\nВведи порядковый номер нужного файла:')
-        src_csv_name = os.listdir('work/src')[int(input())-1]
+        src_csv_name = os.listdir('work/src')[int(input()) - 1]
         print(f'Выбран файл "{src_csv_name}"\n')
 
         print(f'Выбери исходную xml-базу параметров\n'
               f'Список файлов в папке "/library_manager/work":')
-        [print(f'{i+1}. {e}') for i, e in enumerate(os.listdir('work'))]
+        [print(f'{i + 1}. {e}') for i, e in enumerate(os.listdir('work'))]
 
         print(f'\nВведи порядковый номер нужного файла:')
-        src_xml_name = os.listdir('work')[int(input())-1]
+        src_xml_name = os.listdir('work')[int(input()) - 1]
         print(f'Выбран файл "{src_xml_name}"\n')
 
         print('Нажми enter, чтобы создать xml')
@@ -93,3 +93,7 @@ if __name__ == '__main__':
 
         while True:
             input()
+
+
+if __name__ == '__main__':
+    main()
