@@ -43,14 +43,14 @@ def new_parameter(attr_name, attr_comment):
     return parameter
 
 
-def csv_input(name):  # указать в дальнейшем переменную
+def csv_input(name):
     filepath = fr'work/src/{name}'
-    result = []
+    result = dict()
 
     with open(filepath, 'r', encoding='cp1251', newline='') as file:
         reader = csv.reader(file, delimiter=';')
         for row in reader:
-            result.append(row)
+            result[row[1]] = row[0]
 
     return result
 
@@ -81,13 +81,14 @@ if __name__ == '__main__':
         tree = ET.parse(fr'work/{src_xml_name}')
         root = tree.getroot()
 
-        for par in csv_input(src_csv_name):
-            res = new_parameter(par[0], par[1])
+        parameter_dict = csv_input(src_csv_name)
+        for par in parameter_dict:
+            res = new_parameter(par, parameter_dict[par])
             root.append(res)
 
-        tree.write(fr'work\results\{src_csv_name.split(".")[0]}.xml', encoding='utf-8')
+        tree.write(fr'work/results/{src_csv_name.split(".")[0]}.xml', encoding='utf-8')
 
-        print(fr'Файл {src_csv_name.split(".")[0]}.xml создан по адресу "\library_manager\work\results\"')
+        print(fr'Файл {src_csv_name.split(".")[0]}.xml создан по адресу "/library_manager/work/results/"')
         print('Окно нужно закрыть')
 
         while True:
