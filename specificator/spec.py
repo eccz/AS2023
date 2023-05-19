@@ -21,7 +21,7 @@ def csv_input(f_name):
 
 
 def xml_table_build(elem_type, filter_param):
-    table_args = {"caption": elem_type, "filter": f'{filter_param} = "{elem_type}"',
+    table_args = {"caption": elem_type, "filter": f'[{filter_param}] = "{elem_type}"',
                   "result.filter": "", "aggregated": "0"}
 
     return ET.Element('Table', **table_args)
@@ -93,7 +93,7 @@ def xml_extended_build():
     return extended
 
 
-def xml_build(src, filer_param='[EHP_TYPE]'):
+def xml_build(src, filer_param='EHP_TYPE'):
     source = csv_input(src)
 
     root = ET.Element('Report')
@@ -136,7 +136,7 @@ def main():
         src = os.listdir('work/src')[int(input()) - 1]
         print(f'Выбран файл "{src}"')
 
-        print(f'\nВведи наименование параметра фильтрации (например [EHP_TYPE]):')
+        print(f'\nВведи наименование параметра фильтрации (например EHP_TYPE):')
         filter_param = input()
         print(f'Выбран параметр "{filter_param}"\n')
 
