@@ -1,6 +1,7 @@
-from library_manager.libr import indent
+# from library_manager.libr import indent
 import xml.etree.ElementTree as ET
 import csv
+import os
 
 
 def csv_input(f_name):
@@ -20,7 +21,7 @@ def csv_input(f_name):
 
 
 def xml_table_build(elem_type, filter_param):
-    table_args = {"caption": elem_type, "filter": f'{filter_param} = {elem_type}',
+    table_args = {"caption": elem_type, "filter": f'{filter_param} = "{elem_type}"',
                   "result.filter": "", "aggregated": "0"}
 
     return ET.Element('Table', **table_args)
@@ -75,16 +76,24 @@ def xml_report_format_build():
 
 def xml_extended_build():
     extended = ET.Element('Extended')
-    extended.append(ET.Element('Parameter', name="PX_PARSE_ASSEMBLIES", value="0", caption="Учитывать объекты внутри сборок", comment=""))
-    extended.append(ET.Element('Parameter', name="PX_PARSE_BLOCKS", value="0", caption="Учитывать объекты внутри блоков", comment=""))
-    extended.append(ET.Element('Parameter', name="PX_PARSE_XREFS", value="0", caption="Учитывать объекты внутри внешних ссылок", comment=""))
-    extended.append(ET.Element('Parameter', name="PX_RESTORE_TYPES", value="0", caption="Использовать исходный тип для объектов проекта", comment=""))
-    extended.append(ET.Element('Parameter', name="PX_WHOLE_PROJECT", value="0", caption="Учитывать объекты всех файлов текущего каталога", comment=""))
+    extended.append(
+        ET.Element('Parameter', name="PX_PARSE_ASSEMBLIES", value="0", caption="Учитывать объекты внутри сборок",
+                   comment=""))
+    extended.append(
+        ET.Element('Parameter', name="PX_PARSE_BLOCKS", value="0", caption="Учитывать объекты внутри блоков",
+                   comment=""))
+    extended.append(
+        ET.Element('Parameter', name="PX_PARSE_XREFS", value="0", caption="Учитывать объекты внутри внешних ссылок",
+                   comment=""))
+    extended.append(ET.Element('Parameter', name="PX_RESTORE_TYPES", value="0",
+                               caption="Использовать исходный тип для объектов проекта", comment=""))
+    extended.append(ET.Element('Parameter', name="PX_WHOLE_PROJECT", value="0",
+                               caption="Учитывать объекты всех файлов текущего каталога", comment=""))
 
     return extended
 
 
-def xml_build(base=True, src='ELEC.csv'):
+def xml_build(src, filer_param='[EHP_TYPE]'):
     source = csv_input(src)
 
     root = ET.Element('Report')
@@ -92,7 +101,7 @@ def xml_build(base=True, src='ELEC.csv'):
 
     for elem_type, param_dict in source.items():
         dataset = xml_dataset_build()
-        table = xml_table_build(elem_type=elem_type, filter_param='[EHP_TYPE]')
+        table = xml_table_build(elem_type=elem_type, filter_param=filer_param)
         types = xml_types_build()
         view = xml_view_build()
         fields = xml_fields_build()
@@ -111,17 +120,40 @@ def xml_build(base=True, src='ELEC.csv'):
     root.append(xml_report_format_build())
     root.append(xml_extended_build())
 
-    indent(root)
+    # indent(root)
     return root
 
 
 def main():
-    src = 'aec.csv'
-    mydata = ET.tostring(xml_build(src=src), encoding="utf-8", method="xml")
+    while True:
+        print(f'{"#" * 30}\nCкрипт для создания xml-профиля для спецификатора\n{"#" * 30}\n')
 
-    with open(f'work/results/{src.split(".")[0].strip()}.xml', 'w', encoding="utf-8") as f:
-        f.write('<?xml version="1.0" ?>\n')
-        f.write(mydata.decode(encoding="utf-8"))
+        print(f'Выбери csv-файл для работы\n'
+              f'Список файлов в папке "/specificator/work/src":')
+        [print(f'{i + 1}. {e}') for i, e in enumerate(os.listdir('work/src'))]
+
+        print(f'\nВведи порядковый номер нужного файла:')
+        src = os.listdir('work/src')[int(input()) - 1]
+        print(f'Выбран файл "{src}"')
+
+        print(f'\nВведи наименование параметра фильтрации (например [EHP_TYPE]):')
+        filter_param = input()
+        print(f'Выбран параметр "{filter_param}"\n')
+
+        print('Нажми enter, чтобы создать xml')
+        input()
+
+        mydata = ET.tostring(xml_build(src=src, filer_param=filter_param), encoding="utf-8", method="xml")
+
+        with open(f'work/results/{src.split(".")[0].strip()}.xml', 'w', encoding="utf-8") as f:
+            f.write('<?xml version="1.0" ?>\n')
+            f.write(mydata.decode(encoding="utf-8"))
+
+        print(fr'Файл {src.split(".")[0]}.xml создан по адресу "/specificator/work/results/"')
+        print('Окно нужно закрыть')
+
+        while True:
+            input()
 
 
 if __name__ == '__main__':
