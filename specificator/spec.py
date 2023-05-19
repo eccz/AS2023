@@ -11,12 +11,12 @@ def csv_input(f_name):
     with open(filepath, 'r', encoding='cp1251', newline='') as file:
         reader = csv.reader(file, delimiter=';')
         for row in reader:
-            if row[2] in result:
-                result[row[2]].update({row[1]: row[0]})
-            elif not row[0]:
+            if row[2].strip() in result:
+                result[row[2].strip()].update({row[1].strip(): row[0].strip()})
+            elif not row[0].strip():
                 continue
             else:
-                result[row[2]] = {row[1]: row[0]}
+                result[row[2].strip()] = {row[1].strip(): row[0].strip()}
     return result
 
 
@@ -133,11 +133,11 @@ def main():
         [print(f'{i + 1}. {e}') for i, e in enumerate(os.listdir('work/src'))]
 
         print(f'\nВведи порядковый номер нужного файла:')
-        src = os.listdir('work/src')[int(input()) - 1]
+        src = os.listdir('work/src')[int(input().strip()) - 1]
         print(f'Выбран файл "{src}"')
 
         print(f'\nВведи наименование параметра фильтрации (например EHP_TYPE):')
-        filter_param = input()
+        filter_param = input().strip()
         print(f'Выбран параметр "{filter_param}"\n')
 
         print('Нажми enter, чтобы создать xml')

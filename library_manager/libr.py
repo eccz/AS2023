@@ -50,7 +50,7 @@ def csv_input(name):
     with open(filepath, 'r', encoding='cp1251', newline='') as file:
         reader = csv.reader(file, delimiter=';')
         for row in reader:
-            result[row[1]] = row[0]
+            result[row[1].strip()] = row[0].strip()
 
     return result
 
@@ -64,7 +64,7 @@ def main():
         [print(f'{i + 1}. {e}') for i, e in enumerate(os.listdir('work/src'))]
 
         print(f'\nВведи порядковый номер нужного файла:')
-        src_csv_name = os.listdir('work/src')[int(input()) - 1]
+        src_csv_name = os.listdir('work/src')[int(input().strip()) - 1]
         print(f'Выбран файл "{src_csv_name}"\n')
 
         print(f'Выбери исходную xml-базу параметров\n'
@@ -72,7 +72,7 @@ def main():
         [print(f'{i + 1}. {e}') for i, e in enumerate(os.listdir('work'))]
 
         print(f'\nВведи порядковый номер нужного файла:')
-        src_xml_name = os.listdir('work')[int(input()) - 1]
+        src_xml_name = os.listdir('work')[int(input().strip()) - 1]
         print(f'Выбран файл "{src_xml_name}"\n')
 
         print('Нажми enter, чтобы создать xml')
