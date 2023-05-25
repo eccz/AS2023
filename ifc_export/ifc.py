@@ -5,9 +5,9 @@ import os
 
 def csv_input():
     result = set()
-    for f_name in os.listdir('work/src'):
+    for f_name in os.listdir('../src'):
         if f_name.endswith('.csv'):
-            filepath = fr'work/src/{f_name}'
+            filepath = fr'../src/{f_name}'
             with open(filepath, 'r', encoding='cp1251', newline='') as file:
                 reader = csv.reader(file, delimiter=';')
                 [result.add(row[1].strip()) for row in reader if row[1]]
@@ -33,7 +33,7 @@ def ifc_param_filter_record_build():
     return param_filter_record
 
 
-def ifc_property_record_build(param, ifc_property_set='AS2023'):
+def ifc_property_record_build(param, ifc_property_set):
     ifc_property_record = ET.Element('IfcPropertyRecord')
     name = ET.Element('Name')
     name.text = f'{ifc_property_set}.{param}'
@@ -104,11 +104,11 @@ def main():
         print(f'{"#" * 30}\nCкрипт для создания xml-профиля для экспорта IFC\n{"#" * 30}\n')
 
         print(f'Убедись, что в папке присутствуют все 3 csv-файла\n'
-              f'Список файлов в папке "/specificator/work/src":')
-        [print(f'{i + 1}. {e}') for i, e in enumerate(os.listdir('work/src'))]
+              f'Список файлов в папке "AS2023/src":')
+        [print(f'{i + 1}. {e}') for i, e in enumerate(os.listdir('../src'))]
 
         print(f'\nВведи наименование property_set в соответствии с заданием (например AS2023):')
-        property_set = input()
+        property_set = input().strip()
         print(f'Выбрано наименование "{property_set.strip()}"\n')
 
         print('Нажми enter, чтобы создать xml')

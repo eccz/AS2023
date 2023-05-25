@@ -5,7 +5,7 @@ import os
 
 
 def csv_input(f_name):
-    filepath = fr'work/src/{f_name}'
+    filepath = fr'../src/{f_name}'
     result = dict()
 
     with open(filepath, 'r', encoding='cp1251', newline='') as file:
@@ -129,11 +129,11 @@ def main():
         print(f'{"#" * 30}\nCкрипт для создания xml-профиля для спецификатора\n{"#" * 30}\n')
 
         print(f'Выбери csv-файл для работы\n'
-              f'Список файлов в папке "/specificator/work/src":')
-        [print(f'{i + 1}. {e}') for i, e in enumerate(os.listdir('work/src'))]
+              f'Список файлов в папке "/AS2023/src":')
+        [print(f'{i + 1}. {e}') for i, e in enumerate(os.listdir('../src'))]
 
         print(f'\nВведи порядковый номер нужного файла:')
-        src = os.listdir('work/src')[int(input().strip()) - 1]
+        src = os.listdir('../src')[int(input().strip()) - 1]
         print(f'Выбран файл "{src}"')
 
         print(f'\nВведи наименование параметра фильтрации (например EHP_TYPE):')
