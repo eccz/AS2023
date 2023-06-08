@@ -1,0 +1,2442 @@
+<?xml version="1.0" ?>
+<Report>
+    <DatasetProfile>
+        <Dataset assemblyGrouping="0" assemblyFilter="2" binding="Fields" relationType="" join="outer" hierarchy="0">
+            <Table caption="Труба" filter="[EHP_TYPE] = &quot;Труба&quot;" result.filter="" aggregated="0">
+                <Types>
+                    <Type name="aec_elements"/>
+                    <Type name="aec_plate"/>
+                    <Type name="aec_roof"/>
+                    <Type name="aec_surf"/>
+                    <Type name="aec_wall"/>
+                    <Type name="aec_wall_lay"/>
+                    <Type name="aecbore"/>
+                    <Type name="aecsectionreinf"/>
+                    <Type name="aecsite"/>
+                    <Type name="background"/>
+                    <Type name="bearings"/>
+                    <Type name="blockxreferences"/>
+                    <Type name="cable_journal"/>
+                    <Type name="cable_net_links"/>
+                    <Type name="cable_routing"/>
+                    <Type name="cables"/>
+                    <Type name="collisions"/>
+                    <Type name="crossarm"/>
+                    <Type name="crosses"/>
+                    <Type name="equipment_items"/>
+                    <Type name="fire_alarm_zones"/>
+                    <Type name="garlands"/>
+                    <Type name="grounding"/>
+                    <Type name="groundprofiles"/>
+                    <Type name="lines"/>
+                    <Type name="links"/>
+                    <Type name="linksketchs"/>
+                    <Type name="locations"/>
+                    <Type name="metal"/>
+                    <Type name="metalasm"/>
+                    <Type name="metalnode"/>
+                    <Type name="modifier"/>
+                    <Type name="ms_weld_seam"/>
+                    <Type name="mscartogram"/>
+                    <Type name="msgeoarrowslope"/>
+                    <Type name="msgeocircuitbuilding"/>
+                    <Type name="msgeocircuitbuildingaxis"/>
+                    <Type name="msgeocircuitbuildingopening"/>
+                    <Type name="msgeositeroad"/>
+                    <Type name="msparcel"/>
+                    <Type name="mssite"/>
+                    <Type name="mssite_contour"/>
+                    <Type name="mssite_isoline"/>
+                    <Type name="mssite_mainslope"/>
+                    <Type name="mssite_roads"/>
+                    <Type name="mssite_structlines"/>
+                    <Type name="mssite_surfline"/>
+                    <Type name="mssite_zeroworkline"/>
+                    <Type name="mssitebasehorizontal"/>
+                    <Type name="mssitebreakline"/>
+                    <Type name="mssitehorizontal"/>
+                    <Type name="mssiteslopehatch"/>
+                    <Type name="nodes"/>
+                    <Type name="overpass_axis"/>
+                    <Type name="picketage"/>
+                    <Type name="pipe"/>
+                    <Type name="pipe_insulation"/>
+                    <Type name="pipe_part"/>
+                    <Type name="pline_entity"/>
+                    <Type name="pline_unity"/>
+                    <Type name="profiles"/>
+                    <Type name="projectdummy"/>
+                    <Type name="projectframe"/>
+                    <Type name="reinfbar"/>
+                    <Type name="reinfplane"/>
+                    <Type name="reinfsection"/>
+                    <Type name="routeconstruction"/>
+                    <Type name="routeprototype"/>
+                    <Type name="segments"/>
+                    <Type name="syscalc"/>
+                    <Type name="tbl_mssitecarto_grid"/>
+                    <Type name="template"/>
+                    <Type name="templateelement"/>
+                    <Type name="trench"/>
+                    <Type name="unit"/>
+                    <Type name="units"/>
+                </Types>
+                <Fields>
+                    <Field caption="Специализация" data="EHP_SPECIALITY" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Тип элемента" data="EHP_TYPE" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Обозначение системы" data="EHP_SYSTEM_TAG" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Номер участка трубопровода" data="EHP_SEGMENT_N" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Диаметр условный (Dу)" data="EHP_PIPE_DN" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Наружный диаметр трубопровода" data="EHP_PIPE_DIAM" type="0" aggregate="0"
+                           visible="1" format=""/>
+                    <Field caption="Толщина стенки трубы" data="EHP_PIPE_TH" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Наименование" data="EHP_NAME" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Обозначение" data="EHP_TAG" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Нормативный документ" data="EHP_STANDARD" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Класс материала" data="EHP_M_CLASS" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Материал" data="EHP_MATERIAL" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Нормативный документ на материал" data="EHP_M_STANDARD" type="0" aggregate="0"
+                           visible="1" format=""/>
+                    <Field caption="Длина" data="EHP_LENGTH" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Масса" data="EHP_WEIGHT" type="0" aggregate="0" visible="1" format=""/>
+                </Fields>
+            </Table>
+            <View>
+                <GroupFields/>
+                <SortFields/>
+            </View>
+        </Dataset>
+        <Dataset assemblyGrouping="0" assemblyFilter="2" binding="Fields" relationType="" join="outer" hierarchy="0">
+            <Table caption="Отвод" filter="[EHP_TYPE] = &quot;Отвод&quot;" result.filter="" aggregated="0">
+                <Types>
+                    <Type name="aec_elements"/>
+                    <Type name="aec_plate"/>
+                    <Type name="aec_roof"/>
+                    <Type name="aec_surf"/>
+                    <Type name="aec_wall"/>
+                    <Type name="aec_wall_lay"/>
+                    <Type name="aecbore"/>
+                    <Type name="aecsectionreinf"/>
+                    <Type name="aecsite"/>
+                    <Type name="background"/>
+                    <Type name="bearings"/>
+                    <Type name="blockxreferences"/>
+                    <Type name="cable_journal"/>
+                    <Type name="cable_net_links"/>
+                    <Type name="cable_routing"/>
+                    <Type name="cables"/>
+                    <Type name="collisions"/>
+                    <Type name="crossarm"/>
+                    <Type name="crosses"/>
+                    <Type name="equipment_items"/>
+                    <Type name="fire_alarm_zones"/>
+                    <Type name="garlands"/>
+                    <Type name="grounding"/>
+                    <Type name="groundprofiles"/>
+                    <Type name="lines"/>
+                    <Type name="links"/>
+                    <Type name="linksketchs"/>
+                    <Type name="locations"/>
+                    <Type name="metal"/>
+                    <Type name="metalasm"/>
+                    <Type name="metalnode"/>
+                    <Type name="modifier"/>
+                    <Type name="ms_weld_seam"/>
+                    <Type name="mscartogram"/>
+                    <Type name="msgeoarrowslope"/>
+                    <Type name="msgeocircuitbuilding"/>
+                    <Type name="msgeocircuitbuildingaxis"/>
+                    <Type name="msgeocircuitbuildingopening"/>
+                    <Type name="msgeositeroad"/>
+                    <Type name="msparcel"/>
+                    <Type name="mssite"/>
+                    <Type name="mssite_contour"/>
+                    <Type name="mssite_isoline"/>
+                    <Type name="mssite_mainslope"/>
+                    <Type name="mssite_roads"/>
+                    <Type name="mssite_structlines"/>
+                    <Type name="mssite_surfline"/>
+                    <Type name="mssite_zeroworkline"/>
+                    <Type name="mssitebasehorizontal"/>
+                    <Type name="mssitebreakline"/>
+                    <Type name="mssitehorizontal"/>
+                    <Type name="mssiteslopehatch"/>
+                    <Type name="nodes"/>
+                    <Type name="overpass_axis"/>
+                    <Type name="picketage"/>
+                    <Type name="pipe"/>
+                    <Type name="pipe_insulation"/>
+                    <Type name="pipe_part"/>
+                    <Type name="pline_entity"/>
+                    <Type name="pline_unity"/>
+                    <Type name="profiles"/>
+                    <Type name="projectdummy"/>
+                    <Type name="projectframe"/>
+                    <Type name="reinfbar"/>
+                    <Type name="reinfplane"/>
+                    <Type name="reinfsection"/>
+                    <Type name="routeconstruction"/>
+                    <Type name="routeprototype"/>
+                    <Type name="segments"/>
+                    <Type name="syscalc"/>
+                    <Type name="tbl_mssitecarto_grid"/>
+                    <Type name="template"/>
+                    <Type name="templateelement"/>
+                    <Type name="trench"/>
+                    <Type name="unit"/>
+                    <Type name="units"/>
+                </Types>
+                <Fields>
+                    <Field caption="Специализация" data="EHP_SPECIALITY" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Тип элемента" data="EHP_TYPE" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Обозначение системы" data="EHP_SYSTEM_TAG" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Номер участка трубопровода" data="EHP_SEGMENT_N" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Диаметр условный (Dу)" data="EHP_PIPE_DN" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Наружный диаметр трубопровода" data="EHP_PIPE_DIAM" type="0" aggregate="0"
+                           visible="1" format=""/>
+                    <Field caption="Толщина стенки трубы" data="EHP_PIPE_TH" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Угол изгиба отвода" data="EHP_PIPE_E_ANGLE" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Радиус гиба" data="EHP_RADIUS_BEND" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Наименование" data="EHP_NAME" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Обозначение" data="EHP_TAG" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Нормативный документ" data="EHP_STANDARD" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Класс материала" data="EHP_M_CLASS" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Материал" data="EHP_MATERIAL" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Нормативный документ на материал" data="EHP_M_STANDARD" type="0" aggregate="0"
+                           visible="1" format=""/>
+                    <Field caption="Масса" data="EHP_WEIGHT" type="0" aggregate="0" visible="1" format=""/>
+                </Fields>
+            </Table>
+            <View>
+                <GroupFields/>
+                <SortFields/>
+            </View>
+        </Dataset>
+        <Dataset assemblyGrouping="0" assemblyFilter="2" binding="Fields" relationType="" join="outer" hierarchy="0">
+            <Table caption="Тройник" filter="[EHP_TYPE] = &quot;Тройник&quot;" result.filter="" aggregated="0">
+                <Types>
+                    <Type name="aec_elements"/>
+                    <Type name="aec_plate"/>
+                    <Type name="aec_roof"/>
+                    <Type name="aec_surf"/>
+                    <Type name="aec_wall"/>
+                    <Type name="aec_wall_lay"/>
+                    <Type name="aecbore"/>
+                    <Type name="aecsectionreinf"/>
+                    <Type name="aecsite"/>
+                    <Type name="background"/>
+                    <Type name="bearings"/>
+                    <Type name="blockxreferences"/>
+                    <Type name="cable_journal"/>
+                    <Type name="cable_net_links"/>
+                    <Type name="cable_routing"/>
+                    <Type name="cables"/>
+                    <Type name="collisions"/>
+                    <Type name="crossarm"/>
+                    <Type name="crosses"/>
+                    <Type name="equipment_items"/>
+                    <Type name="fire_alarm_zones"/>
+                    <Type name="garlands"/>
+                    <Type name="grounding"/>
+                    <Type name="groundprofiles"/>
+                    <Type name="lines"/>
+                    <Type name="links"/>
+                    <Type name="linksketchs"/>
+                    <Type name="locations"/>
+                    <Type name="metal"/>
+                    <Type name="metalasm"/>
+                    <Type name="metalnode"/>
+                    <Type name="modifier"/>
+                    <Type name="ms_weld_seam"/>
+                    <Type name="mscartogram"/>
+                    <Type name="msgeoarrowslope"/>
+                    <Type name="msgeocircuitbuilding"/>
+                    <Type name="msgeocircuitbuildingaxis"/>
+                    <Type name="msgeocircuitbuildingopening"/>
+                    <Type name="msgeositeroad"/>
+                    <Type name="msparcel"/>
+                    <Type name="mssite"/>
+                    <Type name="mssite_contour"/>
+                    <Type name="mssite_isoline"/>
+                    <Type name="mssite_mainslope"/>
+                    <Type name="mssite_roads"/>
+                    <Type name="mssite_structlines"/>
+                    <Type name="mssite_surfline"/>
+                    <Type name="mssite_zeroworkline"/>
+                    <Type name="mssitebasehorizontal"/>
+                    <Type name="mssitebreakline"/>
+                    <Type name="mssitehorizontal"/>
+                    <Type name="mssiteslopehatch"/>
+                    <Type name="nodes"/>
+                    <Type name="overpass_axis"/>
+                    <Type name="picketage"/>
+                    <Type name="pipe"/>
+                    <Type name="pipe_insulation"/>
+                    <Type name="pipe_part"/>
+                    <Type name="pline_entity"/>
+                    <Type name="pline_unity"/>
+                    <Type name="profiles"/>
+                    <Type name="projectdummy"/>
+                    <Type name="projectframe"/>
+                    <Type name="reinfbar"/>
+                    <Type name="reinfplane"/>
+                    <Type name="reinfsection"/>
+                    <Type name="routeconstruction"/>
+                    <Type name="routeprototype"/>
+                    <Type name="segments"/>
+                    <Type name="syscalc"/>
+                    <Type name="tbl_mssitecarto_grid"/>
+                    <Type name="template"/>
+                    <Type name="templateelement"/>
+                    <Type name="trench"/>
+                    <Type name="unit"/>
+                    <Type name="units"/>
+                </Types>
+                <Fields>
+                    <Field caption="Специализация" data="EHP_SPECIALITY" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Тип элемента" data="EHP_TYPE" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Обозначение системы" data="EHP_SYSTEM_TAG" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Номер участка трубопровода" data="EHP_SEGMENT_N" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Диаметр условный (Dу)" data="EHP_PIPE_DN" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Диаметр условный 2 (Dу)" data="EHP_PIPE_DN2" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Наружный диаметр трубопровода" data="EHP_PIPE_DIAM" type="0" aggregate="0"
+                           visible="1" format=""/>
+                    <Field caption="Наружный диаметр трубопровода 2" data="EHP_PIPE_DIAM2" type="0" aggregate="0"
+                           visible="1" format=""/>
+                    <Field caption="Толщина стенки трубы" data="EHP_PIPE_TH" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Толщина стенки трубы 2" data="EHP_PIPE_TH2" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Наименование" data="EHP_NAME" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Обозначение" data="EHP_TAG" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Нормативный документ" data="EHP_STANDARD" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Класс материала" data="EHP_M_CLASS" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Материал" data="EHP_MATERIAL" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Нормативный документ на материал" data="EHP_M_STANDARD" type="0" aggregate="0"
+                           visible="1" format=""/>
+                    <Field caption="Масса" data="EHP_WEIGHT" type="0" aggregate="0" visible="1" format=""/>
+                </Fields>
+            </Table>
+            <View>
+                <GroupFields/>
+                <SortFields/>
+            </View>
+        </Dataset>
+        <Dataset assemblyGrouping="0" assemblyFilter="2" binding="Fields" relationType="" join="outer" hierarchy="0">
+            <Table caption="Переход" filter="[EHP_TYPE] = &quot;Переход&quot;" result.filter="" aggregated="0">
+                <Types>
+                    <Type name="aec_elements"/>
+                    <Type name="aec_plate"/>
+                    <Type name="aec_roof"/>
+                    <Type name="aec_surf"/>
+                    <Type name="aec_wall"/>
+                    <Type name="aec_wall_lay"/>
+                    <Type name="aecbore"/>
+                    <Type name="aecsectionreinf"/>
+                    <Type name="aecsite"/>
+                    <Type name="background"/>
+                    <Type name="bearings"/>
+                    <Type name="blockxreferences"/>
+                    <Type name="cable_journal"/>
+                    <Type name="cable_net_links"/>
+                    <Type name="cable_routing"/>
+                    <Type name="cables"/>
+                    <Type name="collisions"/>
+                    <Type name="crossarm"/>
+                    <Type name="crosses"/>
+                    <Type name="equipment_items"/>
+                    <Type name="fire_alarm_zones"/>
+                    <Type name="garlands"/>
+                    <Type name="grounding"/>
+                    <Type name="groundprofiles"/>
+                    <Type name="lines"/>
+                    <Type name="links"/>
+                    <Type name="linksketchs"/>
+                    <Type name="locations"/>
+                    <Type name="metal"/>
+                    <Type name="metalasm"/>
+                    <Type name="metalnode"/>
+                    <Type name="modifier"/>
+                    <Type name="ms_weld_seam"/>
+                    <Type name="mscartogram"/>
+                    <Type name="msgeoarrowslope"/>
+                    <Type name="msgeocircuitbuilding"/>
+                    <Type name="msgeocircuitbuildingaxis"/>
+                    <Type name="msgeocircuitbuildingopening"/>
+                    <Type name="msgeositeroad"/>
+                    <Type name="msparcel"/>
+                    <Type name="mssite"/>
+                    <Type name="mssite_contour"/>
+                    <Type name="mssite_isoline"/>
+                    <Type name="mssite_mainslope"/>
+                    <Type name="mssite_roads"/>
+                    <Type name="mssite_structlines"/>
+                    <Type name="mssite_surfline"/>
+                    <Type name="mssite_zeroworkline"/>
+                    <Type name="mssitebasehorizontal"/>
+                    <Type name="mssitebreakline"/>
+                    <Type name="mssitehorizontal"/>
+                    <Type name="mssiteslopehatch"/>
+                    <Type name="nodes"/>
+                    <Type name="overpass_axis"/>
+                    <Type name="picketage"/>
+                    <Type name="pipe"/>
+                    <Type name="pipe_insulation"/>
+                    <Type name="pipe_part"/>
+                    <Type name="pline_entity"/>
+                    <Type name="pline_unity"/>
+                    <Type name="profiles"/>
+                    <Type name="projectdummy"/>
+                    <Type name="projectframe"/>
+                    <Type name="reinfbar"/>
+                    <Type name="reinfplane"/>
+                    <Type name="reinfsection"/>
+                    <Type name="routeconstruction"/>
+                    <Type name="routeprototype"/>
+                    <Type name="segments"/>
+                    <Type name="syscalc"/>
+                    <Type name="tbl_mssitecarto_grid"/>
+                    <Type name="template"/>
+                    <Type name="templateelement"/>
+                    <Type name="trench"/>
+                    <Type name="unit"/>
+                    <Type name="units"/>
+                </Types>
+                <Fields>
+                    <Field caption="Специализация" data="EHP_SPECIALITY" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Тип элемента" data="EHP_TYPE" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Обозначение системы" data="EHP_SYSTEM_TAG" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Номер участка трубопровода" data="EHP_SEGMENT_N" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Диаметр условный (Dу)" data="EHP_PIPE_DN" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Диаметр условный 2 (Dу)" data="EHP_PIPE_DN2" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Наружный диаметр трубопровода" data="EHP_PIPE_DIAM" type="0" aggregate="0"
+                           visible="1" format=""/>
+                    <Field caption="Наружный диаметр трубопровода 2" data="EHP_PIPE_DIAM2" type="0" aggregate="0"
+                           visible="1" format=""/>
+                    <Field caption="Толщина стенки трубы" data="EHP_PIPE_TH" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Толщина стенки трубы 2" data="EHP_PIPE_TH2" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Наименование" data="EHP_NAME" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Обозначение" data="EHP_TAG" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Нормативный документ" data="EHP_STANDARD" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Класс материала" data="EHP_M_CLASS" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Материал" data="EHP_MATERIAL" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Нормативный документ на материал" data="EHP_M_STANDARD" type="0" aggregate="0"
+                           visible="1" format=""/>
+                    <Field caption="Масса" data="EHP_WEIGHT" type="0" aggregate="0" visible="1" format=""/>
+                </Fields>
+            </Table>
+            <View>
+                <GroupFields/>
+                <SortFields/>
+            </View>
+        </Dataset>
+        <Dataset assemblyGrouping="0" assemblyFilter="2" binding="Fields" relationType="" join="outer" hierarchy="0">
+            <Table caption="Заглушка" filter="[EHP_TYPE] = &quot;Заглушка&quot;" result.filter="" aggregated="0">
+                <Types>
+                    <Type name="aec_elements"/>
+                    <Type name="aec_plate"/>
+                    <Type name="aec_roof"/>
+                    <Type name="aec_surf"/>
+                    <Type name="aec_wall"/>
+                    <Type name="aec_wall_lay"/>
+                    <Type name="aecbore"/>
+                    <Type name="aecsectionreinf"/>
+                    <Type name="aecsite"/>
+                    <Type name="background"/>
+                    <Type name="bearings"/>
+                    <Type name="blockxreferences"/>
+                    <Type name="cable_journal"/>
+                    <Type name="cable_net_links"/>
+                    <Type name="cable_routing"/>
+                    <Type name="cables"/>
+                    <Type name="collisions"/>
+                    <Type name="crossarm"/>
+                    <Type name="crosses"/>
+                    <Type name="equipment_items"/>
+                    <Type name="fire_alarm_zones"/>
+                    <Type name="garlands"/>
+                    <Type name="grounding"/>
+                    <Type name="groundprofiles"/>
+                    <Type name="lines"/>
+                    <Type name="links"/>
+                    <Type name="linksketchs"/>
+                    <Type name="locations"/>
+                    <Type name="metal"/>
+                    <Type name="metalasm"/>
+                    <Type name="metalnode"/>
+                    <Type name="modifier"/>
+                    <Type name="ms_weld_seam"/>
+                    <Type name="mscartogram"/>
+                    <Type name="msgeoarrowslope"/>
+                    <Type name="msgeocircuitbuilding"/>
+                    <Type name="msgeocircuitbuildingaxis"/>
+                    <Type name="msgeocircuitbuildingopening"/>
+                    <Type name="msgeositeroad"/>
+                    <Type name="msparcel"/>
+                    <Type name="mssite"/>
+                    <Type name="mssite_contour"/>
+                    <Type name="mssite_isoline"/>
+                    <Type name="mssite_mainslope"/>
+                    <Type name="mssite_roads"/>
+                    <Type name="mssite_structlines"/>
+                    <Type name="mssite_surfline"/>
+                    <Type name="mssite_zeroworkline"/>
+                    <Type name="mssitebasehorizontal"/>
+                    <Type name="mssitebreakline"/>
+                    <Type name="mssitehorizontal"/>
+                    <Type name="mssiteslopehatch"/>
+                    <Type name="nodes"/>
+                    <Type name="overpass_axis"/>
+                    <Type name="picketage"/>
+                    <Type name="pipe"/>
+                    <Type name="pipe_insulation"/>
+                    <Type name="pipe_part"/>
+                    <Type name="pline_entity"/>
+                    <Type name="pline_unity"/>
+                    <Type name="profiles"/>
+                    <Type name="projectdummy"/>
+                    <Type name="projectframe"/>
+                    <Type name="reinfbar"/>
+                    <Type name="reinfplane"/>
+                    <Type name="reinfsection"/>
+                    <Type name="routeconstruction"/>
+                    <Type name="routeprototype"/>
+                    <Type name="segments"/>
+                    <Type name="syscalc"/>
+                    <Type name="tbl_mssitecarto_grid"/>
+                    <Type name="template"/>
+                    <Type name="templateelement"/>
+                    <Type name="trench"/>
+                    <Type name="unit"/>
+                    <Type name="units"/>
+                </Types>
+                <Fields>
+                    <Field caption="Специализация" data="EHP_SPECIALITY" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Тип элемента" data="EHP_TYPE" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Обозначение системы" data="EHP_SYSTEM_TAG" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Номер участка трубопровода" data="EHP_SEGMENT_N" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Диаметр условный (Dу)" data="EHP_PIPE_DN" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Наружный диаметр трубопровода" data="EHP_PIPE_DIAM" type="0" aggregate="0"
+                           visible="1" format=""/>
+                    <Field caption="Наименование" data="EHP_NAME" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Обозначение" data="EHP_TAG" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Нормативный документ" data="EHP_STANDARD" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Класс материала" data="EHP_M_CLASS" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Материал" data="EHP_MATERIAL" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Нормативный документ на материал" data="EHP_M_STANDARD" type="0" aggregate="0"
+                           visible="1" format=""/>
+                    <Field caption="Масса" data="EHP_WEIGHT" type="0" aggregate="0" visible="1" format=""/>
+                </Fields>
+            </Table>
+            <View>
+                <GroupFields/>
+                <SortFields/>
+            </View>
+        </Dataset>
+        <Dataset assemblyGrouping="0" assemblyFilter="2" binding="Fields" relationType="" join="outer" hierarchy="0">
+            <Table caption="Фланец" filter="[EHP_TYPE] = &quot;Фланец&quot;" result.filter="" aggregated="0">
+                <Types>
+                    <Type name="aec_elements"/>
+                    <Type name="aec_plate"/>
+                    <Type name="aec_roof"/>
+                    <Type name="aec_surf"/>
+                    <Type name="aec_wall"/>
+                    <Type name="aec_wall_lay"/>
+                    <Type name="aecbore"/>
+                    <Type name="aecsectionreinf"/>
+                    <Type name="aecsite"/>
+                    <Type name="background"/>
+                    <Type name="bearings"/>
+                    <Type name="blockxreferences"/>
+                    <Type name="cable_journal"/>
+                    <Type name="cable_net_links"/>
+                    <Type name="cable_routing"/>
+                    <Type name="cables"/>
+                    <Type name="collisions"/>
+                    <Type name="crossarm"/>
+                    <Type name="crosses"/>
+                    <Type name="equipment_items"/>
+                    <Type name="fire_alarm_zones"/>
+                    <Type name="garlands"/>
+                    <Type name="grounding"/>
+                    <Type name="groundprofiles"/>
+                    <Type name="lines"/>
+                    <Type name="links"/>
+                    <Type name="linksketchs"/>
+                    <Type name="locations"/>
+                    <Type name="metal"/>
+                    <Type name="metalasm"/>
+                    <Type name="metalnode"/>
+                    <Type name="modifier"/>
+                    <Type name="ms_weld_seam"/>
+                    <Type name="mscartogram"/>
+                    <Type name="msgeoarrowslope"/>
+                    <Type name="msgeocircuitbuilding"/>
+                    <Type name="msgeocircuitbuildingaxis"/>
+                    <Type name="msgeocircuitbuildingopening"/>
+                    <Type name="msgeositeroad"/>
+                    <Type name="msparcel"/>
+                    <Type name="mssite"/>
+                    <Type name="mssite_contour"/>
+                    <Type name="mssite_isoline"/>
+                    <Type name="mssite_mainslope"/>
+                    <Type name="mssite_roads"/>
+                    <Type name="mssite_structlines"/>
+                    <Type name="mssite_surfline"/>
+                    <Type name="mssite_zeroworkline"/>
+                    <Type name="mssitebasehorizontal"/>
+                    <Type name="mssitebreakline"/>
+                    <Type name="mssitehorizontal"/>
+                    <Type name="mssiteslopehatch"/>
+                    <Type name="nodes"/>
+                    <Type name="overpass_axis"/>
+                    <Type name="picketage"/>
+                    <Type name="pipe"/>
+                    <Type name="pipe_insulation"/>
+                    <Type name="pipe_part"/>
+                    <Type name="pline_entity"/>
+                    <Type name="pline_unity"/>
+                    <Type name="profiles"/>
+                    <Type name="projectdummy"/>
+                    <Type name="projectframe"/>
+                    <Type name="reinfbar"/>
+                    <Type name="reinfplane"/>
+                    <Type name="reinfsection"/>
+                    <Type name="routeconstruction"/>
+                    <Type name="routeprototype"/>
+                    <Type name="segments"/>
+                    <Type name="syscalc"/>
+                    <Type name="tbl_mssitecarto_grid"/>
+                    <Type name="template"/>
+                    <Type name="templateelement"/>
+                    <Type name="trench"/>
+                    <Type name="unit"/>
+                    <Type name="units"/>
+                </Types>
+                <Fields>
+                    <Field caption="Специализация" data="EHP_SPECIALITY" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Тип элемента" data="EHP_TYPE" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Обозначение системы" data="EHP_SYSTEM_TAG" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Номер участка трубопровода" data="EHP_SEGMENT_N" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Наименование" data="EHP_NAME" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Обозначение" data="EHP_TAG" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Нормативный документ" data="EHP_STANDARD" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Класс материала" data="EHP_M_CLASS" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Материал" data="EHP_MATERIAL" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Масса" data="EHP_WEIGHT" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Давление условное (PN)" data="EHP_PN" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Диаметр условный (Dу)" data="EHP_PIPE_DN" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Наружный диаметр трубопровода" data="EHP_PIPE_DIAM" type="0" aggregate="0"
+                           visible="1" format=""/>
+                    <Field caption="Длина" data="EHP_LENGTH" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Диаметр" data="EHP_DIAM" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Толщина" data="EHP_THICKNESS" type="0" aggregate="0" visible="1" format=""/>
+                </Fields>
+            </Table>
+            <View>
+                <GroupFields/>
+                <SortFields/>
+            </View>
+        </Dataset>
+        <Dataset assemblyGrouping="0" assemblyFilter="2" binding="Fields" relationType="" join="outer" hierarchy="0">
+            <Table caption="Запорная_арматура" filter="[EHP_TYPE] = &quot;Запорная_арматура&quot;" result.filter=""
+                   aggregated="0">
+                <Types>
+                    <Type name="aec_elements"/>
+                    <Type name="aec_plate"/>
+                    <Type name="aec_roof"/>
+                    <Type name="aec_surf"/>
+                    <Type name="aec_wall"/>
+                    <Type name="aec_wall_lay"/>
+                    <Type name="aecbore"/>
+                    <Type name="aecsectionreinf"/>
+                    <Type name="aecsite"/>
+                    <Type name="background"/>
+                    <Type name="bearings"/>
+                    <Type name="blockxreferences"/>
+                    <Type name="cable_journal"/>
+                    <Type name="cable_net_links"/>
+                    <Type name="cable_routing"/>
+                    <Type name="cables"/>
+                    <Type name="collisions"/>
+                    <Type name="crossarm"/>
+                    <Type name="crosses"/>
+                    <Type name="equipment_items"/>
+                    <Type name="fire_alarm_zones"/>
+                    <Type name="garlands"/>
+                    <Type name="grounding"/>
+                    <Type name="groundprofiles"/>
+                    <Type name="lines"/>
+                    <Type name="links"/>
+                    <Type name="linksketchs"/>
+                    <Type name="locations"/>
+                    <Type name="metal"/>
+                    <Type name="metalasm"/>
+                    <Type name="metalnode"/>
+                    <Type name="modifier"/>
+                    <Type name="ms_weld_seam"/>
+                    <Type name="mscartogram"/>
+                    <Type name="msgeoarrowslope"/>
+                    <Type name="msgeocircuitbuilding"/>
+                    <Type name="msgeocircuitbuildingaxis"/>
+                    <Type name="msgeocircuitbuildingopening"/>
+                    <Type name="msgeositeroad"/>
+                    <Type name="msparcel"/>
+                    <Type name="mssite"/>
+                    <Type name="mssite_contour"/>
+                    <Type name="mssite_isoline"/>
+                    <Type name="mssite_mainslope"/>
+                    <Type name="mssite_roads"/>
+                    <Type name="mssite_structlines"/>
+                    <Type name="mssite_surfline"/>
+                    <Type name="mssite_zeroworkline"/>
+                    <Type name="mssitebasehorizontal"/>
+                    <Type name="mssitebreakline"/>
+                    <Type name="mssitehorizontal"/>
+                    <Type name="mssiteslopehatch"/>
+                    <Type name="nodes"/>
+                    <Type name="overpass_axis"/>
+                    <Type name="picketage"/>
+                    <Type name="pipe"/>
+                    <Type name="pipe_insulation"/>
+                    <Type name="pipe_part"/>
+                    <Type name="pline_entity"/>
+                    <Type name="pline_unity"/>
+                    <Type name="profiles"/>
+                    <Type name="projectdummy"/>
+                    <Type name="projectframe"/>
+                    <Type name="reinfbar"/>
+                    <Type name="reinfplane"/>
+                    <Type name="reinfsection"/>
+                    <Type name="routeconstruction"/>
+                    <Type name="routeprototype"/>
+                    <Type name="segments"/>
+                    <Type name="syscalc"/>
+                    <Type name="tbl_mssitecarto_grid"/>
+                    <Type name="template"/>
+                    <Type name="templateelement"/>
+                    <Type name="trench"/>
+                    <Type name="unit"/>
+                    <Type name="units"/>
+                </Types>
+                <Fields>
+                    <Field caption="Специализация" data="EHP_SPECIALITY" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Тип элемента" data="EHP_TYPE" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Обозначение системы" data="EHP_SYSTEM_TAG" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Номер участка трубопровода" data="EHP_SEGMENT_N" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Наименование" data="EHP_NAME" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Обозначение" data="EHP_TAG" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Диаметр условный (Dу)" data="EHP_PIPE_DN" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Давление условное (PN)" data="EHP_PN" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Пропускная способность (Kvs)" data="EHP_FLOW_KVS" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Артикул производителя" data="EHP_REFERENCE" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Производитель" data="EHP_MANUFACTURER" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Класс материала" data="EHP_M_CLASS" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Материал" data="EHP_MATERIAL" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Масса" data="EHP_WEIGHT" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Длина" data="EHP_LENGTH" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Ширина" data="EHP_WIDTH" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Высота" data="EHP_HEIGHT" type="0" aggregate="0" visible="1" format=""/>
+                </Fields>
+            </Table>
+            <View>
+                <GroupFields/>
+                <SortFields/>
+            </View>
+        </Dataset>
+        <Dataset assemblyGrouping="0" assemblyFilter="2" binding="Fields" relationType="" join="outer" hierarchy="0">
+            <Table caption="Перепускной_клапан" filter="[EHP_TYPE] = &quot;Перепускной_клапан&quot;" result.filter=""
+                   aggregated="0">
+                <Types>
+                    <Type name="aec_elements"/>
+                    <Type name="aec_plate"/>
+                    <Type name="aec_roof"/>
+                    <Type name="aec_surf"/>
+                    <Type name="aec_wall"/>
+                    <Type name="aec_wall_lay"/>
+                    <Type name="aecbore"/>
+                    <Type name="aecsectionreinf"/>
+                    <Type name="aecsite"/>
+                    <Type name="background"/>
+                    <Type name="bearings"/>
+                    <Type name="blockxreferences"/>
+                    <Type name="cable_journal"/>
+                    <Type name="cable_net_links"/>
+                    <Type name="cable_routing"/>
+                    <Type name="cables"/>
+                    <Type name="collisions"/>
+                    <Type name="crossarm"/>
+                    <Type name="crosses"/>
+                    <Type name="equipment_items"/>
+                    <Type name="fire_alarm_zones"/>
+                    <Type name="garlands"/>
+                    <Type name="grounding"/>
+                    <Type name="groundprofiles"/>
+                    <Type name="lines"/>
+                    <Type name="links"/>
+                    <Type name="linksketchs"/>
+                    <Type name="locations"/>
+                    <Type name="metal"/>
+                    <Type name="metalasm"/>
+                    <Type name="metalnode"/>
+                    <Type name="modifier"/>
+                    <Type name="ms_weld_seam"/>
+                    <Type name="mscartogram"/>
+                    <Type name="msgeoarrowslope"/>
+                    <Type name="msgeocircuitbuilding"/>
+                    <Type name="msgeocircuitbuildingaxis"/>
+                    <Type name="msgeocircuitbuildingopening"/>
+                    <Type name="msgeositeroad"/>
+                    <Type name="msparcel"/>
+                    <Type name="mssite"/>
+                    <Type name="mssite_contour"/>
+                    <Type name="mssite_isoline"/>
+                    <Type name="mssite_mainslope"/>
+                    <Type name="mssite_roads"/>
+                    <Type name="mssite_structlines"/>
+                    <Type name="mssite_surfline"/>
+                    <Type name="mssite_zeroworkline"/>
+                    <Type name="mssitebasehorizontal"/>
+                    <Type name="mssitebreakline"/>
+                    <Type name="mssitehorizontal"/>
+                    <Type name="mssiteslopehatch"/>
+                    <Type name="nodes"/>
+                    <Type name="overpass_axis"/>
+                    <Type name="picketage"/>
+                    <Type name="pipe"/>
+                    <Type name="pipe_insulation"/>
+                    <Type name="pipe_part"/>
+                    <Type name="pline_entity"/>
+                    <Type name="pline_unity"/>
+                    <Type name="profiles"/>
+                    <Type name="projectdummy"/>
+                    <Type name="projectframe"/>
+                    <Type name="reinfbar"/>
+                    <Type name="reinfplane"/>
+                    <Type name="reinfsection"/>
+                    <Type name="routeconstruction"/>
+                    <Type name="routeprototype"/>
+                    <Type name="segments"/>
+                    <Type name="syscalc"/>
+                    <Type name="tbl_mssitecarto_grid"/>
+                    <Type name="template"/>
+                    <Type name="templateelement"/>
+                    <Type name="trench"/>
+                    <Type name="unit"/>
+                    <Type name="units"/>
+                </Types>
+                <Fields>
+                    <Field caption="Специализация" data="EHP_SPECIALITY" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Тип элемента" data="EHP_TYPE" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Обозначение системы" data="EHP_SYSTEM_TAG" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Номер участка трубопровода" data="EHP_SEGMENT_N" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Наименование" data="EHP_NAME" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Обозначение" data="EHP_TAG" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Диаметр условный (Dу)" data="EHP_PIPE_DN" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Давление условное (PN)" data="EHP_PN" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Пропускная способность (Kvs)" data="EHP_FLOW_KVS" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Артикул производителя" data="EHP_REFERENCE" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Производитель" data="EHP_MANUFACTURER" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Класс материала" data="EHP_M_CLASS" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Материал" data="EHP_MATERIAL" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Масса" data="EHP_WEIGHT" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Длина" data="EHP_LENGTH" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Ширина" data="EHP_WIDTH" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Высота" data="EHP_HEIGHT" type="0" aggregate="0" visible="1" format=""/>
+                </Fields>
+            </Table>
+            <View>
+                <GroupFields/>
+                <SortFields/>
+            </View>
+        </Dataset>
+        <Dataset assemblyGrouping="0" assemblyFilter="2" binding="Fields" relationType="" join="outer" hierarchy="0">
+            <Table caption="Гидравлический_регулятор_перепада_давления"
+                   filter="[EHP_TYPE] = &quot;Гидравлический_регулятор_перепада_давления&quot;" result.filter=""
+                   aggregated="0">
+                <Types>
+                    <Type name="aec_elements"/>
+                    <Type name="aec_plate"/>
+                    <Type name="aec_roof"/>
+                    <Type name="aec_surf"/>
+                    <Type name="aec_wall"/>
+                    <Type name="aec_wall_lay"/>
+                    <Type name="aecbore"/>
+                    <Type name="aecsectionreinf"/>
+                    <Type name="aecsite"/>
+                    <Type name="background"/>
+                    <Type name="bearings"/>
+                    <Type name="blockxreferences"/>
+                    <Type name="cable_journal"/>
+                    <Type name="cable_net_links"/>
+                    <Type name="cable_routing"/>
+                    <Type name="cables"/>
+                    <Type name="collisions"/>
+                    <Type name="crossarm"/>
+                    <Type name="crosses"/>
+                    <Type name="equipment_items"/>
+                    <Type name="fire_alarm_zones"/>
+                    <Type name="garlands"/>
+                    <Type name="grounding"/>
+                    <Type name="groundprofiles"/>
+                    <Type name="lines"/>
+                    <Type name="links"/>
+                    <Type name="linksketchs"/>
+                    <Type name="locations"/>
+                    <Type name="metal"/>
+                    <Type name="metalasm"/>
+                    <Type name="metalnode"/>
+                    <Type name="modifier"/>
+                    <Type name="ms_weld_seam"/>
+                    <Type name="mscartogram"/>
+                    <Type name="msgeoarrowslope"/>
+                    <Type name="msgeocircuitbuilding"/>
+                    <Type name="msgeocircuitbuildingaxis"/>
+                    <Type name="msgeocircuitbuildingopening"/>
+                    <Type name="msgeositeroad"/>
+                    <Type name="msparcel"/>
+                    <Type name="mssite"/>
+                    <Type name="mssite_contour"/>
+                    <Type name="mssite_isoline"/>
+                    <Type name="mssite_mainslope"/>
+                    <Type name="mssite_roads"/>
+                    <Type name="mssite_structlines"/>
+                    <Type name="mssite_surfline"/>
+                    <Type name="mssite_zeroworkline"/>
+                    <Type name="mssitebasehorizontal"/>
+                    <Type name="mssitebreakline"/>
+                    <Type name="mssitehorizontal"/>
+                    <Type name="mssiteslopehatch"/>
+                    <Type name="nodes"/>
+                    <Type name="overpass_axis"/>
+                    <Type name="picketage"/>
+                    <Type name="pipe"/>
+                    <Type name="pipe_insulation"/>
+                    <Type name="pipe_part"/>
+                    <Type name="pline_entity"/>
+                    <Type name="pline_unity"/>
+                    <Type name="profiles"/>
+                    <Type name="projectdummy"/>
+                    <Type name="projectframe"/>
+                    <Type name="reinfbar"/>
+                    <Type name="reinfplane"/>
+                    <Type name="reinfsection"/>
+                    <Type name="routeconstruction"/>
+                    <Type name="routeprototype"/>
+                    <Type name="segments"/>
+                    <Type name="syscalc"/>
+                    <Type name="tbl_mssitecarto_grid"/>
+                    <Type name="template"/>
+                    <Type name="templateelement"/>
+                    <Type name="trench"/>
+                    <Type name="unit"/>
+                    <Type name="units"/>
+                </Types>
+                <Fields>
+                    <Field caption="Специализация" data="EHP_SPECIALITY" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Тип элемента" data="EHP_TYPE" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Обозначение системы" data="EHP_SYSTEM_TAG" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Номер участка трубопровода" data="EHP_SEGMENT_N" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Наименование" data="EHP_NAME" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Обозначение" data="EHP_TAG" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Диаметр условный (Dу)" data="EHP_PIPE_DN" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Давление условное (PN)" data="EHP_PN" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Пропускная способность (Kvs)" data="EHP_FLOW_KVS" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Перепад давления" data="EHP_DP" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Артикул производителя" data="EHP_REFERENCE" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Производитель" data="EHP_MANUFACTURER" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Класс материала" data="EHP_M_CLASS" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Материал" data="EHP_MATERIAL" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Масса" data="EHP_WEIGHT" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Длина" data="EHP_LENGTH" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Ширина" data="EHP_WIDTH" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Высота" data="EHP_HEIGHT" type="0" aggregate="0" visible="1" format=""/>
+                </Fields>
+            </Table>
+            <View>
+                <GroupFields/>
+                <SortFields/>
+            </View>
+        </Dataset>
+        <Dataset assemblyGrouping="0" assemblyFilter="2" binding="Fields" relationType="" join="outer" hierarchy="0">
+            <Table caption="Фильтр" filter="[EHP_TYPE] = &quot;Фильтр&quot;" result.filter="" aggregated="0">
+                <Types>
+                    <Type name="aec_elements"/>
+                    <Type name="aec_plate"/>
+                    <Type name="aec_roof"/>
+                    <Type name="aec_surf"/>
+                    <Type name="aec_wall"/>
+                    <Type name="aec_wall_lay"/>
+                    <Type name="aecbore"/>
+                    <Type name="aecsectionreinf"/>
+                    <Type name="aecsite"/>
+                    <Type name="background"/>
+                    <Type name="bearings"/>
+                    <Type name="blockxreferences"/>
+                    <Type name="cable_journal"/>
+                    <Type name="cable_net_links"/>
+                    <Type name="cable_routing"/>
+                    <Type name="cables"/>
+                    <Type name="collisions"/>
+                    <Type name="crossarm"/>
+                    <Type name="crosses"/>
+                    <Type name="equipment_items"/>
+                    <Type name="fire_alarm_zones"/>
+                    <Type name="garlands"/>
+                    <Type name="grounding"/>
+                    <Type name="groundprofiles"/>
+                    <Type name="lines"/>
+                    <Type name="links"/>
+                    <Type name="linksketchs"/>
+                    <Type name="locations"/>
+                    <Type name="metal"/>
+                    <Type name="metalasm"/>
+                    <Type name="metalnode"/>
+                    <Type name="modifier"/>
+                    <Type name="ms_weld_seam"/>
+                    <Type name="mscartogram"/>
+                    <Type name="msgeoarrowslope"/>
+                    <Type name="msgeocircuitbuilding"/>
+                    <Type name="msgeocircuitbuildingaxis"/>
+                    <Type name="msgeocircuitbuildingopening"/>
+                    <Type name="msgeositeroad"/>
+                    <Type name="msparcel"/>
+                    <Type name="mssite"/>
+                    <Type name="mssite_contour"/>
+                    <Type name="mssite_isoline"/>
+                    <Type name="mssite_mainslope"/>
+                    <Type name="mssite_roads"/>
+                    <Type name="mssite_structlines"/>
+                    <Type name="mssite_surfline"/>
+                    <Type name="mssite_zeroworkline"/>
+                    <Type name="mssitebasehorizontal"/>
+                    <Type name="mssitebreakline"/>
+                    <Type name="mssitehorizontal"/>
+                    <Type name="mssiteslopehatch"/>
+                    <Type name="nodes"/>
+                    <Type name="overpass_axis"/>
+                    <Type name="picketage"/>
+                    <Type name="pipe"/>
+                    <Type name="pipe_insulation"/>
+                    <Type name="pipe_part"/>
+                    <Type name="pline_entity"/>
+                    <Type name="pline_unity"/>
+                    <Type name="profiles"/>
+                    <Type name="projectdummy"/>
+                    <Type name="projectframe"/>
+                    <Type name="reinfbar"/>
+                    <Type name="reinfplane"/>
+                    <Type name="reinfsection"/>
+                    <Type name="routeconstruction"/>
+                    <Type name="routeprototype"/>
+                    <Type name="segments"/>
+                    <Type name="syscalc"/>
+                    <Type name="tbl_mssitecarto_grid"/>
+                    <Type name="template"/>
+                    <Type name="templateelement"/>
+                    <Type name="trench"/>
+                    <Type name="unit"/>
+                    <Type name="units"/>
+                </Types>
+                <Fields>
+                    <Field caption="Специализация" data="EHP_SPECIALITY" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Тип элемента" data="EHP_TYPE" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Обозначение системы" data="EHP_SYSTEM_TAG" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Номер участка трубопровода" data="EHP_SEGMENT_N" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Наименование" data="EHP_NAME" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Обозначение" data="EHP_TAG" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Диаметр условный (Dу)" data="EHP_PIPE_DN" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Давление условное (PN)" data="EHP_PN" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Артикул производителя" data="EHP_REFERENCE" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Производитель" data="EHP_MANUFACTURER" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Класс материала" data="EHP_M_CLASS" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Масса" data="EHP_WEIGHT" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Длина" data="EHP_LENGTH" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Ширина" data="EHP_WIDTH" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Высота" data="EHP_HEIGHT" type="0" aggregate="0" visible="1" format=""/>
+                </Fields>
+            </Table>
+            <View>
+                <GroupFields/>
+                <SortFields/>
+            </View>
+        </Dataset>
+        <Dataset assemblyGrouping="0" assemblyFilter="2" binding="Fields" relationType="" join="outer" hierarchy="0">
+            <Table caption="Грязевик" filter="[EHP_TYPE] = &quot;Грязевик&quot;" result.filter="" aggregated="0">
+                <Types>
+                    <Type name="aec_elements"/>
+                    <Type name="aec_plate"/>
+                    <Type name="aec_roof"/>
+                    <Type name="aec_surf"/>
+                    <Type name="aec_wall"/>
+                    <Type name="aec_wall_lay"/>
+                    <Type name="aecbore"/>
+                    <Type name="aecsectionreinf"/>
+                    <Type name="aecsite"/>
+                    <Type name="background"/>
+                    <Type name="bearings"/>
+                    <Type name="blockxreferences"/>
+                    <Type name="cable_journal"/>
+                    <Type name="cable_net_links"/>
+                    <Type name="cable_routing"/>
+                    <Type name="cables"/>
+                    <Type name="collisions"/>
+                    <Type name="crossarm"/>
+                    <Type name="crosses"/>
+                    <Type name="equipment_items"/>
+                    <Type name="fire_alarm_zones"/>
+                    <Type name="garlands"/>
+                    <Type name="grounding"/>
+                    <Type name="groundprofiles"/>
+                    <Type name="lines"/>
+                    <Type name="links"/>
+                    <Type name="linksketchs"/>
+                    <Type name="locations"/>
+                    <Type name="metal"/>
+                    <Type name="metalasm"/>
+                    <Type name="metalnode"/>
+                    <Type name="modifier"/>
+                    <Type name="ms_weld_seam"/>
+                    <Type name="mscartogram"/>
+                    <Type name="msgeoarrowslope"/>
+                    <Type name="msgeocircuitbuilding"/>
+                    <Type name="msgeocircuitbuildingaxis"/>
+                    <Type name="msgeocircuitbuildingopening"/>
+                    <Type name="msgeositeroad"/>
+                    <Type name="msparcel"/>
+                    <Type name="mssite"/>
+                    <Type name="mssite_contour"/>
+                    <Type name="mssite_isoline"/>
+                    <Type name="mssite_mainslope"/>
+                    <Type name="mssite_roads"/>
+                    <Type name="mssite_structlines"/>
+                    <Type name="mssite_surfline"/>
+                    <Type name="mssite_zeroworkline"/>
+                    <Type name="mssitebasehorizontal"/>
+                    <Type name="mssitebreakline"/>
+                    <Type name="mssitehorizontal"/>
+                    <Type name="mssiteslopehatch"/>
+                    <Type name="nodes"/>
+                    <Type name="overpass_axis"/>
+                    <Type name="picketage"/>
+                    <Type name="pipe"/>
+                    <Type name="pipe_insulation"/>
+                    <Type name="pipe_part"/>
+                    <Type name="pline_entity"/>
+                    <Type name="pline_unity"/>
+                    <Type name="profiles"/>
+                    <Type name="projectdummy"/>
+                    <Type name="projectframe"/>
+                    <Type name="reinfbar"/>
+                    <Type name="reinfplane"/>
+                    <Type name="reinfsection"/>
+                    <Type name="routeconstruction"/>
+                    <Type name="routeprototype"/>
+                    <Type name="segments"/>
+                    <Type name="syscalc"/>
+                    <Type name="tbl_mssitecarto_grid"/>
+                    <Type name="template"/>
+                    <Type name="templateelement"/>
+                    <Type name="trench"/>
+                    <Type name="unit"/>
+                    <Type name="units"/>
+                </Types>
+                <Fields>
+                    <Field caption="Специализация" data="EHP_SPECIALITY" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Тип элемента" data="EHP_TYPE" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Обозначение системы" data="EHP_SYSTEM_TAG" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Номер участка трубопровода" data="EHP_SEGMENT_N" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Наименование" data="EHP_NAME" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Обозначение" data="EHP_TAG" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Диаметр условный (Dу)" data="EHP_PIPE_DN" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Давление условное (PN)" data="EHP_PN" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Артикул производителя" data="EHP_REFERENCE" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Производитель" data="EHP_MANUFACTURER" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Класс материала" data="EHP_M_CLASS" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Масса" data="EHP_WEIGHT" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Длина" data="EHP_LENGTH" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Ширина" data="EHP_WIDTH" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Высота" data="EHP_HEIGHT" type="0" aggregate="0" visible="1" format=""/>
+                </Fields>
+            </Table>
+            <View>
+                <GroupFields/>
+                <SortFields/>
+            </View>
+        </Dataset>
+        <Dataset assemblyGrouping="0" assemblyFilter="2" binding="Fields" relationType="" join="outer" hierarchy="0">
+            <Table caption="Обратный_клапан" filter="[EHP_TYPE] = &quot;Обратный_клапан&quot;" result.filter=""
+                   aggregated="0">
+                <Types>
+                    <Type name="aec_elements"/>
+                    <Type name="aec_plate"/>
+                    <Type name="aec_roof"/>
+                    <Type name="aec_surf"/>
+                    <Type name="aec_wall"/>
+                    <Type name="aec_wall_lay"/>
+                    <Type name="aecbore"/>
+                    <Type name="aecsectionreinf"/>
+                    <Type name="aecsite"/>
+                    <Type name="background"/>
+                    <Type name="bearings"/>
+                    <Type name="blockxreferences"/>
+                    <Type name="cable_journal"/>
+                    <Type name="cable_net_links"/>
+                    <Type name="cable_routing"/>
+                    <Type name="cables"/>
+                    <Type name="collisions"/>
+                    <Type name="crossarm"/>
+                    <Type name="crosses"/>
+                    <Type name="equipment_items"/>
+                    <Type name="fire_alarm_zones"/>
+                    <Type name="garlands"/>
+                    <Type name="grounding"/>
+                    <Type name="groundprofiles"/>
+                    <Type name="lines"/>
+                    <Type name="links"/>
+                    <Type name="linksketchs"/>
+                    <Type name="locations"/>
+                    <Type name="metal"/>
+                    <Type name="metalasm"/>
+                    <Type name="metalnode"/>
+                    <Type name="modifier"/>
+                    <Type name="ms_weld_seam"/>
+                    <Type name="mscartogram"/>
+                    <Type name="msgeoarrowslope"/>
+                    <Type name="msgeocircuitbuilding"/>
+                    <Type name="msgeocircuitbuildingaxis"/>
+                    <Type name="msgeocircuitbuildingopening"/>
+                    <Type name="msgeositeroad"/>
+                    <Type name="msparcel"/>
+                    <Type name="mssite"/>
+                    <Type name="mssite_contour"/>
+                    <Type name="mssite_isoline"/>
+                    <Type name="mssite_mainslope"/>
+                    <Type name="mssite_roads"/>
+                    <Type name="mssite_structlines"/>
+                    <Type name="mssite_surfline"/>
+                    <Type name="mssite_zeroworkline"/>
+                    <Type name="mssitebasehorizontal"/>
+                    <Type name="mssitebreakline"/>
+                    <Type name="mssitehorizontal"/>
+                    <Type name="mssiteslopehatch"/>
+                    <Type name="nodes"/>
+                    <Type name="overpass_axis"/>
+                    <Type name="picketage"/>
+                    <Type name="pipe"/>
+                    <Type name="pipe_insulation"/>
+                    <Type name="pipe_part"/>
+                    <Type name="pline_entity"/>
+                    <Type name="pline_unity"/>
+                    <Type name="profiles"/>
+                    <Type name="projectdummy"/>
+                    <Type name="projectframe"/>
+                    <Type name="reinfbar"/>
+                    <Type name="reinfplane"/>
+                    <Type name="reinfsection"/>
+                    <Type name="routeconstruction"/>
+                    <Type name="routeprototype"/>
+                    <Type name="segments"/>
+                    <Type name="syscalc"/>
+                    <Type name="tbl_mssitecarto_grid"/>
+                    <Type name="template"/>
+                    <Type name="templateelement"/>
+                    <Type name="trench"/>
+                    <Type name="unit"/>
+                    <Type name="units"/>
+                </Types>
+                <Fields>
+                    <Field caption="Специализация" data="EHP_SPECIALITY" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Тип элемента" data="EHP_TYPE" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Обозначение системы" data="EHP_SYSTEM_TAG" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Номер участка трубопровода" data="EHP_SEGMENT_N" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Наименование" data="EHP_NAME" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Обозначение" data="EHP_TAG" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Диаметр условный (Dу)" data="EHP_PIPE_DN" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Давление условное (PN)" data="EHP_PN" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Артикул производителя" data="EHP_REFERENCE" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Производитель" data="EHP_MANUFACTURER" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Класс материала" data="EHP_M_CLASS" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Материал" data="EHP_MATERIAL" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Масса" data="EHP_WEIGHT" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Длина" data="EHP_LENGTH" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Ширина" data="EHP_WIDTH" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Высота" data="EHP_HEIGHT" type="0" aggregate="0" visible="1" format=""/>
+                </Fields>
+            </Table>
+            <View>
+                <GroupFields/>
+                <SortFields/>
+            </View>
+        </Dataset>
+        <Dataset assemblyGrouping="0" assemblyFilter="2" binding="Fields" relationType="" join="outer" hierarchy="0">
+            <Table caption="Ручной_балансировочный_клапан"
+                   filter="[EHP_TYPE] = &quot;Ручной_балансировочный_клапан&quot;" result.filter="" aggregated="0">
+                <Types>
+                    <Type name="aec_elements"/>
+                    <Type name="aec_plate"/>
+                    <Type name="aec_roof"/>
+                    <Type name="aec_surf"/>
+                    <Type name="aec_wall"/>
+                    <Type name="aec_wall_lay"/>
+                    <Type name="aecbore"/>
+                    <Type name="aecsectionreinf"/>
+                    <Type name="aecsite"/>
+                    <Type name="background"/>
+                    <Type name="bearings"/>
+                    <Type name="blockxreferences"/>
+                    <Type name="cable_journal"/>
+                    <Type name="cable_net_links"/>
+                    <Type name="cable_routing"/>
+                    <Type name="cables"/>
+                    <Type name="collisions"/>
+                    <Type name="crossarm"/>
+                    <Type name="crosses"/>
+                    <Type name="equipment_items"/>
+                    <Type name="fire_alarm_zones"/>
+                    <Type name="garlands"/>
+                    <Type name="grounding"/>
+                    <Type name="groundprofiles"/>
+                    <Type name="lines"/>
+                    <Type name="links"/>
+                    <Type name="linksketchs"/>
+                    <Type name="locations"/>
+                    <Type name="metal"/>
+                    <Type name="metalasm"/>
+                    <Type name="metalnode"/>
+                    <Type name="modifier"/>
+                    <Type name="ms_weld_seam"/>
+                    <Type name="mscartogram"/>
+                    <Type name="msgeoarrowslope"/>
+                    <Type name="msgeocircuitbuilding"/>
+                    <Type name="msgeocircuitbuildingaxis"/>
+                    <Type name="msgeocircuitbuildingopening"/>
+                    <Type name="msgeositeroad"/>
+                    <Type name="msparcel"/>
+                    <Type name="mssite"/>
+                    <Type name="mssite_contour"/>
+                    <Type name="mssite_isoline"/>
+                    <Type name="mssite_mainslope"/>
+                    <Type name="mssite_roads"/>
+                    <Type name="mssite_structlines"/>
+                    <Type name="mssite_surfline"/>
+                    <Type name="mssite_zeroworkline"/>
+                    <Type name="mssitebasehorizontal"/>
+                    <Type name="mssitebreakline"/>
+                    <Type name="mssitehorizontal"/>
+                    <Type name="mssiteslopehatch"/>
+                    <Type name="nodes"/>
+                    <Type name="overpass_axis"/>
+                    <Type name="picketage"/>
+                    <Type name="pipe"/>
+                    <Type name="pipe_insulation"/>
+                    <Type name="pipe_part"/>
+                    <Type name="pline_entity"/>
+                    <Type name="pline_unity"/>
+                    <Type name="profiles"/>
+                    <Type name="projectdummy"/>
+                    <Type name="projectframe"/>
+                    <Type name="reinfbar"/>
+                    <Type name="reinfplane"/>
+                    <Type name="reinfsection"/>
+                    <Type name="routeconstruction"/>
+                    <Type name="routeprototype"/>
+                    <Type name="segments"/>
+                    <Type name="syscalc"/>
+                    <Type name="tbl_mssitecarto_grid"/>
+                    <Type name="template"/>
+                    <Type name="templateelement"/>
+                    <Type name="trench"/>
+                    <Type name="unit"/>
+                    <Type name="units"/>
+                </Types>
+                <Fields>
+                    <Field caption="Специализация" data="EHP_SPECIALITY" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Тип элемента" data="EHP_TYPE" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Обозначение системы" data="EHP_SYSTEM_TAG" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Номер участка трубопровода" data="EHP_SEGMENT_N" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Наименование" data="EHP_NAME" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Обозначение" data="EHP_TAG" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Диаметр условный (Dу)" data="EHP_PIPE_DN" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Давление условное (PN)" data="EHP_PN" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Пропускная способность (Kvs)" data="EHP_FLOW_KVS" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Артикул производителя" data="EHP_REFERENCE" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Производитель" data="EHP_MANUFACTURER" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Класс материала" data="EHP_M_CLASS" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Материал" data="EHP_MATERIAL" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Масса" data="EHP_WEIGHT" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Длина" data="EHP_LENGTH" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Ширина" data="EHP_WIDTH" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Высота" data="EHP_HEIGHT" type="0" aggregate="0" visible="1" format=""/>
+                </Fields>
+            </Table>
+            <View>
+                <GroupFields/>
+                <SortFields/>
+            </View>
+        </Dataset>
+        <Dataset assemblyGrouping="0" assemblyFilter="2" binding="Fields" relationType="" join="outer" hierarchy="0">
+            <Table caption="Двухходовой_регулирующий_клапан_с_электроприводом"
+                   filter="[EHP_TYPE] = &quot;Двухходовой_регулирующий_клапан_с_электроприводом&quot;" result.filter=""
+                   aggregated="0">
+                <Types>
+                    <Type name="aec_elements"/>
+                    <Type name="aec_plate"/>
+                    <Type name="aec_roof"/>
+                    <Type name="aec_surf"/>
+                    <Type name="aec_wall"/>
+                    <Type name="aec_wall_lay"/>
+                    <Type name="aecbore"/>
+                    <Type name="aecsectionreinf"/>
+                    <Type name="aecsite"/>
+                    <Type name="background"/>
+                    <Type name="bearings"/>
+                    <Type name="blockxreferences"/>
+                    <Type name="cable_journal"/>
+                    <Type name="cable_net_links"/>
+                    <Type name="cable_routing"/>
+                    <Type name="cables"/>
+                    <Type name="collisions"/>
+                    <Type name="crossarm"/>
+                    <Type name="crosses"/>
+                    <Type name="equipment_items"/>
+                    <Type name="fire_alarm_zones"/>
+                    <Type name="garlands"/>
+                    <Type name="grounding"/>
+                    <Type name="groundprofiles"/>
+                    <Type name="lines"/>
+                    <Type name="links"/>
+                    <Type name="linksketchs"/>
+                    <Type name="locations"/>
+                    <Type name="metal"/>
+                    <Type name="metalasm"/>
+                    <Type name="metalnode"/>
+                    <Type name="modifier"/>
+                    <Type name="ms_weld_seam"/>
+                    <Type name="mscartogram"/>
+                    <Type name="msgeoarrowslope"/>
+                    <Type name="msgeocircuitbuilding"/>
+                    <Type name="msgeocircuitbuildingaxis"/>
+                    <Type name="msgeocircuitbuildingopening"/>
+                    <Type name="msgeositeroad"/>
+                    <Type name="msparcel"/>
+                    <Type name="mssite"/>
+                    <Type name="mssite_contour"/>
+                    <Type name="mssite_isoline"/>
+                    <Type name="mssite_mainslope"/>
+                    <Type name="mssite_roads"/>
+                    <Type name="mssite_structlines"/>
+                    <Type name="mssite_surfline"/>
+                    <Type name="mssite_zeroworkline"/>
+                    <Type name="mssitebasehorizontal"/>
+                    <Type name="mssitebreakline"/>
+                    <Type name="mssitehorizontal"/>
+                    <Type name="mssiteslopehatch"/>
+                    <Type name="nodes"/>
+                    <Type name="overpass_axis"/>
+                    <Type name="picketage"/>
+                    <Type name="pipe"/>
+                    <Type name="pipe_insulation"/>
+                    <Type name="pipe_part"/>
+                    <Type name="pline_entity"/>
+                    <Type name="pline_unity"/>
+                    <Type name="profiles"/>
+                    <Type name="projectdummy"/>
+                    <Type name="projectframe"/>
+                    <Type name="reinfbar"/>
+                    <Type name="reinfplane"/>
+                    <Type name="reinfsection"/>
+                    <Type name="routeconstruction"/>
+                    <Type name="routeprototype"/>
+                    <Type name="segments"/>
+                    <Type name="syscalc"/>
+                    <Type name="tbl_mssitecarto_grid"/>
+                    <Type name="template"/>
+                    <Type name="templateelement"/>
+                    <Type name="trench"/>
+                    <Type name="unit"/>
+                    <Type name="units"/>
+                </Types>
+                <Fields>
+                    <Field caption="Специализация" data="EHP_SPECIALITY" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Тип элемента" data="EHP_TYPE" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Обозначение системы" data="EHP_SYSTEM_TAG" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Номер участка трубопровода" data="EHP_SEGMENT_N" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Наименование" data="EHP_NAME" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Обозначение" data="EHP_TAG" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Диаметр условный (Dу)" data="EHP_PIPE_DN" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Давление условное (PN)" data="EHP_PN" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Пропускная способность (Kvs)" data="EHP_FLOW_KVS" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Артикул производителя" data="EHP_REFERENCE" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Производитель" data="EHP_MANUFACTURER" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Класс материала" data="EHP_M_CLASS" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Материал" data="EHP_MATERIAL" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Масса" data="EHP_WEIGHT" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Длина" data="EHP_LENGTH" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Ширина" data="EHP_WIDTH" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Высота" data="EHP_HEIGHT" type="0" aggregate="0" visible="1" format=""/>
+                </Fields>
+            </Table>
+            <View>
+                <GroupFields/>
+                <SortFields/>
+            </View>
+        </Dataset>
+        <Dataset assemblyGrouping="0" assemblyFilter="2" binding="Fields" relationType="" join="outer" hierarchy="0">
+            <Table caption="Предохранительный_клапан" filter="[EHP_TYPE] = &quot;Предохранительный_клапан&quot;"
+                   result.filter="" aggregated="0">
+                <Types>
+                    <Type name="aec_elements"/>
+                    <Type name="aec_plate"/>
+                    <Type name="aec_roof"/>
+                    <Type name="aec_surf"/>
+                    <Type name="aec_wall"/>
+                    <Type name="aec_wall_lay"/>
+                    <Type name="aecbore"/>
+                    <Type name="aecsectionreinf"/>
+                    <Type name="aecsite"/>
+                    <Type name="background"/>
+                    <Type name="bearings"/>
+                    <Type name="blockxreferences"/>
+                    <Type name="cable_journal"/>
+                    <Type name="cable_net_links"/>
+                    <Type name="cable_routing"/>
+                    <Type name="cables"/>
+                    <Type name="collisions"/>
+                    <Type name="crossarm"/>
+                    <Type name="crosses"/>
+                    <Type name="equipment_items"/>
+                    <Type name="fire_alarm_zones"/>
+                    <Type name="garlands"/>
+                    <Type name="grounding"/>
+                    <Type name="groundprofiles"/>
+                    <Type name="lines"/>
+                    <Type name="links"/>
+                    <Type name="linksketchs"/>
+                    <Type name="locations"/>
+                    <Type name="metal"/>
+                    <Type name="metalasm"/>
+                    <Type name="metalnode"/>
+                    <Type name="modifier"/>
+                    <Type name="ms_weld_seam"/>
+                    <Type name="mscartogram"/>
+                    <Type name="msgeoarrowslope"/>
+                    <Type name="msgeocircuitbuilding"/>
+                    <Type name="msgeocircuitbuildingaxis"/>
+                    <Type name="msgeocircuitbuildingopening"/>
+                    <Type name="msgeositeroad"/>
+                    <Type name="msparcel"/>
+                    <Type name="mssite"/>
+                    <Type name="mssite_contour"/>
+                    <Type name="mssite_isoline"/>
+                    <Type name="mssite_mainslope"/>
+                    <Type name="mssite_roads"/>
+                    <Type name="mssite_structlines"/>
+                    <Type name="mssite_surfline"/>
+                    <Type name="mssite_zeroworkline"/>
+                    <Type name="mssitebasehorizontal"/>
+                    <Type name="mssitebreakline"/>
+                    <Type name="mssitehorizontal"/>
+                    <Type name="mssiteslopehatch"/>
+                    <Type name="nodes"/>
+                    <Type name="overpass_axis"/>
+                    <Type name="picketage"/>
+                    <Type name="pipe"/>
+                    <Type name="pipe_insulation"/>
+                    <Type name="pipe_part"/>
+                    <Type name="pline_entity"/>
+                    <Type name="pline_unity"/>
+                    <Type name="profiles"/>
+                    <Type name="projectdummy"/>
+                    <Type name="projectframe"/>
+                    <Type name="reinfbar"/>
+                    <Type name="reinfplane"/>
+                    <Type name="reinfsection"/>
+                    <Type name="routeconstruction"/>
+                    <Type name="routeprototype"/>
+                    <Type name="segments"/>
+                    <Type name="syscalc"/>
+                    <Type name="tbl_mssitecarto_grid"/>
+                    <Type name="template"/>
+                    <Type name="templateelement"/>
+                    <Type name="trench"/>
+                    <Type name="unit"/>
+                    <Type name="units"/>
+                </Types>
+                <Fields>
+                    <Field caption="Специализация" data="EHP_SPECIALITY" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Тип элемента" data="EHP_TYPE" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Обозначение системы" data="EHP_SYSTEM_TAG" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Номер участка трубопровода" data="EHP_SEGMENT_N" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Наименование" data="EHP_NAME" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Обозначение" data="EHP_TAG" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Диаметр условный (Dу)" data="EHP_PIPE_DN" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Давление условное (PN)" data="EHP_PN" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Пропускная способность (Kvs)" data="EHP_FLOW_KVS" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Артикул производителя" data="EHP_REFERENCE" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Производитель" data="EHP_MANUFACTURER" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Класс материала" data="EHP_M_CLASS" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Материал" data="EHP_MATERIAL" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Масса" data="EHP_WEIGHT" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Длина" data="EHP_LENGTH" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Ширина" data="EHP_WIDTH" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Высота" data="EHP_HEIGHT" type="0" aggregate="0" visible="1" format=""/>
+                </Fields>
+            </Table>
+            <View>
+                <GroupFields/>
+                <SortFields/>
+            </View>
+        </Dataset>
+        <Dataset assemblyGrouping="0" assemblyFilter="2" binding="Fields" relationType="" join="outer" hierarchy="0">
+            <Table caption="Узел_регулирующий" filter="[EHP_TYPE] = &quot;Узел_регулирующий&quot;" result.filter=""
+                   aggregated="0">
+                <Types>
+                    <Type name="aec_elements"/>
+                    <Type name="aec_plate"/>
+                    <Type name="aec_roof"/>
+                    <Type name="aec_surf"/>
+                    <Type name="aec_wall"/>
+                    <Type name="aec_wall_lay"/>
+                    <Type name="aecbore"/>
+                    <Type name="aecsectionreinf"/>
+                    <Type name="aecsite"/>
+                    <Type name="background"/>
+                    <Type name="bearings"/>
+                    <Type name="blockxreferences"/>
+                    <Type name="cable_journal"/>
+                    <Type name="cable_net_links"/>
+                    <Type name="cable_routing"/>
+                    <Type name="cables"/>
+                    <Type name="collisions"/>
+                    <Type name="crossarm"/>
+                    <Type name="crosses"/>
+                    <Type name="equipment_items"/>
+                    <Type name="fire_alarm_zones"/>
+                    <Type name="garlands"/>
+                    <Type name="grounding"/>
+                    <Type name="groundprofiles"/>
+                    <Type name="lines"/>
+                    <Type name="links"/>
+                    <Type name="linksketchs"/>
+                    <Type name="locations"/>
+                    <Type name="metal"/>
+                    <Type name="metalasm"/>
+                    <Type name="metalnode"/>
+                    <Type name="modifier"/>
+                    <Type name="ms_weld_seam"/>
+                    <Type name="mscartogram"/>
+                    <Type name="msgeoarrowslope"/>
+                    <Type name="msgeocircuitbuilding"/>
+                    <Type name="msgeocircuitbuildingaxis"/>
+                    <Type name="msgeocircuitbuildingopening"/>
+                    <Type name="msgeositeroad"/>
+                    <Type name="msparcel"/>
+                    <Type name="mssite"/>
+                    <Type name="mssite_contour"/>
+                    <Type name="mssite_isoline"/>
+                    <Type name="mssite_mainslope"/>
+                    <Type name="mssite_roads"/>
+                    <Type name="mssite_structlines"/>
+                    <Type name="mssite_surfline"/>
+                    <Type name="mssite_zeroworkline"/>
+                    <Type name="mssitebasehorizontal"/>
+                    <Type name="mssitebreakline"/>
+                    <Type name="mssitehorizontal"/>
+                    <Type name="mssiteslopehatch"/>
+                    <Type name="nodes"/>
+                    <Type name="overpass_axis"/>
+                    <Type name="picketage"/>
+                    <Type name="pipe"/>
+                    <Type name="pipe_insulation"/>
+                    <Type name="pipe_part"/>
+                    <Type name="pline_entity"/>
+                    <Type name="pline_unity"/>
+                    <Type name="profiles"/>
+                    <Type name="projectdummy"/>
+                    <Type name="projectframe"/>
+                    <Type name="reinfbar"/>
+                    <Type name="reinfplane"/>
+                    <Type name="reinfsection"/>
+                    <Type name="routeconstruction"/>
+                    <Type name="routeprototype"/>
+                    <Type name="segments"/>
+                    <Type name="syscalc"/>
+                    <Type name="tbl_mssitecarto_grid"/>
+                    <Type name="template"/>
+                    <Type name="templateelement"/>
+                    <Type name="trench"/>
+                    <Type name="unit"/>
+                    <Type name="units"/>
+                </Types>
+                <Fields>
+                    <Field caption="Специализация" data="EHP_SPECIALITY" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Тип элемента" data="EHP_TYPE" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Проектная марка" data="EHP_PRJCT_MARK" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Наименование" data="EHP_NAME" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Обозначение" data="EHP_TAG" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Артикул производителя" data="EHP_REFERENCE" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Производитель" data="EHP_MANUFACTURER" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Масса" data="EHP_WEIGHT" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Длина" data="EHP_LENGTH" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Ширина" data="EHP_WIDTH" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Высота" data="EHP_HEIGHT" type="0" aggregate="0" visible="1" format=""/>
+                </Fields>
+            </Table>
+            <View>
+                <GroupFields/>
+                <SortFields/>
+            </View>
+        </Dataset>
+        <Dataset assemblyGrouping="0" assemblyFilter="2" binding="Fields" relationType="" join="outer" hierarchy="0">
+            <Table caption="Теплообменник" filter="[EHP_TYPE] = &quot;Теплообменник&quot;" result.filter=""
+                   aggregated="0">
+                <Types>
+                    <Type name="aec_elements"/>
+                    <Type name="aec_plate"/>
+                    <Type name="aec_roof"/>
+                    <Type name="aec_surf"/>
+                    <Type name="aec_wall"/>
+                    <Type name="aec_wall_lay"/>
+                    <Type name="aecbore"/>
+                    <Type name="aecsectionreinf"/>
+                    <Type name="aecsite"/>
+                    <Type name="background"/>
+                    <Type name="bearings"/>
+                    <Type name="blockxreferences"/>
+                    <Type name="cable_journal"/>
+                    <Type name="cable_net_links"/>
+                    <Type name="cable_routing"/>
+                    <Type name="cables"/>
+                    <Type name="collisions"/>
+                    <Type name="crossarm"/>
+                    <Type name="crosses"/>
+                    <Type name="equipment_items"/>
+                    <Type name="fire_alarm_zones"/>
+                    <Type name="garlands"/>
+                    <Type name="grounding"/>
+                    <Type name="groundprofiles"/>
+                    <Type name="lines"/>
+                    <Type name="links"/>
+                    <Type name="linksketchs"/>
+                    <Type name="locations"/>
+                    <Type name="metal"/>
+                    <Type name="metalasm"/>
+                    <Type name="metalnode"/>
+                    <Type name="modifier"/>
+                    <Type name="ms_weld_seam"/>
+                    <Type name="mscartogram"/>
+                    <Type name="msgeoarrowslope"/>
+                    <Type name="msgeocircuitbuilding"/>
+                    <Type name="msgeocircuitbuildingaxis"/>
+                    <Type name="msgeocircuitbuildingopening"/>
+                    <Type name="msgeositeroad"/>
+                    <Type name="msparcel"/>
+                    <Type name="mssite"/>
+                    <Type name="mssite_contour"/>
+                    <Type name="mssite_isoline"/>
+                    <Type name="mssite_mainslope"/>
+                    <Type name="mssite_roads"/>
+                    <Type name="mssite_structlines"/>
+                    <Type name="mssite_surfline"/>
+                    <Type name="mssite_zeroworkline"/>
+                    <Type name="mssitebasehorizontal"/>
+                    <Type name="mssitebreakline"/>
+                    <Type name="mssitehorizontal"/>
+                    <Type name="mssiteslopehatch"/>
+                    <Type name="nodes"/>
+                    <Type name="overpass_axis"/>
+                    <Type name="picketage"/>
+                    <Type name="pipe"/>
+                    <Type name="pipe_insulation"/>
+                    <Type name="pipe_part"/>
+                    <Type name="pline_entity"/>
+                    <Type name="pline_unity"/>
+                    <Type name="profiles"/>
+                    <Type name="projectdummy"/>
+                    <Type name="projectframe"/>
+                    <Type name="reinfbar"/>
+                    <Type name="reinfplane"/>
+                    <Type name="reinfsection"/>
+                    <Type name="routeconstruction"/>
+                    <Type name="routeprototype"/>
+                    <Type name="segments"/>
+                    <Type name="syscalc"/>
+                    <Type name="tbl_mssitecarto_grid"/>
+                    <Type name="template"/>
+                    <Type name="templateelement"/>
+                    <Type name="trench"/>
+                    <Type name="unit"/>
+                    <Type name="units"/>
+                </Types>
+                <Fields>
+                    <Field caption="Специализация" data="EHP_SPECIALITY" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Тип элемента" data="EHP_TYPE" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Проектная марка" data="EHP_PRJCT_MARK" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Наименование" data="EHP_NAME" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Обозначение" data="EHP_TAG" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Артикул производителя" data="EHP_REFERENCE" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Производитель" data="EHP_MANUFACTURER" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Масса" data="EHP_WEIGHT" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Класс материала" data="EHP_M_CLASS" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Тепловая мощность" data="EHP_HEAT_POWER" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Максимальное рабочее давление" data="EHP_PRESS_MAX" type="0" aggregate="0"
+                           visible="1" format=""/>
+                    <Field caption="Число пластин теплообменника" data="EHP_N_PLATES" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Эффективная площадь теплообменника" data="EHP_EQ_SQUARE" type="0" aggregate="0"
+                           visible="1" format=""/>
+                    <Field caption="Длина" data="EHP_LENGTH" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Ширина" data="EHP_WIDTH" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Высота" data="EHP_HEIGHT" type="0" aggregate="0" visible="1" format=""/>
+                </Fields>
+            </Table>
+            <View>
+                <GroupFields/>
+                <SortFields/>
+            </View>
+        </Dataset>
+        <Dataset assemblyGrouping="0" assemblyFilter="2" binding="Fields" relationType="" join="outer" hierarchy="0">
+            <Table caption="Насос" filter="[EHP_TYPE] = &quot;Насос&quot;" result.filter="" aggregated="0">
+                <Types>
+                    <Type name="aec_elements"/>
+                    <Type name="aec_plate"/>
+                    <Type name="aec_roof"/>
+                    <Type name="aec_surf"/>
+                    <Type name="aec_wall"/>
+                    <Type name="aec_wall_lay"/>
+                    <Type name="aecbore"/>
+                    <Type name="aecsectionreinf"/>
+                    <Type name="aecsite"/>
+                    <Type name="background"/>
+                    <Type name="bearings"/>
+                    <Type name="blockxreferences"/>
+                    <Type name="cable_journal"/>
+                    <Type name="cable_net_links"/>
+                    <Type name="cable_routing"/>
+                    <Type name="cables"/>
+                    <Type name="collisions"/>
+                    <Type name="crossarm"/>
+                    <Type name="crosses"/>
+                    <Type name="equipment_items"/>
+                    <Type name="fire_alarm_zones"/>
+                    <Type name="garlands"/>
+                    <Type name="grounding"/>
+                    <Type name="groundprofiles"/>
+                    <Type name="lines"/>
+                    <Type name="links"/>
+                    <Type name="linksketchs"/>
+                    <Type name="locations"/>
+                    <Type name="metal"/>
+                    <Type name="metalasm"/>
+                    <Type name="metalnode"/>
+                    <Type name="modifier"/>
+                    <Type name="ms_weld_seam"/>
+                    <Type name="mscartogram"/>
+                    <Type name="msgeoarrowslope"/>
+                    <Type name="msgeocircuitbuilding"/>
+                    <Type name="msgeocircuitbuildingaxis"/>
+                    <Type name="msgeocircuitbuildingopening"/>
+                    <Type name="msgeositeroad"/>
+                    <Type name="msparcel"/>
+                    <Type name="mssite"/>
+                    <Type name="mssite_contour"/>
+                    <Type name="mssite_isoline"/>
+                    <Type name="mssite_mainslope"/>
+                    <Type name="mssite_roads"/>
+                    <Type name="mssite_structlines"/>
+                    <Type name="mssite_surfline"/>
+                    <Type name="mssite_zeroworkline"/>
+                    <Type name="mssitebasehorizontal"/>
+                    <Type name="mssitebreakline"/>
+                    <Type name="mssitehorizontal"/>
+                    <Type name="mssiteslopehatch"/>
+                    <Type name="nodes"/>
+                    <Type name="overpass_axis"/>
+                    <Type name="picketage"/>
+                    <Type name="pipe"/>
+                    <Type name="pipe_insulation"/>
+                    <Type name="pipe_part"/>
+                    <Type name="pline_entity"/>
+                    <Type name="pline_unity"/>
+                    <Type name="profiles"/>
+                    <Type name="projectdummy"/>
+                    <Type name="projectframe"/>
+                    <Type name="reinfbar"/>
+                    <Type name="reinfplane"/>
+                    <Type name="reinfsection"/>
+                    <Type name="routeconstruction"/>
+                    <Type name="routeprototype"/>
+                    <Type name="segments"/>
+                    <Type name="syscalc"/>
+                    <Type name="tbl_mssitecarto_grid"/>
+                    <Type name="template"/>
+                    <Type name="templateelement"/>
+                    <Type name="trench"/>
+                    <Type name="unit"/>
+                    <Type name="units"/>
+                </Types>
+                <Fields>
+                    <Field caption="Специализация" data="EHP_SPECIALITY" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Тип элемента" data="EHP_TYPE" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Проектная марка" data="EHP_PRJCT_MARK" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Наименование" data="EHP_NAME" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Обозначение" data="EHP_TAG" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Артикул производителя" data="EHP_REFERENCE" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Производитель" data="EHP_MANUFACTURER" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Масса" data="EHP_WEIGHT" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Электрическая номинальная мощность" data="EHP_EL_ANOM_PW" type="0" aggregate="0"
+                           visible="1" format=""/>
+                    <Field caption="Номинальное напряжение" data="EHP_EL_VOLTAGE" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Диаметр условный (Dу)" data="EHP_PIPE_DN" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Диаметр условный 2 (Dу)" data="EHP_PIPE_DN2" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Напор насоса" data="EHP_PUMP_THRUST" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Производительность насоса" data="EHP_PUMP_CPCTY" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Длина" data="EHP_LENGTH" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Ширина" data="EHP_WIDTH" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Высота" data="EHP_HEIGHT" type="0" aggregate="0" visible="1" format=""/>
+                </Fields>
+            </Table>
+            <View>
+                <GroupFields/>
+                <SortFields/>
+            </View>
+        </Dataset>
+        <Dataset assemblyGrouping="0" assemblyFilter="2" binding="Fields" relationType="" join="outer" hierarchy="0">
+            <Table caption="Насос_сдвоенный" filter="[EHP_TYPE] = &quot;Насос_сдвоенный&quot;" result.filter=""
+                   aggregated="0">
+                <Types>
+                    <Type name="aec_elements"/>
+                    <Type name="aec_plate"/>
+                    <Type name="aec_roof"/>
+                    <Type name="aec_surf"/>
+                    <Type name="aec_wall"/>
+                    <Type name="aec_wall_lay"/>
+                    <Type name="aecbore"/>
+                    <Type name="aecsectionreinf"/>
+                    <Type name="aecsite"/>
+                    <Type name="background"/>
+                    <Type name="bearings"/>
+                    <Type name="blockxreferences"/>
+                    <Type name="cable_journal"/>
+                    <Type name="cable_net_links"/>
+                    <Type name="cable_routing"/>
+                    <Type name="cables"/>
+                    <Type name="collisions"/>
+                    <Type name="crossarm"/>
+                    <Type name="crosses"/>
+                    <Type name="equipment_items"/>
+                    <Type name="fire_alarm_zones"/>
+                    <Type name="garlands"/>
+                    <Type name="grounding"/>
+                    <Type name="groundprofiles"/>
+                    <Type name="lines"/>
+                    <Type name="links"/>
+                    <Type name="linksketchs"/>
+                    <Type name="locations"/>
+                    <Type name="metal"/>
+                    <Type name="metalasm"/>
+                    <Type name="metalnode"/>
+                    <Type name="modifier"/>
+                    <Type name="ms_weld_seam"/>
+                    <Type name="mscartogram"/>
+                    <Type name="msgeoarrowslope"/>
+                    <Type name="msgeocircuitbuilding"/>
+                    <Type name="msgeocircuitbuildingaxis"/>
+                    <Type name="msgeocircuitbuildingopening"/>
+                    <Type name="msgeositeroad"/>
+                    <Type name="msparcel"/>
+                    <Type name="mssite"/>
+                    <Type name="mssite_contour"/>
+                    <Type name="mssite_isoline"/>
+                    <Type name="mssite_mainslope"/>
+                    <Type name="mssite_roads"/>
+                    <Type name="mssite_structlines"/>
+                    <Type name="mssite_surfline"/>
+                    <Type name="mssite_zeroworkline"/>
+                    <Type name="mssitebasehorizontal"/>
+                    <Type name="mssitebreakline"/>
+                    <Type name="mssitehorizontal"/>
+                    <Type name="mssiteslopehatch"/>
+                    <Type name="nodes"/>
+                    <Type name="overpass_axis"/>
+                    <Type name="picketage"/>
+                    <Type name="pipe"/>
+                    <Type name="pipe_insulation"/>
+                    <Type name="pipe_part"/>
+                    <Type name="pline_entity"/>
+                    <Type name="pline_unity"/>
+                    <Type name="profiles"/>
+                    <Type name="projectdummy"/>
+                    <Type name="projectframe"/>
+                    <Type name="reinfbar"/>
+                    <Type name="reinfplane"/>
+                    <Type name="reinfsection"/>
+                    <Type name="routeconstruction"/>
+                    <Type name="routeprototype"/>
+                    <Type name="segments"/>
+                    <Type name="syscalc"/>
+                    <Type name="tbl_mssitecarto_grid"/>
+                    <Type name="template"/>
+                    <Type name="templateelement"/>
+                    <Type name="trench"/>
+                    <Type name="unit"/>
+                    <Type name="units"/>
+                </Types>
+                <Fields>
+                    <Field caption="Специализация" data="EHP_SPECIALITY" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Тип элемента" data="EHP_TYPE" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Проектная марка" data="EHP_PRJCT_MARK" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Наименование" data="EHP_NAME" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Обозначение" data="EHP_TAG" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Артикул производителя" data="EHP_REFERENCE" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Производитель" data="EHP_MANUFACTURER" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Масса" data="EHP_WEIGHT" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Электрическая номинальная мощность" data="EHP_EL_ANOM_PW" type="0" aggregate="0"
+                           visible="1" format=""/>
+                    <Field caption="Номинальное напряжение" data="EHP_EL_VOLTAGE" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Диаметр условный (Dу)" data="EHP_PIPE_DN" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Диаметр условный 2 (Dу)" data="EHP_PIPE_DN2" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Напор насоса" data="EHP_PUMP_THRUST" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Производительность насоса" data="EHP_PUMP_CPCTY" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Длина" data="EHP_LENGTH" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Ширина" data="EHP_WIDTH" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Высота" data="EHP_HEIGHT" type="0" aggregate="0" visible="1" format=""/>
+                </Fields>
+            </Table>
+            <View>
+                <GroupFields/>
+                <SortFields/>
+            </View>
+        </Dataset>
+        <Dataset assemblyGrouping="0" assemblyFilter="2" binding="Fields" relationType="" join="outer" hierarchy="0">
+            <Table caption="Мембранный_расширительный_бак"
+                   filter="[EHP_TYPE] = &quot;Мембранный_расширительный_бак&quot;" result.filter="" aggregated="0">
+                <Types>
+                    <Type name="aec_elements"/>
+                    <Type name="aec_plate"/>
+                    <Type name="aec_roof"/>
+                    <Type name="aec_surf"/>
+                    <Type name="aec_wall"/>
+                    <Type name="aec_wall_lay"/>
+                    <Type name="aecbore"/>
+                    <Type name="aecsectionreinf"/>
+                    <Type name="aecsite"/>
+                    <Type name="background"/>
+                    <Type name="bearings"/>
+                    <Type name="blockxreferences"/>
+                    <Type name="cable_journal"/>
+                    <Type name="cable_net_links"/>
+                    <Type name="cable_routing"/>
+                    <Type name="cables"/>
+                    <Type name="collisions"/>
+                    <Type name="crossarm"/>
+                    <Type name="crosses"/>
+                    <Type name="equipment_items"/>
+                    <Type name="fire_alarm_zones"/>
+                    <Type name="garlands"/>
+                    <Type name="grounding"/>
+                    <Type name="groundprofiles"/>
+                    <Type name="lines"/>
+                    <Type name="links"/>
+                    <Type name="linksketchs"/>
+                    <Type name="locations"/>
+                    <Type name="metal"/>
+                    <Type name="metalasm"/>
+                    <Type name="metalnode"/>
+                    <Type name="modifier"/>
+                    <Type name="ms_weld_seam"/>
+                    <Type name="mscartogram"/>
+                    <Type name="msgeoarrowslope"/>
+                    <Type name="msgeocircuitbuilding"/>
+                    <Type name="msgeocircuitbuildingaxis"/>
+                    <Type name="msgeocircuitbuildingopening"/>
+                    <Type name="msgeositeroad"/>
+                    <Type name="msparcel"/>
+                    <Type name="mssite"/>
+                    <Type name="mssite_contour"/>
+                    <Type name="mssite_isoline"/>
+                    <Type name="mssite_mainslope"/>
+                    <Type name="mssite_roads"/>
+                    <Type name="mssite_structlines"/>
+                    <Type name="mssite_surfline"/>
+                    <Type name="mssite_zeroworkline"/>
+                    <Type name="mssitebasehorizontal"/>
+                    <Type name="mssitebreakline"/>
+                    <Type name="mssitehorizontal"/>
+                    <Type name="mssiteslopehatch"/>
+                    <Type name="nodes"/>
+                    <Type name="overpass_axis"/>
+                    <Type name="picketage"/>
+                    <Type name="pipe"/>
+                    <Type name="pipe_insulation"/>
+                    <Type name="pipe_part"/>
+                    <Type name="pline_entity"/>
+                    <Type name="pline_unity"/>
+                    <Type name="profiles"/>
+                    <Type name="projectdummy"/>
+                    <Type name="projectframe"/>
+                    <Type name="reinfbar"/>
+                    <Type name="reinfplane"/>
+                    <Type name="reinfsection"/>
+                    <Type name="routeconstruction"/>
+                    <Type name="routeprototype"/>
+                    <Type name="segments"/>
+                    <Type name="syscalc"/>
+                    <Type name="tbl_mssitecarto_grid"/>
+                    <Type name="template"/>
+                    <Type name="templateelement"/>
+                    <Type name="trench"/>
+                    <Type name="unit"/>
+                    <Type name="units"/>
+                </Types>
+                <Fields>
+                    <Field caption="Специализация" data="EHP_SPECIALITY" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Тип элемента" data="EHP_TYPE" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Проектная марка" data="EHP_PRJCT_MARK" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Наименование" data="EHP_NAME" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Нормативный документ" data="EHP_STANDARD" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Масса" data="EHP_WEIGHT" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Объем" data="EHP_VOLUME" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Длина" data="EHP_LENGTH" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Ширина" data="EHP_WIDTH" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Высота" data="EHP_HEIGHT" type="0" aggregate="0" visible="1" format=""/>
+                </Fields>
+            </Table>
+            <View>
+                <GroupFields/>
+                <SortFields/>
+            </View>
+        </Dataset>
+        <Dataset assemblyGrouping="0" assemblyFilter="2" binding="Fields" relationType="" join="outer" hierarchy="0">
+            <Table caption="Воздушно-тепловая_завеса" filter="[EHP_TYPE] = &quot;Воздушно-тепловая_завеса&quot;"
+                   result.filter="" aggregated="0">
+                <Types>
+                    <Type name="aec_elements"/>
+                    <Type name="aec_plate"/>
+                    <Type name="aec_roof"/>
+                    <Type name="aec_surf"/>
+                    <Type name="aec_wall"/>
+                    <Type name="aec_wall_lay"/>
+                    <Type name="aecbore"/>
+                    <Type name="aecsectionreinf"/>
+                    <Type name="aecsite"/>
+                    <Type name="background"/>
+                    <Type name="bearings"/>
+                    <Type name="blockxreferences"/>
+                    <Type name="cable_journal"/>
+                    <Type name="cable_net_links"/>
+                    <Type name="cable_routing"/>
+                    <Type name="cables"/>
+                    <Type name="collisions"/>
+                    <Type name="crossarm"/>
+                    <Type name="crosses"/>
+                    <Type name="equipment_items"/>
+                    <Type name="fire_alarm_zones"/>
+                    <Type name="garlands"/>
+                    <Type name="grounding"/>
+                    <Type name="groundprofiles"/>
+                    <Type name="lines"/>
+                    <Type name="links"/>
+                    <Type name="linksketchs"/>
+                    <Type name="locations"/>
+                    <Type name="metal"/>
+                    <Type name="metalasm"/>
+                    <Type name="metalnode"/>
+                    <Type name="modifier"/>
+                    <Type name="ms_weld_seam"/>
+                    <Type name="mscartogram"/>
+                    <Type name="msgeoarrowslope"/>
+                    <Type name="msgeocircuitbuilding"/>
+                    <Type name="msgeocircuitbuildingaxis"/>
+                    <Type name="msgeocircuitbuildingopening"/>
+                    <Type name="msgeositeroad"/>
+                    <Type name="msparcel"/>
+                    <Type name="mssite"/>
+                    <Type name="mssite_contour"/>
+                    <Type name="mssite_isoline"/>
+                    <Type name="mssite_mainslope"/>
+                    <Type name="mssite_roads"/>
+                    <Type name="mssite_structlines"/>
+                    <Type name="mssite_surfline"/>
+                    <Type name="mssite_zeroworkline"/>
+                    <Type name="mssitebasehorizontal"/>
+                    <Type name="mssitebreakline"/>
+                    <Type name="mssitehorizontal"/>
+                    <Type name="mssiteslopehatch"/>
+                    <Type name="nodes"/>
+                    <Type name="overpass_axis"/>
+                    <Type name="picketage"/>
+                    <Type name="pipe"/>
+                    <Type name="pipe_insulation"/>
+                    <Type name="pipe_part"/>
+                    <Type name="pline_entity"/>
+                    <Type name="pline_unity"/>
+                    <Type name="profiles"/>
+                    <Type name="projectdummy"/>
+                    <Type name="projectframe"/>
+                    <Type name="reinfbar"/>
+                    <Type name="reinfplane"/>
+                    <Type name="reinfsection"/>
+                    <Type name="routeconstruction"/>
+                    <Type name="routeprototype"/>
+                    <Type name="segments"/>
+                    <Type name="syscalc"/>
+                    <Type name="tbl_mssitecarto_grid"/>
+                    <Type name="template"/>
+                    <Type name="templateelement"/>
+                    <Type name="trench"/>
+                    <Type name="unit"/>
+                    <Type name="units"/>
+                </Types>
+                <Fields>
+                    <Field caption="Специализация" data="EHP_SPECIALITY" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Тип элемента" data="EHP_TYPE" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Проектная марка" data="EHP_PRJCT_MARK" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Наименование" data="EHP_NAME" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Обозначение" data="EHP_TAG" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Диаметр условный (Dу)" data="EHP_PIPE_DN" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Артикул производителя" data="EHP_REFERENCE" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Производитель" data="EHP_MANUFACTURER" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Масса" data="EHP_WEIGHT" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Длина" data="EHP_LENGTH" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Ширина" data="EHP_WIDTH" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Высота" data="EHP_HEIGHT" type="0" aggregate="0" visible="1" format=""/>
+                </Fields>
+            </Table>
+            <View>
+                <GroupFields/>
+                <SortFields/>
+            </View>
+        </Dataset>
+        <Dataset assemblyGrouping="0" assemblyFilter="2" binding="Fields" relationType="" join="outer" hierarchy="0">
+            <Table caption="Регистр_отопления" filter="[EHP_TYPE] = &quot;Регистр_отопления&quot;" result.filter=""
+                   aggregated="0">
+                <Types>
+                    <Type name="aec_elements"/>
+                    <Type name="aec_plate"/>
+                    <Type name="aec_roof"/>
+                    <Type name="aec_surf"/>
+                    <Type name="aec_wall"/>
+                    <Type name="aec_wall_lay"/>
+                    <Type name="aecbore"/>
+                    <Type name="aecsectionreinf"/>
+                    <Type name="aecsite"/>
+                    <Type name="background"/>
+                    <Type name="bearings"/>
+                    <Type name="blockxreferences"/>
+                    <Type name="cable_journal"/>
+                    <Type name="cable_net_links"/>
+                    <Type name="cable_routing"/>
+                    <Type name="cables"/>
+                    <Type name="collisions"/>
+                    <Type name="crossarm"/>
+                    <Type name="crosses"/>
+                    <Type name="equipment_items"/>
+                    <Type name="fire_alarm_zones"/>
+                    <Type name="garlands"/>
+                    <Type name="grounding"/>
+                    <Type name="groundprofiles"/>
+                    <Type name="lines"/>
+                    <Type name="links"/>
+                    <Type name="linksketchs"/>
+                    <Type name="locations"/>
+                    <Type name="metal"/>
+                    <Type name="metalasm"/>
+                    <Type name="metalnode"/>
+                    <Type name="modifier"/>
+                    <Type name="ms_weld_seam"/>
+                    <Type name="mscartogram"/>
+                    <Type name="msgeoarrowslope"/>
+                    <Type name="msgeocircuitbuilding"/>
+                    <Type name="msgeocircuitbuildingaxis"/>
+                    <Type name="msgeocircuitbuildingopening"/>
+                    <Type name="msgeositeroad"/>
+                    <Type name="msparcel"/>
+                    <Type name="mssite"/>
+                    <Type name="mssite_contour"/>
+                    <Type name="mssite_isoline"/>
+                    <Type name="mssite_mainslope"/>
+                    <Type name="mssite_roads"/>
+                    <Type name="mssite_structlines"/>
+                    <Type name="mssite_surfline"/>
+                    <Type name="mssite_zeroworkline"/>
+                    <Type name="mssitebasehorizontal"/>
+                    <Type name="mssitebreakline"/>
+                    <Type name="mssitehorizontal"/>
+                    <Type name="mssiteslopehatch"/>
+                    <Type name="nodes"/>
+                    <Type name="overpass_axis"/>
+                    <Type name="picketage"/>
+                    <Type name="pipe"/>
+                    <Type name="pipe_insulation"/>
+                    <Type name="pipe_part"/>
+                    <Type name="pline_entity"/>
+                    <Type name="pline_unity"/>
+                    <Type name="profiles"/>
+                    <Type name="projectdummy"/>
+                    <Type name="projectframe"/>
+                    <Type name="reinfbar"/>
+                    <Type name="reinfplane"/>
+                    <Type name="reinfsection"/>
+                    <Type name="routeconstruction"/>
+                    <Type name="routeprototype"/>
+                    <Type name="segments"/>
+                    <Type name="syscalc"/>
+                    <Type name="tbl_mssitecarto_grid"/>
+                    <Type name="template"/>
+                    <Type name="templateelement"/>
+                    <Type name="trench"/>
+                    <Type name="unit"/>
+                    <Type name="units"/>
+                </Types>
+                <Fields>
+                    <Field caption="Специализация" data="EHP_SPECIALITY" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Тип элемента" data="EHP_TYPE" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Проектная марка" data="EHP_PRJCT_MARK" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Наименование" data="EHP_NAME" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Обозначение" data="EHP_TAG" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Артикул производителя" data="EHP_REFERENCE" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Производитель" data="EHP_MANUFACTURER" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Масса" data="EHP_WEIGHT" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Диаметр условный (Dу)" data="EHP_PIPE_DN" type="0" aggregate="0" visible="1"
+                           format=""/>
+                    <Field caption="Длина" data="EHP_LENGTH" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Ширина" data="EHP_WIDTH" type="0" aggregate="0" visible="1" format=""/>
+                    <Field caption="Высота" data="EHP_HEIGHT" type="0" aggregate="0" visible="1" format=""/>
+                </Fields>
+            </Table>
+            <View>
+                <GroupFields/>
+                <SortFields/>
+            </View>
+        </Dataset>
+    </DatasetProfile>
+    <ReportFormat application="6" title="0" parser="" outlining="0" headers.style="2" headers.bold="1"
+                  table.separate="0" table.offset="50" table.offset.dir="0" groups.style="2" groups.bold="1"
+                  groups.column="1" groups.slant="0" groups.underline="0" macros="" template="" usefullpathtemplate="0"
+                  encoding="0" worksheet="" wrap="0" xml.application="" xml.arguments="" xml.script=""
+                  identifiers.out="0" xml.wait.results="1" totals.bold="0" totals.italic="0" totals.underline="0"
+                  totals.comment="" totals.comment.column="1" csv.divider=";"/>
+    <Extended>
+        <Parameter name="PX_PARSE_ASSEMBLIES" value="0" caption="Учитывать объекты внутри сборок" comment=""/>
+        <Parameter name="PX_PARSE_BLOCKS" value="0" caption="Учитывать объекты внутри блоков" comment=""/>
+        <Parameter name="PX_PARSE_XREFS" value="0" caption="Учитывать объекты внутри внешних ссылок" comment=""/>
+        <Parameter name="PX_RESTORE_TYPES" value="0" caption="Использовать исходный тип для объектов проекта"
+                   comment=""/>
+        <Parameter name="PX_WHOLE_PROJECT" value="0" caption="Учитывать объекты всех файлов текущего каталога"
+                   comment=""/>
+    </Extended>
+</Report>

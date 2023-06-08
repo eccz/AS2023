@@ -20,9 +20,11 @@ def csv_input(f_name):
     return result
 
 
-def xml_table_build(elem_type, filter_param):
-    table_args = {"caption": elem_type, "filter": f'[{filter_param}] = "{elem_type}"',
-                  "result.filter": "", "aggregated": "0"}
+def xml_table_build(elem_type, filter_param_1, filter_param_2, param_2_value):
+    table_args = {"caption": elem_type,
+                  "filter": f'[{filter_param_1}] = "{elem_type}" AND [{filter_param_2}] = "{param_2_value}"',
+                  "result.filter": "",
+                  "aggregated": "0"}
 
     return ET.Element('Table', **table_args)
 
@@ -93,7 +95,7 @@ def xml_extended_build():
     return extended
 
 
-def xml_build(src, filer_param='EHP_TYPE'):
+def xml_build(src, filter_param_1, filter_param_2, param_2_value):
     source = csv_input(src)
 
     root = ET.Element('Report')
@@ -101,7 +103,7 @@ def xml_build(src, filer_param='EHP_TYPE'):
 
     for elem_type, param_dict in source.items():
         dataset = xml_dataset_build()
-        table = xml_table_build(elem_type=elem_type, filter_param=filer_param)
+        table = xml_table_build(elem_type, filter_param_1, filter_param_2, param_2_value)
         types = xml_types_build()
         view = xml_view_build()
         fields = xml_fields_build()
@@ -136,14 +138,25 @@ def main():
         src = os.listdir('../src')[int(input().strip()) - 1]
         print(f'Выбран файл "{src}"')
 
-        print(f'\nВведи наименование параметра фильтрации (например EHP_TYPE):')
-        filter_param = input().strip()
-        print(f'Выбран параметр "{filter_param}"\n')
+        print(f'\nВведи наименование параметра фильтрации по типу (например EHP_TYPE):')
+        filter_param_1 = input().strip()
+        print(f'Выбран параметр "{filter_param_1}"')
+
+        print(f'\nВведи наименование дополнительного параметра фильтрации (например EHP_SPECIALITY):\n'
+              f'В случае, если применение этого параметра не требуется, наименование и значение нужно оставить пустыми')
+        filter_param_2 = input().strip()
+        print(f'Выбран параметр "{filter_param_2}"')
+
+        print(f'\nВведи значение для дополнительного параметра {filter_param_2}:')
+        param_2_value = input().strip()
+        print(f'Выбрано значение "{param_2_value}"')
 
         print('Нажми enter, чтобы создать xml')
         input()
 
-        mydata = ET.tostring(xml_build(src=src, filer_param=filter_param), encoding="utf-8", method="xml")
+        mydata = ET.tostring(xml_build(src, filter_param_1, filter_param_2, param_2_value),
+                             encoding="utf-8",
+                             method="xml")
 
         with open(f'work/results/{src.split(".")[0].strip()}.xml', 'w', encoding="utf-8") as f:
             f.write('<?xml version="1.0" ?>\n')
