@@ -147,7 +147,7 @@ def main():
         filter_param_2 = input().strip()
         print(f'Выбран параметр "{filter_param_2}"')
 
-        print(f'\nВведи значение для дополнительного параметра {filter_param_2}:')
+        print(f'\nВведи значение для дополнительного параметра {filter_param_2}, например Строительная_часть:')
         param_2_value = input().strip()
         print(f'Выбрано значение "{param_2_value}"')
 
@@ -158,11 +158,11 @@ def main():
                              encoding="utf-8",
                              method="xml")
 
-        with open(f'work/results/{src.split(".")[0].strip()}.xml', 'w', encoding="utf-8") as f:
+        with open(f'work/results/{src.split(".")[0].strip()}_spec.xml', 'w', encoding="utf-8") as f:
             f.write('<?xml version="1.0" ?>\n')
             f.write(mydata.decode(encoding="utf-8"))
 
-        print(fr'Файл {src.split(".")[0]}.xml создан по адресу "/specificator/work/results/"')
+        print(fr'Файл {src.split(".")[0]}_spec.xml создан по адресу "/specificator/work/results/"')
         print('Окно нужно закрыть')
 
         while True:

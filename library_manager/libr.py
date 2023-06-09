@@ -90,9 +90,9 @@ def main():
             res = new_parameter(par, parameter_dict[par], cat_name)
             root.append(res)
 
-        tree.write(fr'work/results/{src_csv_name.split(".")[0]}.xml', encoding='utf-8')
+        tree.write(fr'work/results/{src_csv_name.split(".")[0]}_libr.xml', encoding='utf-8')
 
-        print(fr'Файл {src_csv_name.split(".")[0]}.xml создан по адресу "/library_manager/work/results/"')
+        print(fr'Файл {src_csv_name.split(".")[0]}_libr.xml создан по адресу "/library_manager/work/results/"')
         print('Окно нужно закрыть')
 
         while True:
