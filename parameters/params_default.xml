@@ -1,0 +1,3550 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PARAMETERS>
+  <PARAMETER type="6" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>COMMENT_STATUS</NAME>
+    <COMMENT>Статус замечания</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Общие</CATEGORY>
+    </CATEGORIES>
+    <VALUES>
+      <VALUE>
+        <DATA>Выдано первично</DATA>
+      </VALUE>
+      <VALUE>
+        <DATA>В работе</DATA>
+      </VALUE>
+      <VALUE>
+        <DATA>В работе частично</DATA>
+      </VALUE>
+      <VALUE>
+        <DATA>На обсуждении</DATA>
+      </VALUE>
+      <VALUE>
+        <DATA>Устранено</DATA>
+      </VALUE>
+      <VALUE>
+        <DATA>Устранено частично</DATA>
+      </VALUE>
+      <VALUE>
+        <DATA>Согласовано</DATA>
+      </VALUE>
+      <VALUE>
+        <DATA>Не принято</DATA>
+      </VALUE>
+      <VALUE>
+        <DATA>Возврат</DATA>
+      </VALUE>
+    </VALUES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="100" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>MODEL_REPRESENTATION_LAST_UPDATE</NAME>
+    <COMMENT>Время последнего обновления раскраски представления модели</COMMENT>
+    <DEFAULT></DEFAULT>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>MS_OBJECT_KSI</NAME>
+    <COMMENT>Классификатор строительной информации</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2">КСИ</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_3DMANAGER</NAME>
+    <COMMENT>Ответственный за 3D</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="14" categoryOrder="2147483647">Параметры проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_3DMANAGER_EMAIL</NAME>
+    <COMMENT>Ответственный за 3D (Email)</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="15" categoryOrder="2147483647">Параметры проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_3DMANAGER_PHONE</NAME>
+    <COMMENT>Ответственный за 3D (Тел.)</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="16" categoryOrder="2147483647">Параметры проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CHIEF_ENGINEER</NAME>
+    <COMMENT>Главный инженер</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="11" categoryOrder="2147483647">Параметры проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CHIEF_ENGINEER_EMAIL</NAME>
+    <COMMENT>Главный инженер (Email)</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="12" categoryOrder="2147483647">Параметры проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CHIEF_ENGINEER_PHONE</NAME>
+    <COMMENT>Главный инженер (Тел.)</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="13" categoryOrder="2147483647">Параметры проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BACKUP_POLICY</NAME>
+    <COMMENT>PRJ_CLP_BACKUP_POLICY</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CABLE_SYSTEM_IDENTIFY</NAME>
+    <COMMENT>PRJ_CLP_BLD_CABLE_SYSTEM_IDENTIFY</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_1</NAME>
+    <COMMENT>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_1</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_11</NAME>
+    <COMMENT>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_11</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_12</NAME>
+    <COMMENT>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_12</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_13</NAME>
+    <COMMENT>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_13</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_14</NAME>
+    <COMMENT>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_14</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_15</NAME>
+    <COMMENT>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_15</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_16</NAME>
+    <COMMENT>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_16</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_17</NAME>
+    <COMMENT>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_17</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_18</NAME>
+    <COMMENT>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_18</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_19</NAME>
+    <COMMENT>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_19</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_2</NAME>
+    <COMMENT>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_2</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_20</NAME>
+    <COMMENT>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_20</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_21</NAME>
+    <COMMENT>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_21</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_22</NAME>
+    <COMMENT>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_22</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_23</NAME>
+    <COMMENT>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_23</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_24</NAME>
+    <COMMENT>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_24</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_25</NAME>
+    <COMMENT>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_25</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_26</NAME>
+    <COMMENT>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_26</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_3</NAME>
+    <COMMENT>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_3</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_34</NAME>
+    <COMMENT>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_34</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_35</NAME>
+    <COMMENT>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_35</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_36</NAME>
+    <COMMENT>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_36</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_37</NAME>
+    <COMMENT>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_37</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_38</NAME>
+    <COMMENT>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_38</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_39</NAME>
+    <COMMENT>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_39</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_4</NAME>
+    <COMMENT>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_4</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_40</NAME>
+    <COMMENT>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_40</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_41</NAME>
+    <COMMENT>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_41</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_42</NAME>
+    <COMMENT>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_42</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_43</NAME>
+    <COMMENT>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_43</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_44</NAME>
+    <COMMENT>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_44</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_45</NAME>
+    <COMMENT>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_45</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_46</NAME>
+    <COMMENT>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_46</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_47</NAME>
+    <COMMENT>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_47</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_48</NAME>
+    <COMMENT>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_48</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_49</NAME>
+    <COMMENT>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_49</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_5</NAME>
+    <COMMENT>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_5</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_50</NAME>
+    <COMMENT>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_50</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_51</NAME>
+    <COMMENT>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_51</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_52</NAME>
+    <COMMENT>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_52</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_53</NAME>
+    <COMMENT>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_53</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_54</NAME>
+    <COMMENT>PRJ_CLP_BLD_CIPHER_PARAM_NAME_LEVEL_54</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CLASSIFIER_DICT</NAME>
+    <COMMENT>PRJ_CLP_BLD_CLASSIFIER_DICT</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_1</NAME>
+    <COMMENT>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_1</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_11</NAME>
+    <COMMENT>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_11</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_12</NAME>
+    <COMMENT>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_12</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_13</NAME>
+    <COMMENT>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_13</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_14</NAME>
+    <COMMENT>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_14</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_15</NAME>
+    <COMMENT>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_15</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_16</NAME>
+    <COMMENT>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_16</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_17</NAME>
+    <COMMENT>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_17</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_18</NAME>
+    <COMMENT>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_18</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_19</NAME>
+    <COMMENT>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_19</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_2</NAME>
+    <COMMENT>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_2</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_20</NAME>
+    <COMMENT>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_20</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_21</NAME>
+    <COMMENT>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_21</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_22</NAME>
+    <COMMENT>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_22</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_23</NAME>
+    <COMMENT>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_23</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_24</NAME>
+    <COMMENT>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_24</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_25</NAME>
+    <COMMENT>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_25</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_26</NAME>
+    <COMMENT>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_26</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_3</NAME>
+    <COMMENT>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_3</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_34</NAME>
+    <COMMENT>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_34</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_35</NAME>
+    <COMMENT>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_35</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_36</NAME>
+    <COMMENT>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_36</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_37</NAME>
+    <COMMENT>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_37</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_38</NAME>
+    <COMMENT>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_38</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_39</NAME>
+    <COMMENT>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_39</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_4</NAME>
+    <COMMENT>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_4</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_40</NAME>
+    <COMMENT>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_40</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_41</NAME>
+    <COMMENT>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_41</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_42</NAME>
+    <COMMENT>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_42</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_43</NAME>
+    <COMMENT>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_43</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_44</NAME>
+    <COMMENT>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_44</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_45</NAME>
+    <COMMENT>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_45</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_46</NAME>
+    <COMMENT>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_46</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_47</NAME>
+    <COMMENT>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_47</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_48</NAME>
+    <COMMENT>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_48</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_49</NAME>
+    <COMMENT>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_49</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_5</NAME>
+    <COMMENT>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_5</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_50</NAME>
+    <COMMENT>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_50</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_51</NAME>
+    <COMMENT>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_51</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_52</NAME>
+    <COMMENT>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_52</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_53</NAME>
+    <COMMENT>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_53</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_54</NAME>
+    <COMMENT>PRJ_CLP_BLD_CLASSIFIER_PARAMS_LEVEL_54</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CLASSIFIER_STRUCT_DATA</NAME>
+    <COMMENT>PRJ_CLP_BLD_CLASSIFIER_STRUCT_DATA</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_1</NAME>
+    <COMMENT>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_1</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_11</NAME>
+    <COMMENT>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_11</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_12</NAME>
+    <COMMENT>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_12</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_13</NAME>
+    <COMMENT>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_13</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_14</NAME>
+    <COMMENT>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_14</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_15</NAME>
+    <COMMENT>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_15</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_16</NAME>
+    <COMMENT>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_16</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_17</NAME>
+    <COMMENT>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_17</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_18</NAME>
+    <COMMENT>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_18</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_19</NAME>
+    <COMMENT>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_19</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_2</NAME>
+    <COMMENT>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_2</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_20</NAME>
+    <COMMENT>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_20</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_21</NAME>
+    <COMMENT>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_21</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_22</NAME>
+    <COMMENT>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_22</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_23</NAME>
+    <COMMENT>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_23</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_24</NAME>
+    <COMMENT>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_24</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_25</NAME>
+    <COMMENT>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_25</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_26</NAME>
+    <COMMENT>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_26</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_3</NAME>
+    <COMMENT>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_3</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_34</NAME>
+    <COMMENT>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_34</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_35</NAME>
+    <COMMENT>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_35</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_36</NAME>
+    <COMMENT>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_36</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_37</NAME>
+    <COMMENT>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_37</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_38</NAME>
+    <COMMENT>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_38</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_39</NAME>
+    <COMMENT>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_39</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_4</NAME>
+    <COMMENT>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_4</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_40</NAME>
+    <COMMENT>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_40</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_41</NAME>
+    <COMMENT>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_41</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_42</NAME>
+    <COMMENT>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_42</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_43</NAME>
+    <COMMENT>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_43</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_44</NAME>
+    <COMMENT>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_44</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_45</NAME>
+    <COMMENT>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_45</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_46</NAME>
+    <COMMENT>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_46</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_47</NAME>
+    <COMMENT>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_47</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_48</NAME>
+    <COMMENT>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_48</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_49</NAME>
+    <COMMENT>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_49</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_5</NAME>
+    <COMMENT>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_5</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_50</NAME>
+    <COMMENT>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_50</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_51</NAME>
+    <COMMENT>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_51</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_52</NAME>
+    <COMMENT>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_52</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_53</NAME>
+    <COMMENT>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_53</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_54</NAME>
+    <COMMENT>PRJ_CLP_BLD_CODE_TYPE_CREATE_LEVEL_54</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_COMMON_SYSTEM_IDENTIFY</NAME>
+    <COMMENT>PRJ_CLP_BLD_COMMON_SYSTEM_IDENTIFY</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DEF_MASK_LEVEL_1</NAME>
+    <COMMENT>PRJ_CLP_BLD_DEF_MASK_LEVEL_1</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DEF_MASK_LEVEL_11</NAME>
+    <COMMENT>PRJ_CLP_BLD_DEF_MASK_LEVEL_11</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DEF_MASK_LEVEL_12</NAME>
+    <COMMENT>PRJ_CLP_BLD_DEF_MASK_LEVEL_12</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DEF_MASK_LEVEL_13</NAME>
+    <COMMENT>PRJ_CLP_BLD_DEF_MASK_LEVEL_13</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DEF_MASK_LEVEL_14</NAME>
+    <COMMENT>PRJ_CLP_BLD_DEF_MASK_LEVEL_14</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DEF_MASK_LEVEL_15</NAME>
+    <COMMENT>PRJ_CLP_BLD_DEF_MASK_LEVEL_15</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DEF_MASK_LEVEL_16</NAME>
+    <COMMENT>PRJ_CLP_BLD_DEF_MASK_LEVEL_16</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DEF_MASK_LEVEL_17</NAME>
+    <COMMENT>PRJ_CLP_BLD_DEF_MASK_LEVEL_17</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DEF_MASK_LEVEL_18</NAME>
+    <COMMENT>PRJ_CLP_BLD_DEF_MASK_LEVEL_18</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DEF_MASK_LEVEL_19</NAME>
+    <COMMENT>PRJ_CLP_BLD_DEF_MASK_LEVEL_19</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DEF_MASK_LEVEL_2</NAME>
+    <COMMENT>PRJ_CLP_BLD_DEF_MASK_LEVEL_2</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DEF_MASK_LEVEL_20</NAME>
+    <COMMENT>PRJ_CLP_BLD_DEF_MASK_LEVEL_20</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DEF_MASK_LEVEL_21</NAME>
+    <COMMENT>PRJ_CLP_BLD_DEF_MASK_LEVEL_21</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DEF_MASK_LEVEL_22</NAME>
+    <COMMENT>PRJ_CLP_BLD_DEF_MASK_LEVEL_22</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DEF_MASK_LEVEL_23</NAME>
+    <COMMENT>PRJ_CLP_BLD_DEF_MASK_LEVEL_23</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DEF_MASK_LEVEL_24</NAME>
+    <COMMENT>PRJ_CLP_BLD_DEF_MASK_LEVEL_24</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DEF_MASK_LEVEL_25</NAME>
+    <COMMENT>PRJ_CLP_BLD_DEF_MASK_LEVEL_25</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DEF_MASK_LEVEL_26</NAME>
+    <COMMENT>PRJ_CLP_BLD_DEF_MASK_LEVEL_26</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DEF_MASK_LEVEL_3</NAME>
+    <COMMENT>PRJ_CLP_BLD_DEF_MASK_LEVEL_3</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DEF_MASK_LEVEL_34</NAME>
+    <COMMENT>PRJ_CLP_BLD_DEF_MASK_LEVEL_34</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DEF_MASK_LEVEL_35</NAME>
+    <COMMENT>PRJ_CLP_BLD_DEF_MASK_LEVEL_35</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DEF_MASK_LEVEL_36</NAME>
+    <COMMENT>PRJ_CLP_BLD_DEF_MASK_LEVEL_36</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DEF_MASK_LEVEL_37</NAME>
+    <COMMENT>PRJ_CLP_BLD_DEF_MASK_LEVEL_37</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DEF_MASK_LEVEL_38</NAME>
+    <COMMENT>PRJ_CLP_BLD_DEF_MASK_LEVEL_38</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DEF_MASK_LEVEL_39</NAME>
+    <COMMENT>PRJ_CLP_BLD_DEF_MASK_LEVEL_39</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DEF_MASK_LEVEL_4</NAME>
+    <COMMENT>PRJ_CLP_BLD_DEF_MASK_LEVEL_4</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DEF_MASK_LEVEL_40</NAME>
+    <COMMENT>PRJ_CLP_BLD_DEF_MASK_LEVEL_40</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DEF_MASK_LEVEL_41</NAME>
+    <COMMENT>PRJ_CLP_BLD_DEF_MASK_LEVEL_41</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DEF_MASK_LEVEL_42</NAME>
+    <COMMENT>PRJ_CLP_BLD_DEF_MASK_LEVEL_42</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DEF_MASK_LEVEL_43</NAME>
+    <COMMENT>PRJ_CLP_BLD_DEF_MASK_LEVEL_43</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DEF_MASK_LEVEL_44</NAME>
+    <COMMENT>PRJ_CLP_BLD_DEF_MASK_LEVEL_44</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DEF_MASK_LEVEL_45</NAME>
+    <COMMENT>PRJ_CLP_BLD_DEF_MASK_LEVEL_45</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DEF_MASK_LEVEL_46</NAME>
+    <COMMENT>PRJ_CLP_BLD_DEF_MASK_LEVEL_46</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DEF_MASK_LEVEL_47</NAME>
+    <COMMENT>PRJ_CLP_BLD_DEF_MASK_LEVEL_47</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DEF_MASK_LEVEL_48</NAME>
+    <COMMENT>PRJ_CLP_BLD_DEF_MASK_LEVEL_48</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DEF_MASK_LEVEL_49</NAME>
+    <COMMENT>PRJ_CLP_BLD_DEF_MASK_LEVEL_49</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DEF_MASK_LEVEL_5</NAME>
+    <COMMENT>PRJ_CLP_BLD_DEF_MASK_LEVEL_5</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DEF_MASK_LEVEL_50</NAME>
+    <COMMENT>PRJ_CLP_BLD_DEF_MASK_LEVEL_50</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DEF_MASK_LEVEL_51</NAME>
+    <COMMENT>PRJ_CLP_BLD_DEF_MASK_LEVEL_51</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DEF_MASK_LEVEL_52</NAME>
+    <COMMENT>PRJ_CLP_BLD_DEF_MASK_LEVEL_52</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DEF_MASK_LEVEL_53</NAME>
+    <COMMENT>PRJ_CLP_BLD_DEF_MASK_LEVEL_53</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DEF_MASK_LEVEL_54</NAME>
+    <COMMENT>PRJ_CLP_BLD_DEF_MASK_LEVEL_54</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_1</NAME>
+    <COMMENT>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_1</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_11</NAME>
+    <COMMENT>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_11</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_12</NAME>
+    <COMMENT>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_12</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_13</NAME>
+    <COMMENT>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_13</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_14</NAME>
+    <COMMENT>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_14</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_15</NAME>
+    <COMMENT>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_15</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_16</NAME>
+    <COMMENT>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_16</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_17</NAME>
+    <COMMENT>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_17</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_18</NAME>
+    <COMMENT>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_18</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_19</NAME>
+    <COMMENT>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_19</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_2</NAME>
+    <COMMENT>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_2</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_20</NAME>
+    <COMMENT>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_20</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_21</NAME>
+    <COMMENT>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_21</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_22</NAME>
+    <COMMENT>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_22</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_23</NAME>
+    <COMMENT>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_23</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_24</NAME>
+    <COMMENT>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_24</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_25</NAME>
+    <COMMENT>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_25</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_26</NAME>
+    <COMMENT>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_26</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_3</NAME>
+    <COMMENT>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_3</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_34</NAME>
+    <COMMENT>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_34</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_35</NAME>
+    <COMMENT>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_35</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_36</NAME>
+    <COMMENT>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_36</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_37</NAME>
+    <COMMENT>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_37</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_38</NAME>
+    <COMMENT>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_38</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_39</NAME>
+    <COMMENT>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_39</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_4</NAME>
+    <COMMENT>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_4</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_40</NAME>
+    <COMMENT>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_40</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_41</NAME>
+    <COMMENT>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_41</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_42</NAME>
+    <COMMENT>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_42</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_43</NAME>
+    <COMMENT>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_43</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_44</NAME>
+    <COMMENT>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_44</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_45</NAME>
+    <COMMENT>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_45</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_46</NAME>
+    <COMMENT>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_46</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_47</NAME>
+    <COMMENT>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_47</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_48</NAME>
+    <COMMENT>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_48</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_49</NAME>
+    <COMMENT>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_49</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_5</NAME>
+    <COMMENT>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_5</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_50</NAME>
+    <COMMENT>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_50</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_51</NAME>
+    <COMMENT>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_51</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_52</NAME>
+    <COMMENT>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_52</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_53</NAME>
+    <COMMENT>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_53</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_54</NAME>
+    <COMMENT>PRJ_CLP_BLD_DICT_CAT_NAME_LEVEL_54</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_LINEAR_EQUIPMENT_SYSTEM_IDENTIFY</NAME>
+    <COMMENT>PRJ_CLP_BLD_LINEAR_EQUIPMENT_SYSTEM_IDENTIFY</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_1</NAME>
+    <COMMENT>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_1</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_11</NAME>
+    <COMMENT>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_11</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_12</NAME>
+    <COMMENT>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_12</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_13</NAME>
+    <COMMENT>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_13</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_14</NAME>
+    <COMMENT>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_14</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_15</NAME>
+    <COMMENT>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_15</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_16</NAME>
+    <COMMENT>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_16</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_17</NAME>
+    <COMMENT>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_17</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_18</NAME>
+    <COMMENT>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_18</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_19</NAME>
+    <COMMENT>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_19</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_2</NAME>
+    <COMMENT>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_2</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_20</NAME>
+    <COMMENT>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_20</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_21</NAME>
+    <COMMENT>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_21</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_22</NAME>
+    <COMMENT>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_22</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_23</NAME>
+    <COMMENT>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_23</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_24</NAME>
+    <COMMENT>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_24</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_25</NAME>
+    <COMMENT>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_25</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_26</NAME>
+    <COMMENT>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_26</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_3</NAME>
+    <COMMENT>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_3</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_34</NAME>
+    <COMMENT>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_34</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_35</NAME>
+    <COMMENT>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_35</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_36</NAME>
+    <COMMENT>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_36</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_37</NAME>
+    <COMMENT>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_37</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_38</NAME>
+    <COMMENT>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_38</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_39</NAME>
+    <COMMENT>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_39</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_4</NAME>
+    <COMMENT>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_4</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_40</NAME>
+    <COMMENT>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_40</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_41</NAME>
+    <COMMENT>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_41</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_42</NAME>
+    <COMMENT>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_42</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_43</NAME>
+    <COMMENT>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_43</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_44</NAME>
+    <COMMENT>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_44</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_45</NAME>
+    <COMMENT>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_45</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_46</NAME>
+    <COMMENT>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_46</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_47</NAME>
+    <COMMENT>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_47</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_48</NAME>
+    <COMMENT>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_48</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_49</NAME>
+    <COMMENT>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_49</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_5</NAME>
+    <COMMENT>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_5</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_50</NAME>
+    <COMMENT>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_50</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_51</NAME>
+    <COMMENT>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_51</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_52</NAME>
+    <COMMENT>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_52</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_53</NAME>
+    <COMMENT>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_53</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_54</NAME>
+    <COMMENT>PRJ_CLP_BLD_NAME_EXPRESSION_LEVEL_54</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_PIPELINE_SYSTEM_IDENTIFY</NAME>
+    <COMMENT>PRJ_CLP_BLD_PIPELINE_SYSTEM_IDENTIFY</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_PIPLINE_FITTING_SYSTEM_IDENTIFY</NAME>
+    <COMMENT>PRJ_CLP_BLD_PIPLINE_FITTING_SYSTEM_IDENTIFY</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_BLD_SUB_SYSTEM_IDENTIFY</NAME>
+    <COMMENT>PRJ_CLP_BLD_SUB_SYSTEM_IDENTIFY</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_CHAT_FREQUENCY</NAME>
+    <COMMENT>PRJ_CLP_CHAT_FREQUENCY</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_CHAT_RUN_ON_DB_CONNECT</NAME>
+    <COMMENT>PRJ_CLP_CHAT_RUN_ON_DB_CONNECT</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_COMPONENT_CONNECTION_REQUIRED</NAME>
+    <COMMENT>PRJ_CLP_COMPONENT_CONNECTION_REQUIRED</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_CREATE_LOD_MESHES</NAME>
+    <COMMENT>PRJ_CLP_CREATE_LOD_MESHES</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_CUSTOM_STRUCT_FOLDER_NAME_EXPRESSION</NAME>
+    <COMMENT>PRJ_CLP_CUSTOM_STRUCT_FOLDER_NAME_EXPRESSION</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_CUSTOM_STRUCT_STRUCTURE_NAME_EXPRESSION</NAME>
+    <COMMENT>PRJ_CLP_CUSTOM_STRUCT_STRUCTURE_NAME_EXPRESSION</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_DEVIATION_FORMULA</NAME>
+    <COMMENT>PRJ_CLP_DEVIATION_FORMULA</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_DEVIATION_LOD_FORMULA</NAME>
+    <COMMENT>PRJ_CLP_DEVIATION_LOD_FORMULA</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_DOC_CARD_NAME_EXPRESSION</NAME>
+    <COMMENT>PRJ_CLP_DOC_CARD_NAME_EXPRESSION</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_DOC_FOLDER_NAME_EXPRESSION_LEVEL_0</NAME>
+    <COMMENT>PRJ_CLP_DOC_FOLDER_NAME_EXPRESSION_LEVEL_0</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_DOC_FOLDER_NAME_EXPRESSION_LEVEL_1</NAME>
+    <COMMENT>PRJ_CLP_DOC_FOLDER_NAME_EXPRESSION_LEVEL_1</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_DOC_FOLDER_NAME_EXPRESSION_LEVEL_2</NAME>
+    <COMMENT>PRJ_CLP_DOC_FOLDER_NAME_EXPRESSION_LEVEL_2</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_DOC_FOLDER_NAME_EXPRESSION_LEVEL_3</NAME>
+    <COMMENT>PRJ_CLP_DOC_FOLDER_NAME_EXPRESSION_LEVEL_3</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_DOC_FOLDER_NAME_EXPRESSION_LEVEL_4</NAME>
+    <COMMENT>PRJ_CLP_DOC_FOLDER_NAME_EXPRESSION_LEVEL_4</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_DOC_FOLDER_NAME_EXPRESSION_LEVEL_5</NAME>
+    <COMMENT>PRJ_CLP_DOC_FOLDER_NAME_EXPRESSION_LEVEL_5</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_DOC_FOLDER_NAME_EXPRESSION_LEVEL_6</NAME>
+    <COMMENT>PRJ_CLP_DOC_FOLDER_NAME_EXPRESSION_LEVEL_6</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_DOC_PART_NAME_NAME_EXPRESSION</NAME>
+    <COMMENT>PRJ_CLP_DOC_PART_NAME_NAME_EXPRESSION</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_ENABLE_EDIT_FILE_NAME</NAME>
+    <COMMENT>PRJ_CLP_ENABLE_EDIT_FILE_NAME</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_ENABLE_FILE_NAME_FORMULA</NAME>
+    <COMMENT>PRJ_CLP_ENABLE_FILE_NAME_FORMULA</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_EXPLODE_MS_BLOCKS</NAME>
+    <COMMENT>PRJ_CLP_EXPLODE_MS_BLOCKS</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_FILE_NAME_BASE_EXPRESSION</NAME>
+    <COMMENT>PRJ_CLP_FILE_NAME_BASE_EXPRESSION</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_FILE_NAME_EXPRESSION</NAME>
+    <COMMENT>PRJ_CLP_FILE_NAME_EXPRESSION</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_FULL_CODE_FORMULA</NAME>
+    <COMMENT>PRJ_CLP_FULL_CODE_FORMULA</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_GENERATE_EDGES</NAME>
+    <COMMENT>PRJ_CLP_GENERATE_EDGES</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_IGNORE_SERVICE_GRAPHICS</NAME>
+    <COMMENT>PRJ_CLP_IGNORE_SERVICE_GRAPHICS</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_1</NAME>
+    <COMMENT>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_1</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_11</NAME>
+    <COMMENT>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_11</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_12</NAME>
+    <COMMENT>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_12</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_13</NAME>
+    <COMMENT>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_13</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_14</NAME>
+    <COMMENT>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_14</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_15</NAME>
+    <COMMENT>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_15</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_16</NAME>
+    <COMMENT>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_16</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_17</NAME>
+    <COMMENT>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_17</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_18</NAME>
+    <COMMENT>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_18</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_19</NAME>
+    <COMMENT>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_19</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_2</NAME>
+    <COMMENT>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_2</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_20</NAME>
+    <COMMENT>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_20</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_21</NAME>
+    <COMMENT>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_21</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_22</NAME>
+    <COMMENT>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_22</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_23</NAME>
+    <COMMENT>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_23</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_24</NAME>
+    <COMMENT>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_24</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_25</NAME>
+    <COMMENT>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_25</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_26</NAME>
+    <COMMENT>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_26</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_3</NAME>
+    <COMMENT>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_3</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_34</NAME>
+    <COMMENT>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_34</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_35</NAME>
+    <COMMENT>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_35</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_36</NAME>
+    <COMMENT>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_36</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_37</NAME>
+    <COMMENT>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_37</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_38</NAME>
+    <COMMENT>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_38</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_39</NAME>
+    <COMMENT>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_39</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_4</NAME>
+    <COMMENT>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_4</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_40</NAME>
+    <COMMENT>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_40</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_41</NAME>
+    <COMMENT>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_41</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_42</NAME>
+    <COMMENT>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_42</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_43</NAME>
+    <COMMENT>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_43</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_44</NAME>
+    <COMMENT>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_44</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_45</NAME>
+    <COMMENT>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_45</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_46</NAME>
+    <COMMENT>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_46</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_47</NAME>
+    <COMMENT>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_47</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_48</NAME>
+    <COMMENT>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_48</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_49</NAME>
+    <COMMENT>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_49</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_5</NAME>
+    <COMMENT>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_5</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_50</NAME>
+    <COMMENT>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_50</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_51</NAME>
+    <COMMENT>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_51</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_52</NAME>
+    <COMMENT>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_52</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_53</NAME>
+    <COMMENT>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_53</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_54</NAME>
+    <COMMENT>PRJ_CLP_INCLUDE_IN_SHORT_CODE_LEVEL_54</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_LEVEL_DETAIL</NAME>
+    <COMMENT>PRJ_CLP_LEVEL_DETAIL</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_LOD_GENERATE_EDGES</NAME>
+    <COMMENT>PRJ_CLP_LOD_GENERATE_EDGES</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_LOD_IGNORE_SERVICE_GRAPHICS</NAME>
+    <COMMENT>PRJ_CLP_LOD_IGNORE_SERVICE_GRAPHICS</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_LOD_LEVEL_DETAIL</NAME>
+    <COMMENT>PRJ_CLP_LOD_LEVEL_DETAIL</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_REMOVE_DWG_AFTER_CHECKIN</NAME>
+    <COMMENT>PRJ_CLP_REMOVE_DWG_AFTER_CHECKIN</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_RESTORE_CONNECTION</NAME>
+    <COMMENT>PRJ_CLP_RESTORE_CONNECTION</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_SEPARATOR_AFTER_LEVEL_1</NAME>
+    <COMMENT>PRJ_CLP_SEPARATOR_AFTER_LEVEL_1</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_SEPARATOR_AFTER_LEVEL_11</NAME>
+    <COMMENT>PRJ_CLP_SEPARATOR_AFTER_LEVEL_11</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_SEPARATOR_AFTER_LEVEL_12</NAME>
+    <COMMENT>PRJ_CLP_SEPARATOR_AFTER_LEVEL_12</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_SEPARATOR_AFTER_LEVEL_13</NAME>
+    <COMMENT>PRJ_CLP_SEPARATOR_AFTER_LEVEL_13</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_SEPARATOR_AFTER_LEVEL_14</NAME>
+    <COMMENT>PRJ_CLP_SEPARATOR_AFTER_LEVEL_14</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_SEPARATOR_AFTER_LEVEL_15</NAME>
+    <COMMENT>PRJ_CLP_SEPARATOR_AFTER_LEVEL_15</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_SEPARATOR_AFTER_LEVEL_16</NAME>
+    <COMMENT>PRJ_CLP_SEPARATOR_AFTER_LEVEL_16</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_SEPARATOR_AFTER_LEVEL_17</NAME>
+    <COMMENT>PRJ_CLP_SEPARATOR_AFTER_LEVEL_17</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_SEPARATOR_AFTER_LEVEL_18</NAME>
+    <COMMENT>PRJ_CLP_SEPARATOR_AFTER_LEVEL_18</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_SEPARATOR_AFTER_LEVEL_19</NAME>
+    <COMMENT>PRJ_CLP_SEPARATOR_AFTER_LEVEL_19</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_SEPARATOR_AFTER_LEVEL_2</NAME>
+    <COMMENT>PRJ_CLP_SEPARATOR_AFTER_LEVEL_2</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_SEPARATOR_AFTER_LEVEL_20</NAME>
+    <COMMENT>PRJ_CLP_SEPARATOR_AFTER_LEVEL_20</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_SEPARATOR_AFTER_LEVEL_21</NAME>
+    <COMMENT>PRJ_CLP_SEPARATOR_AFTER_LEVEL_21</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_SEPARATOR_AFTER_LEVEL_22</NAME>
+    <COMMENT>PRJ_CLP_SEPARATOR_AFTER_LEVEL_22</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_SEPARATOR_AFTER_LEVEL_23</NAME>
+    <COMMENT>PRJ_CLP_SEPARATOR_AFTER_LEVEL_23</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_SEPARATOR_AFTER_LEVEL_24</NAME>
+    <COMMENT>PRJ_CLP_SEPARATOR_AFTER_LEVEL_24</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_SEPARATOR_AFTER_LEVEL_25</NAME>
+    <COMMENT>PRJ_CLP_SEPARATOR_AFTER_LEVEL_25</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_SEPARATOR_AFTER_LEVEL_26</NAME>
+    <COMMENT>PRJ_CLP_SEPARATOR_AFTER_LEVEL_26</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_SEPARATOR_AFTER_LEVEL_3</NAME>
+    <COMMENT>PRJ_CLP_SEPARATOR_AFTER_LEVEL_3</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_SEPARATOR_AFTER_LEVEL_34</NAME>
+    <COMMENT>PRJ_CLP_SEPARATOR_AFTER_LEVEL_34</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_SEPARATOR_AFTER_LEVEL_35</NAME>
+    <COMMENT>PRJ_CLP_SEPARATOR_AFTER_LEVEL_35</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_SEPARATOR_AFTER_LEVEL_36</NAME>
+    <COMMENT>PRJ_CLP_SEPARATOR_AFTER_LEVEL_36</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_SEPARATOR_AFTER_LEVEL_37</NAME>
+    <COMMENT>PRJ_CLP_SEPARATOR_AFTER_LEVEL_37</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_SEPARATOR_AFTER_LEVEL_38</NAME>
+    <COMMENT>PRJ_CLP_SEPARATOR_AFTER_LEVEL_38</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_SEPARATOR_AFTER_LEVEL_39</NAME>
+    <COMMENT>PRJ_CLP_SEPARATOR_AFTER_LEVEL_39</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_SEPARATOR_AFTER_LEVEL_4</NAME>
+    <COMMENT>PRJ_CLP_SEPARATOR_AFTER_LEVEL_4</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_SEPARATOR_AFTER_LEVEL_40</NAME>
+    <COMMENT>PRJ_CLP_SEPARATOR_AFTER_LEVEL_40</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_SEPARATOR_AFTER_LEVEL_41</NAME>
+    <COMMENT>PRJ_CLP_SEPARATOR_AFTER_LEVEL_41</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_SEPARATOR_AFTER_LEVEL_42</NAME>
+    <COMMENT>PRJ_CLP_SEPARATOR_AFTER_LEVEL_42</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_SEPARATOR_AFTER_LEVEL_43</NAME>
+    <COMMENT>PRJ_CLP_SEPARATOR_AFTER_LEVEL_43</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_SEPARATOR_AFTER_LEVEL_44</NAME>
+    <COMMENT>PRJ_CLP_SEPARATOR_AFTER_LEVEL_44</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_SEPARATOR_AFTER_LEVEL_45</NAME>
+    <COMMENT>PRJ_CLP_SEPARATOR_AFTER_LEVEL_45</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_SEPARATOR_AFTER_LEVEL_46</NAME>
+    <COMMENT>PRJ_CLP_SEPARATOR_AFTER_LEVEL_46</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_SEPARATOR_AFTER_LEVEL_47</NAME>
+    <COMMENT>PRJ_CLP_SEPARATOR_AFTER_LEVEL_47</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_SEPARATOR_AFTER_LEVEL_48</NAME>
+    <COMMENT>PRJ_CLP_SEPARATOR_AFTER_LEVEL_48</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_SEPARATOR_AFTER_LEVEL_49</NAME>
+    <COMMENT>PRJ_CLP_SEPARATOR_AFTER_LEVEL_49</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_SEPARATOR_AFTER_LEVEL_5</NAME>
+    <COMMENT>PRJ_CLP_SEPARATOR_AFTER_LEVEL_5</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_SEPARATOR_AFTER_LEVEL_50</NAME>
+    <COMMENT>PRJ_CLP_SEPARATOR_AFTER_LEVEL_50</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_SEPARATOR_AFTER_LEVEL_51</NAME>
+    <COMMENT>PRJ_CLP_SEPARATOR_AFTER_LEVEL_51</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_SEPARATOR_AFTER_LEVEL_52</NAME>
+    <COMMENT>PRJ_CLP_SEPARATOR_AFTER_LEVEL_52</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_SEPARATOR_AFTER_LEVEL_53</NAME>
+    <COMMENT>PRJ_CLP_SEPARATOR_AFTER_LEVEL_53</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_SEPARATOR_AFTER_LEVEL_54</NAME>
+    <COMMENT>PRJ_CLP_SEPARATOR_AFTER_LEVEL_54</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_SERVICE_URL</NAME>
+    <COMMENT>PRJ_CLP_SERVICE_URL</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_SERVICE_USE_TO_COMMIT_PUBLICATION</NAME>
+    <COMMENT>PRJ_CLP_SERVICE_USE_TO_COMMIT_PUBLICATION</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_STRUCT_CHAPTER_NAME_EXPRESSION</NAME>
+    <COMMENT>PRJ_CLP_STRUCT_CHAPTER_NAME_EXPRESSION</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_STRUCT_DISCIPLINES_NAME_EXPRESSION</NAME>
+    <COMMENT>PRJ_CLP_STRUCT_DISCIPLINES_NAME_EXPRESSION</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_STRUCT_DISCIPLINE_NAME_EXPRESSION</NAME>
+    <COMMENT>PRJ_CLP_STRUCT_DISCIPLINE_NAME_EXPRESSION</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_STRUCT_PART_NAME_EXPRESSION</NAME>
+    <COMMENT>PRJ_CLP_STRUCT_PART_NAME_EXPRESSION</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_STRUCT_STAGE_NAME_EXPRESSION</NAME>
+    <COMMENT>PRJ_CLP_STRUCT_STAGE_NAME_EXPRESSION</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_TASKS_USE_DB</NAME>
+    <COMMENT>PRJ_CLP_TASKS_USE_DB</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_USE_CLONE_FILE</NAME>
+    <COMMENT>PRJ_CLP_USE_CLONE_FILE</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CLP_USE_DUAL_NORMALS</NAME>
+    <COMMENT>PRJ_CLP_USE_DUAL_NORMALS</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2147483647" categoryOrder="2147483647">Настройки проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_COMMENTS</NAME>
+    <COMMENT>Описание</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="4" categoryOrder="2147483647">Параметры проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_CUSTOMER_COMPANY</NAME>
+    <COMMENT>Компания заказчик</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="3" categoryOrder="2147483647">Параметры проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_DATE_END</NAME>
+    <COMMENT>Дата завершения</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="7" categoryOrder="2147483647">Параметры проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_DATE_START</NAME>
+    <COMMENT>Дата начала</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="6" categoryOrder="2147483647">Параметры проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_DIRECTOR</NAME>
+    <COMMENT>Директор проекта</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="8" categoryOrder="2147483647">Параметры проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_DIRECTOR_EMAIL</NAME>
+    <COMMENT>Директор проекта (Email)</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="9" categoryOrder="2147483647">Параметры проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_DIRECTOR_PHONE</NAME>
+    <COMMENT>Директор проекта (Тел.)</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="10" categoryOrder="2147483647">Параметры проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_ID</NAME>
+    <COMMENT>Шифр проекта</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2" categoryOrder="2147483647">Параметры проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_NAME</NAME>
+    <COMMENT>Наименование проекта</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">Параметры проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>PRJ_STATUS</NAME>
+    <COMMENT>Статус проекта</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="5" categoryOrder="2147483647">Параметры проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>SMETA_BUILDING_PROJECT</NAME>
+    <COMMENT>Наименование объекта</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="14" categoryOrder="2147483647">Параметры проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>SMETA_CONSTRUCTION</NAME>
+    <COMMENT>Наименование стройки</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="12" categoryOrder="2147483647">Параметры проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>SMETA_CONSTRUCTION_TYPE</NAME>
+    <COMMENT>Тип капитального строительства</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="16" categoryOrder="2147483647">Параметры проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>SMETA_INDEX</NAME>
+    <COMMENT>Индивидуальные индексы для позиций сметы</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="4" categoryOrder="2147483647">Параметры проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>SMETA_INDEX_МAT</NAME>
+    <COMMENT>МР на 1 полугодие 2021г.</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="220" categoryOrder="2147483647">Параметры проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>SMETA_INDEX_03-01</NAME>
+    <COMMENT>03-01.  Перевозка бетонных, железобетонных изделий, стеновых и перегородочных материалов (кирпич, блоки, камни, плиты и панели), лесоматериалов круглых и пиломатериалов бортовым автомобилем грузоподъемностью 15 т (код СММиАТ 91.14.02 - 004.1.001)</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="260" categoryOrder="2147483647">Параметры проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>SMETA_INDEX_03-02</NAME>
+    <COMMENT>бортовым автомобилем грузоподъемностью 5 т (код СММиАТ 91.14.02 - 001.1.001)</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="270" categoryOrder="2147483647">Параметры проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>SMETA_INDEX_03-21</NAME>
+    <COMMENT>03-21.  Перевозка грузов автомобилями-самосвалами грузоподъемностью 10 т, работающими вне карьера (код СММиАТ 91.14.03 - 002.1.001)</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="280" categoryOrder="2147483647">Параметры проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>SMETA_INDEX_03-22</NAME>
+    <COMMENT>03-22.  Перевозка грузов автомобилями-самосвалами грузоподъемностью 10 т, работающими из карьера (код СММиАТ 91.14.03 - 002.1.001)</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="290" categoryOrder="2147483647">Параметры проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>SMETA_INDEX_03-31</NAME>
+    <COMMENT>03-31.  Перевозка бетонных, железобетонных изделий, стеновых и перегородных материалов (плит, панелей) панелевозом на автомобильном ходу грузоподъемностью 25 т (код СММиАТ 91.14.07 - 041.1.001)</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="300" categoryOrder="2147483647">Параметры проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>SMETA_INDEX_03-32</NAME>
+    <COMMENT>03-32.  Перевозка длинномерных грузов трубоплетевозом грузоподъемностью 12 т (код СММиАТ 91.14.06 - 011.1.001)</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="310" categoryOrder="2147483647">Параметры проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>SMETA_INDEX_03-33</NAME>
+    <COMMENT>03-33.  Перевозка бетонных смесей и строительных растворов, готовых к употреблению, автобетоносмесителем 6 м3 (код СММиАТ 91.14.01 - 003.1.001)</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="320" categoryOrder="2147483647">Параметры проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>SMETA_INDEX_DESCRIPTION</NAME>
+    <COMMENT>Описание индексов</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="170" categoryOrder="2147483647">Параметры проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>SMETA_INDEX_EMM</NAME>
+    <COMMENT>ЭММ</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="210" categoryOrder="2147483647">Параметры проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>SMETA_INDEX_FED_REGION</NAME>
+    <COMMENT>Федеральный округ</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="175" categoryOrder="2147483647">Параметры проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>SMETA_INDEX_FOT</NAME>
+    <COMMENT>ФОТ</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="200" categoryOrder="2147483647">Параметры проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>SMETA_INDEX_OBOR</NAME>
+    <COMMENT>ОБОР</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="240" categoryOrder="2147483647">Параметры проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>SMETA_INDEX_OTHERS</NAME>
+    <COMMENT>Прочие затраты (РиД)</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="330" categoryOrder="2147483647">Параметры проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>SMETA_INDEX_PNR</NAME>
+    <COMMENT>ПНР</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="230" categoryOrder="2147483647">Параметры проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>SMETA_INDEX_PRR</NAME>
+    <COMMENT>ПРР</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="250" categoryOrder="2147483647">Параметры проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>SMETA_INDEX_RKS_MPRKS</NAME>
+    <COMMENT>РКС, МПРКС</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="180" categoryOrder="2147483647">Параметры проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>SMETA_INDEX_SMR</NAME>
+    <COMMENT>СМР</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="190" categoryOrder="2147483647">Параметры проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>SMETA_LOCAL_NUMBER</NAME>
+    <COMMENT>Локальный номер</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="9" categoryOrder="2147483647">Параметры проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>SMETA_METOD</NAME>
+    <COMMENT>Методика 2020</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="3" categoryOrder="2147483647">Параметры проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>SMETA_REG</NAME>
+    <COMMENT>Регион</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">Параметры проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>SMETA_REGION</NAME>
+    <COMMENT>Наименование региона</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="15" categoryOrder="2147483647">Параметры проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>SMETA_REG_NUMBER</NAME>
+    <COMMENT>Регистрационный номер</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="10" categoryOrder="2147483647">Параметры проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>SMETA_SIGNATURE_BASIS</NAME>
+    <COMMENT>Основание</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="5" categoryOrder="2147483647">Параметры проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>SMETA_SIGNATURE_CHECK</NAME>
+    <COMMENT>Проверил</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="7" categoryOrder="2147483647">Параметры проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>SMETA_SIGNATURE_DATE</NAME>
+    <COMMENT>Дата составления сметы</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="8" categoryOrder="2147483647">Параметры проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>SMETA_SIGNATURE_MADE</NAME>
+    <COMMENT>Составил</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="6" categoryOrder="2147483647">Параметры проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>SMETA_STAGE</NAME>
+    <COMMENT>Наименование этапа</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="13" categoryOrder="2147483647">Параметры проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>SMETA_TEMPLATE</NAME>
+    <COMMENT>Текущий шаблон</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="2" categoryOrder="2147483647">Параметры проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>SMETA_WORK_COST_NAME</NAME>
+    <COMMENT>Наименование работ и затрат</COMMENT>
+    <DEFAULT></DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="11" categoryOrder="2147483647">Параметры проекта</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="1" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>SYS_CATEGORY_GROUP</NAME>
+    <COMMENT>Группа данных</COMMENT>
+    <DEFAULT>Общие</DEFAULT>
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="1">Системные</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <MEASUREMENTS />
+</PARAMETERS>
