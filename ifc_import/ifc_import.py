@@ -110,10 +110,15 @@ def main():
         if not property_set:
             property_set = 'EngeneeringDesign'
 
+        print(f'Prettify?\n'
+              f'True/False')
+
+        prettify = input()
+
         res = ifc_import_profile_build(ifc_property_set=property_set)
 
-        # indent(res)
-
+        if prettify:
+            indent(res)
 
         mydata = ET.tostring(res, encoding="utf-8", method="xml")
 

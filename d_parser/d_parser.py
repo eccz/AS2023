@@ -6,7 +6,7 @@ from datetime import datetime
 SHEET_NAMES = ['AEC_EL', 'PIPE_EL', 'CABLE_EL', 'TASK']
 
 
-def sheet_processor(sheet):
+def el_sheet_processor(sheet):
     elements = {}
     element = {}
     element_name = ''
@@ -18,7 +18,7 @@ def sheet_processor(sheet):
             if row[0].startswith('Таблица'):
                 table_num = row[0].strip()
                 element_name = row[1].strip()
-                element = {element_name: {'table_num': table_num,'IFC': [], 'LOI200': [], 'LOI300': [], 'LOI400': []}}
+                element = {element_name: {'table_num': table_num, 'IFC': [], 'LOI200': [], 'LOI300': [], 'LOI400': []}}
                 # print(element)
 
             if row[0].startswith('Класс IFC'):
@@ -33,6 +33,8 @@ def sheet_processor(sheet):
 
                     if not isinstance(row_2[0], str): break
                     if row_2[0].startswith('Таблица') or row_2[0].startswith('Примечание'): break
+                    if row_2[1].strip() == 'TYPE' or row_2[1].strip() == 'TASK_TYPE':
+                        element[element_name][row_2[1].strip()] = row_2[2].strip()
 
                     if isinstance(row_2[2], str):
                         element[element_name]['LOI200'].append(row_2[1])
@@ -44,6 +46,7 @@ def sheet_processor(sheet):
 
                     if isinstance(row_2[4], str) and not row_2[4].startswith('-'):
                         element[element_name]['LOI400'].append(row_2[1])
+
                 if len(element[element_name]['LOI400']) < len(element[element_name]['LOI300']):
                     element[element_name].pop('LOI400')
                 elements.update(element)
@@ -55,12 +58,27 @@ def sheet_processor(sheet):
     return elements
 
 
+def gr_sheet_processor(sheet, el_name):
+    res = []
+    for row in sheet.iter_rows(min_row=0, max_row=sheet.max_row, min_col=1, max_col=sheet.max_column, values_only=True):
+        if isinstance(row[2], str) and row[2].strip() == el_name:
+            res.append([el_name, row[5].strip(), row[12].strip()])
+    return res
+    # print(res)
+
+
 def parse(input_file, to_json=False, to_term=False):
     res = {}
     wb = openpyxl.load_workbook(input_file)
     for sheet in wb.sheetnames:
         if sheet in SHEET_NAMES:
-            res.update(sheet_processor(wb[sheet]))
+            res.update(el_sheet_processor(wb[sheet]))
+
+    for el_name, el_props in res.items():
+        # print(el_name, el_props)
+        # print(len(el_props['IFC']))
+        if len(el_props['IFC']) > 1:
+            el_props['IFC'] = gr_sheet_processor(wb['AEC_GR'], el_name)
 
     if to_term:
         print(res)
@@ -72,5 +90,6 @@ def parse(input_file, to_json=False, to_term=False):
 
     return res
 
+
 if __name__ == '__main__':
-    parse("../src/add_D.xlsx")
+    parse("../src/add_D.xlsx", to_term=True)
