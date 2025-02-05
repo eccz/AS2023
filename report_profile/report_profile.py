@@ -1,20 +1,14 @@
+import config
+from config import TASK_TYPE_ATTR_NAME, TYPE_ATTR_NAME, SPECIALITY_ATTR_NAME
 from d_parser.d_parser import parse
 import xml.etree.ElementTree as ET
 from ifc_import.ifc_import import indent
 
-TYPES = ['AEC_SURF', 'COLLISIONS', 'Cable_ETS', 'HVAC', 'HVACAxis', 'HVACPipeItems', 'IFCElement', 'Insulation',
-         'Materials', 'OptionsList', 'REINFORCEMENT', 'TRAYS', 'TowerSettings', 'WireDefault', 'WorkItem', 'WorkList',
-         'WorkResource', 'aec_elements', 'aec_layer_groups', 'aec_layer_material', 'assemblies', 'assembly', 'bolts',
-         'cabinet', 'cables', 'cat160', 'cat161', 'cat47', 'catDiameterList', 'catLineSystems', 'catMaterial',
-         'catMaterials', 'catPipeSupportStepData', 'cat_clash', 'climate', 'commonLinks', 'concreteware', 'decoration',
-         'device', 'foundation', 'garlandMisc', 'garlands', 'gesnCategoryList', 'gesnResourceItem', 'ground',
-         'hierarchical_list', 'iron_assemblies', 'label', 'metalware', 'metalwarenode', 'modifiers', 'node', 'nodes',
-         'panels', 'pipeAxis', 'pipeCategoryList', 'pipeItems', 'pipeLineNumberList', 'pipeMaterialList', 'report',
-         'routeConstructions', 'routeConstructionsAssemblies', 'structure_data', 'suppressor', 'symbol', 'tank_eq_schm',
-         'tank_equip', 'towerequipment', 'units', 'valve_prototype', 'wire', 'wires', 'zoneList']
-
 
 def cond_generator(loi):
+    """
+    Функция генерирует if-условие для CadLib на базе списка наименований атрибутов для определенного LOI
+    """
     res = []
     for i in loi:
         res.append(f'[{i}]<>""')
@@ -22,20 +16,33 @@ def cond_generator(loi):
     return ' and '.join(res)
 
 
-def loi_if_generator(table_el_name, name_attr='TYPE', loi200=None, loi300=None, loi400=None):
+def loi_if_generator(type_attr_name, type_attr, loi200=None, loi300=None, loi400=None):
+    """
+    Функция генерирует полное if-условие для CadLib по проверке LOI, с учетом наличия требований на LOI300 и LOI400.
+    type_attr_name - наименование атрибута CadLib для фильтра, например TYPE
+    type_attr - значение атрибута "TYPE" для фильтра в CadLib
+    """
     if loi200 and loi300 and loi400:
-        return f'if([{name_attr}]="{table_el_name}", if({cond_generator(loi200)}, if({cond_generator(loi300)}, if({cond_generator(loi400)}, "LOI400", "LOI300"), "LOI200"), "LOI000"), "")'
+        return f'if([{type_attr_name}]="{type_attr}", if({cond_generator(loi200)}, if({cond_generator(loi300)}, if({cond_generator(loi400)}, "LOI400", "LOI300"), "LOI200"), "LOI000"), "")'
     elif loi200 and loi300:
-        return f'if([{name_attr}]="{table_el_name}", if({cond_generator(loi200)}, if({cond_generator(loi300)}, "LOI300", "LOI200"),"LOI000"), "")'
+        return f'if([{type_attr_name}]="{type_attr}", if({cond_generator(loi200)}, if({cond_generator(loi300)}, "LOI300", "LOI200"),"LOI000"), "")'
     elif loi200:
-        return f'if([{name_attr}]="{table_el_name}", if({cond_generator(loi200)}, "LOI200","LOI000"), "")'
+        return f'if([{type_attr_name}]="{type_attr}", if({cond_generator(loi200)}, "LOI200","LOI000"), "")'
 
 
-def ifc_if_generator(name_attr='IFC_TYPE', asm_type='ASSEMBLY_TYPE', ifc_list=None):
+def ifc_if_generator(ifc_attr_name=config.IFC_ATTR_NAME, asm_attr_name=config.ASM_TYPE_ATTR_NAME, ifc_list=None):
+    """
+    Функция генерирует полное if-условие для CadLib по проверке правильности IFC-класса.
+    Учитывает результаты парсинга приложения Д - учитывает требования по сборкам.
+    ifc_list - список списков для разных требований по сборкам либо список с одним элементом.
+    ifc_attr_name - наименование атрибута CadLib, содержащего класс IFC
+    type_attr - значение атрибута "TYPE" для фильтра в CadLib
+    asm_attr_name - наименование атрибута CadLib, содержащего тип сборки.
+    """
     res = []
     if isinstance(ifc_list[0], list):
         for req in ifc_list:
-            res.append(f'instr("{req[1]}", [{name_attr}])>=0 and [{asm_type}]="{req[2]}"')
+            res.append(f'instr("{req[1]}", [{ifc_attr_name}])>=0 and [{asm_attr_name}]="{req[2]}"')
         res = ' or '.join(res)
         return f'if({res}, "CORRECT", "INCORRECT")'
 
@@ -83,7 +90,6 @@ def report_format_build():
           'totals.comment': "",
           'totals.comment.column': "1",
           'csv.divider': ";"}
-
     return ET.Element('ReportFormat', **ns)
 
 
@@ -116,16 +122,17 @@ def report_table_build(table_num, type_attr, _type):
 
 def report_types_build():
     types = ET.Element('Types')
-    for i in TYPES:
+    for i in config.REPORT_TYPES:
         types.append(ET.Element('Type', name=i))
 
     return types
 
 
-def report_field_build(caption="TASK_USER", data="TASK_USER", unknown=False):
+def report_field_build(caption, data, unknown=False):
     if unknown:
         return ET.Element('Field', caption=caption, data=data, type="1", aggregate="0", visible="1", format='')
     return ET.Element('Field', caption=caption, data=data, type="0", aggregate="0", visible="1", format='')
+
 
 def report_fields_build(table_data, loi_data, ifc_flag_data, unknown=False):
     fields = ET.Element('Fields')
@@ -136,19 +143,19 @@ def report_fields_build(table_data, loi_data, ifc_flag_data, unknown=False):
     fields.append(report_field_build(caption="TABLE", data=table_data, unknown=unknown))
     fields.append(report_field_build(caption="LOI", data=loi_data, unknown=unknown))
     fields.append(report_field_build(caption="IFC_TYPE_FLAG", data=ifc_flag_data, unknown=unknown))
-    fields.append(report_field_build(caption="SPECIALITY", data="SPECIALITY"))
-    fields.append(report_field_build(caption="TYPE", data="TYPE"))
-    fields.append(report_field_build(caption="TASK_TYPE", data="TASK_TYPE"))
-    fields.append(report_field_build(caption="ASSEMBLY_TYPE", data="ASSEMBLY_TYPE"))
-    fields.append(report_field_build(caption="TAG", data="TAG"))
-    fields.append(report_field_build(caption="NAME", data="NAME"))
-    fields.append(report_field_build(caption="ASSEMBLY_MARK", data="ASSEMBLY_MARK"))
-    fields.append(report_field_build(caption="ASSEMBLY_N", data="ASSEMBLY_N"))
-    fields.append(report_field_build(caption="PROJECT_MARK", data="PROJECT_MARK"))
-    fields.append(report_field_build(caption="SYSTEM_TAG", data="SYSTEM_TAG"))
-    fields.append(report_field_build(caption="EL_LINE_TAG", data="EL_LINE_TAG"))
-    fields.append(report_field_build(caption="TASK_AUTHOR", data="TASK_AUTHOR"))
-    fields.append(report_field_build(caption="TASK_USER", data="TASK_USER"))
+    fields.append(report_field_build(caption=SPECIALITY_ATTR_NAME, data=SPECIALITY_ATTR_NAME))
+    fields.append(report_field_build(caption=TYPE_ATTR_NAME, data=TYPE_ATTR_NAME))
+    fields.append(report_field_build(caption=TASK_TYPE_ATTR_NAME, data=TASK_TYPE_ATTR_NAME))
+    fields.append(report_field_build(caption=config.ASSEMBLY_TYPE_ATTR_NAME, data=config.ASSEMBLY_TYPE_ATTR_NAME))
+    fields.append(report_field_build(caption=config.TAG_ATTR_NAME, data=config.TAG_ATTR_NAME))
+    fields.append(report_field_build(caption=config.NAME_ATTR_NAME, data=config.NAME_ATTR_NAME))
+    fields.append(report_field_build(caption=config.ASSEMBLY_MARK_ATTR_NAME, data=config.ASSEMBLY_MARK_ATTR_NAME))
+    fields.append(report_field_build(caption=config.ASSEMBLY_N_ATTR_NAME, data=config.ASSEMBLY_N_ATTR_NAME))
+    fields.append(report_field_build(caption=config.PROJECT_MARK_ATTR_NAME, data=config.PROJECT_MARK_ATTR_NAME))
+    fields.append(report_field_build(caption=config.SYSTEM_TAG_ATTR_NAME, data=config.SYSTEM_TAG_ATTR_NAME))
+    fields.append(report_field_build(caption=config.EL_LINE_TAG_ATTR_NAME, data=config.EL_LINE_TAG_ATTR_NAME))
+    fields.append(report_field_build(caption=config.TASK_AUTHOR_ATTR_NAME, data=config.TASK_AUTHOR_ATTR_NAME))
+    fields.append(report_field_build(caption=config.TASK_USER_ATTR_NAME, data=config.TASK_USER_ATTR_NAME))
     return fields
 
 
@@ -162,10 +169,11 @@ def report_view_build():
 def unknown_dataset_build(types_list):
     unknown_dataset = report_dataset_build()
     ftr = ' and '.join([f'[{i}]<>"{j}"' for i, j in types_list])
-    ns = {'caption':"[НЕИЗВЕСТНЫЙ_ТИП]", 'filter':ftr, 'result.filter': "", 'aggregated': "0"}
+    ns = {'caption': "[НЕИЗВЕСТНЫЙ_ТИП]", 'filter': ftr, 'result.filter': "", 'aggregated': "0"}
     table = ET.Element('Table', **ns)
     table.append(report_types_build())
-    table.append(report_fields_build(table_data='"UNKNOWN"', loi_data='"UNKNOWN"', ifc_flag_data='"UNKNOWN"', unknown=True))
+    table.append(
+        report_fields_build(table_data='"UNKNOWN"', loi_data='"UNKNOWN"', ifc_flag_data='"UNKNOWN"', unknown=True))
     unknown_dataset.append(table)
 
     return unknown_dataset
@@ -178,16 +186,15 @@ def xml_report_profile_build(source):
     root = report_root_build()
     report_dataset_profile = report_dataset_profile_build()
 
-
     for k, v in source.items():
         dataset = report_dataset_build()
 
         table_num = v['table_num']
-        type_attr = 'TYPE' if v.get('TYPE') else 'TASK_TYPE'
-        type_ = v[type_attr]
-        table = report_table_build(table_num, type_attr, type_)
+        type_attr_name = config.TYPE_ATTR_NAME if v.get(config.TYPE_ATTR_NAME) else config.TASK_TYPE_ATTR_NAME
+        type_attr = v[type_attr_name]
+        table = report_table_build(table_num, type_attr_name, type_attr)
 
-        types_list.append([type_attr, type_])
+        types_list.append([type_attr_name, type_attr])
 
         table.append(types)
 
@@ -198,18 +205,18 @@ def xml_report_profile_build(source):
         # print('NO LOI 400', '----', type_) if not loi400 else None
 
         fields = report_fields_build(table_data=f'{table_num} {type_attr}',
-                                     loi_data=loi_if_generator(type_,
-                                                               name_attr='TYPE',
+                                     loi_data=loi_if_generator(type_attr_name=type_attr_name,
+                                                               type_attr=type_attr,
                                                                loi200=loi200,
                                                                loi300=loi300,
                                                                loi400=loi400),
-                                     ifc_flag_data=ifc_if_generator(ifc_list=v.get('IFC')))
+                                     ifc_flag_data=ifc_if_generator(ifc_list=v.get('IFC')),
+                                     unknown=False)
 
         table.append(fields)
         dataset.append(table)
         dataset.append(report_view_build())
         report_dataset_profile.append(dataset)
-
 
     report_dataset_profile.append(unknown_dataset_build(types_list))
     root.append(report_dataset_profile)

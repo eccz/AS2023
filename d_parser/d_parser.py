@@ -2,8 +2,7 @@ import openpyxl
 import json
 from string import ascii_letters
 from datetime import datetime
-
-SHEET_NAMES = ['AEC_EL', 'PIPE_EL', 'CABLE_EL', 'TASK']
+from config import SHEET_NAMES, TASK_TYPE_ATTR_NAME, TYPE_ATTR_NAME
 
 
 def el_sheet_processor(sheet):
@@ -33,7 +32,7 @@ def el_sheet_processor(sheet):
 
                     if not isinstance(row_2[0], str): break
                     if row_2[0].startswith('Таблица') or row_2[0].startswith('Примечание'): break
-                    if row_2[1].strip() == 'TYPE' or row_2[1].strip() == 'TASK_TYPE':
+                    if row_2[1].strip() == TYPE_ATTR_NAME or row_2[1].strip() == TASK_TYPE_ATTR_NAME:
                         element[element_name][row_2[1].strip()] = row_2[2].strip()
 
                     if isinstance(row_2[2], str):
