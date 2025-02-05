@@ -117,7 +117,7 @@ def main():
 
         res = ifc_import_profile_build(ifc_property_set=property_set)
 
-        if prettify:
+        if prettify and prettify != 'False':
             indent(res)
 
         mydata = ET.tostring(res, encoding="utf-8", method="xml")

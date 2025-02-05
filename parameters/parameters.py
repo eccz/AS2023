@@ -1,6 +1,8 @@
 import xml.etree.ElementTree as ET
 import csv
 import os
+from config import PARAMETER_GROUP_NAME
+from d_parser.d_parser import parse
 
 
 def indent(elem, level=0):
@@ -25,7 +27,7 @@ def csv_input():
     with open(filepath, 'r', encoding='cp1251', newline='') as file:
         reader = csv.reader(file, delimiter=';')
         for row in reader:
-            result[row[0]] = row[1]
+            result[row[1]] = row[0]
     return result
 
 
@@ -53,47 +55,70 @@ def new_parameter(attr_name, attr_comment, cat_name):
     return parameter
 
 
-def ifc_root_build():
+def parameters_root_build():
 
     return ET.Element('PARAMETERS')
 
 
-def main():
-    while True:
-        print(f'{"#" * 30}\nCкрипт для создания xml-профиля параметров для CADLib\n{"#" * 30}\n')
+def parameters_build(src: dict, c_name):
+    if not c_name:
+        c_name = PARAMETER_GROUP_NAME
 
-        print(f'Убедись, что в папке присутствует файл zadanie.csv с именами атрибутов\n'
-              f'Список файлов в папке "/parameters":')
-        [print(f'{i + 1}. {e}') for i, e in enumerate(os.listdir())]
-        input()
+    root = parameters_root_build()
 
-        print(f'Введите наименование группы параметров\n'
-              f'По умолчанию AS_2024')
+    for key, value in src.items():
+        root.append(new_parameter(f'{key}', f'{key}', c_name))
 
-        c_name = input()
-        if not c_name:
-            c_name = 'AS_2024'
+    root.append(ET.Element('MEASUREMENTS'))
 
-        base_xml = ifc_root_build()
+    return root
 
-        for key, value in csv_input().items():
-            base_xml.append(new_parameter(f'{value}', f'{value}', c_name))
+def parameters_xml_output(el, filename):
+    indent(el)
+    mydata = ET.tostring(el, encoding="utf-8", method="xml")
 
-        base_xml.append(ET.Element('MEASUREMENTS'))
+    with open(filename, 'w', encoding="utf-8") as f:
+        f.write('<?xml version="1.0" encoding="utf-8"?>\n')
+        f.write(mydata.decode(encoding="utf-8"))
 
-        indent(base_xml)
-        mydata = ET.tostring(base_xml, encoding="utf-8", method="xml")
 
-        with open(r'param_profile.xml', 'w', encoding="utf-8") as f:
-            f.write('<?xml version="1.0" encoding="utf-8"?>\n')
-            f.write(mydata.decode(encoding="utf-8"))
-
-        print(r'Файл param_profile.xml создан по адресу "/parameters"')
-        print('Окно нужно закрыть')
-
+def main(interface=True):
+    if interface:
         while True:
+            print(f'{"#" * 30}\nCкрипт для создания xml-профиля параметров для CADLib\n{"#" * 30}\n')
+
+            print(f'Убедись, что в папке присутствует файл zadanie.csv с именами атрибутов\n'
+                  f'Список файлов в папке "/parameters":')
+            [print(f'{i + 1}. {e}') for i, e in enumerate(os.listdir())]
             input()
+
+            print(f'Введите наименование группы параметров\n'
+                  f'По умолчанию AS_2024')
+
+            c_name = input()
+
+            src = csv_input()
+            root = parameters_build(src, c_name)
+            output_filename = 'param_profile_1.xml'
+            parameters_xml_output(root, output_filename)
+
+            print(r'Файл param_profile.xml создан по адресу "/parameters"')
+            print('Окно нужно закрыть')
+
+            while True:
+                input()
+    else:
+        src = dict()
+        inp = [j['el_attr_list'] for j in parse("../src/add_D.xlsx", to_term=False).values()]
+
+        for m in inp:
+            for n in m:
+                src.update({n[0]: n[1]})
+
+        root = parameters_build(src, PARAMETER_GROUP_NAME)
+        output_filename = 'param_profile_1.xml'
+        parameters_xml_output(root, output_filename)
 
 
 if __name__ == '__main__':
-    main()
+    main(interface=False)

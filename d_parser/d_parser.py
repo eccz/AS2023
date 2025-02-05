@@ -17,7 +17,7 @@ def el_sheet_processor(sheet):
             if row[0].startswith('Таблица'):
                 table_num = row[0].strip()
                 element_name = row[1].strip()
-                element = {element_name: {'table_num': table_num, 'IFC': [], 'LOI200': [], 'LOI300': [], 'LOI400': []}}
+                element = {element_name: {'table_num': table_num, 'IFC': [], 'LOI200': [], 'LOI300': [], 'LOI400': [], 'el_attr_list': []}}
                 # print(element)
 
             if row[0].startswith('Класс IFC'):
@@ -45,6 +45,9 @@ def el_sheet_processor(sheet):
 
                     if isinstance(row_2[4], str) and not row_2[4].startswith('-'):
                         element[element_name]['LOI400'].append(row_2[1])
+
+                    # используется для составления списка параметров
+                    element[element_name]['el_attr_list'].append([row_2[1], row_2[0]])
 
                 if len(element[element_name]['LOI400']) < len(element[element_name]['LOI300']):
                     element[element_name].pop('LOI400')
