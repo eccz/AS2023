@@ -1,6 +1,14 @@
 from tkinter import filedialog, messagebox
-import tkinter as tk
 import openpyxl
+
+
+def choose_file(filepath):
+    filename = filedialog.askopenfilename(
+        title="!Выберите файл",
+        filetypes=(("Файлы excel", "*.xlsx"), ("Файлы excel", "*.xlsm*"))
+    )
+    filepath.set(filename)
+
 
 def load_excel_file():
     """Открывает диалог для выбора файла и возвращает его содержимое."""

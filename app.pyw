@@ -4,7 +4,8 @@ from ui.notebook import create_notebook
 def main():
     root = tk.Tk()
     root.title("Atomskills")
-    root.geometry("600x200")
+    root.geometry("600x300")
+    root.resizable(False, False)
 
     # Создаем вкладки через функцию из модуля
     notebook = create_notebook(root)

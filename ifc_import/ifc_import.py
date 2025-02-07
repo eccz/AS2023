@@ -1,22 +1,18 @@
 import xml.etree.ElementTree as ET
 import csv
 import os
+from utils import indent
+import openpyxl
+from d_parser.d_parser import parse
 
 
-def indent(elem, level=0):
-    i = "\n" + level * "  "
-    if len(elem):
-        if not elem.text or not elem.text.strip():
-            elem.text = i + "  "
-        if not elem.tail or not elem.tail.strip():
-            elem.tail = i
-        for elem in elem:
-            indent(elem, level + 1)
-        if not elem.tail or not elem.tail.strip():
-            elem.tail = i
-    else:
-        if level and (not elem.tail or not elem.tail.strip()):
-            elem.tail = i
+def ifc_input_xml_output(el, filename):
+    indent(el)
+    mydata = ET.tostring(el, encoding="utf-8", method="xml")
+
+    with open(filename, 'w', encoding="utf-8") as f:
+        f.write('<?xml version="1.0" encoding="utf-8"?>\n')
+        f.write(mydata.decode(encoding="utf-8"))
 
 
 def csv_input():
@@ -68,7 +64,7 @@ def ifc_par_record_maker(param, ifc_property_set):
     return ifc_par_record
 
 
-def ifc_import_profile_build(ifc_property_set):
+def ifc_import_profile_build(inp: dict, ifc_property_set: str):
     root = ifc_root_build()
     profile = ET.Element('Profile')
     item = ET.Element('item')
@@ -81,7 +77,8 @@ def ifc_import_profile_build(ifc_property_set):
 
     array_of_cadlib_par_records = ET.Element('ArrayOfCADLibParRecord')
 
-    for k, v in csv_input().items():
+    # print(inp)
+    for k, v in inp.items():
         array_of_cadlib_par_records.append(ifc_par_record_maker(v, f'{ifc_property_set}'))
 
     key.append(string)
@@ -94,7 +91,7 @@ def ifc_import_profile_build(ifc_property_set):
     return root
 
 
-def main():
+def ifc_import_maker_console():
     while True:
         print(f'{"#" * 30}\nCкрипт для создания xml-профиля для импорта IFC\n{"#" * 30}\n')
 
@@ -115,7 +112,8 @@ def main():
 
         prettify = input()
 
-        res = ifc_import_profile_build(ifc_property_set=property_set)
+        inp = csv_input()
+        res = ifc_import_profile_build(inp, ifc_property_set=property_set)
 
         if prettify and prettify.lower() != 'false':
             indent(res)
@@ -133,5 +131,22 @@ def main():
             input()
 
 
+def ifc_import_maker_no_interface(source, property_set='EngeneeringDesign', output_filename='ifc_import_profile_1.xml'):
+    # без интерфейса работает на основе парсинга приложения Д, см d_parser.py
+    params = dict()
+    inp = [j['el_attr_list'] for j in source.values()]
+
+    for m in inp:
+        for n in m:
+            params.update({n[1]: n[0]})
+
+    res = ifc_import_profile_build(params, ifc_property_set=property_set)
+    ifc_input_xml_output(res, output_filename)
+
+
 if __name__ == '__main__':
-    main()
+    # ifc_import_maker_console()
+
+    workbook = openpyxl.load_workbook("../src/add_D.xlsx")
+    src = parse(workbook, to_term=True, to_json=False)
+    ifc_import_maker_no_interface(src)

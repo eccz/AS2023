@@ -1,24 +1,10 @@
 import xml.etree.ElementTree as ET
 import csv
 import os
-from config import PARAMETER_GROUP_NAME
+import openpyxl
+
 from d_parser.d_parser import parse
-
-
-def indent(elem, level=0):
-    i = "\n" + level * "  "
-    if len(elem):
-        if not elem.text or not elem.text.strip():
-            elem.text = i + "  "
-        if not elem.tail or not elem.tail.strip():
-            elem.tail = i
-        for elem in elem:
-            indent(elem, level + 1)
-        if not elem.tail or not elem.tail.strip():
-            elem.tail = i
-    else:
-        if level and (not elem.tail or not elem.tail.strip()):
-            elem.tail = i
+from utils import indent
 
 
 def csv_input():
@@ -59,13 +45,13 @@ def parameters_root_build():
     return ET.Element('PARAMETERS')
 
 
-def parameters_build(src: dict, c_name):
+def parameters_build(source: dict, c_name):
     if not c_name:
         c_name = PARAMETER_GROUP_NAME
 
     root = parameters_root_build()
 
-    for key, value in src.items():
+    for key, value in source.items():
         root.append(new_parameter(f'{key}', f'{key}', c_name))
 
     root.append(ET.Element('MEASUREMENTS'))
@@ -97,8 +83,8 @@ def parameters_maker_console():
 
         c_name = input()
 
-        src = csv_input()
-        root = parameters_build(src, c_name)
+        source = csv_input()
+        root = parameters_build(source, c_name)
         output_filename = 'param_profile_1.xml'
         parameters_xml_output(root, output_filename)
 
@@ -109,19 +95,24 @@ def parameters_maker_console():
             input()
 
 
-def parameters_maker_no_interface(src_path='../src/add_D.xlsx', output_filename='param_profile_1.xml'):
+def parameters_maker_no_interface(source, param_group_name, output_filename='param_profile_1.xml'):
     # без интерфейса работает на основе парсинга приложения Д, см d_parser.py
-    src = dict()
-    inp = [j['el_attr_list'] for j in parse(src_path, to_term=False).values()]
+    res = dict()
+    inp = [j['el_attr_list'] for j in source.values()]
+
 
     for m in inp:
         for n in m:
-            src.update({n[0]: n[1]})
+            res.update({n[0]: n[1]})
 
-    root = parameters_build(src, PARAMETER_GROUP_NAME)
+    print(res)
+
+    root = parameters_build(res, param_group_name)
     output_filename = output_filename
     parameters_xml_output(root, output_filename)
 
 
 if __name__ == '__main__':
-    parameters_maker_no_interface()
+    workbook = openpyxl.load_workbook("../src/add_D.xlsx")
+    src = parse(workbook, to_term=True, to_json=False)
+    parameters_maker_no_interface(src, 'AS_2036')

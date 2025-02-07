@@ -30,5 +30,5 @@ REPORT_TYPES = ['AEC_SURF', 'COLLISIONS', 'Cable_ETS', 'HVAC', 'HVACAxis', 'HVAC
 """d_parser"""
 SHEET_NAMES = ['AEC_EL', 'PIPE_EL', 'CABLE_EL', 'TASK']
 
-"""parameters"""
-PARAMETER_GROUP_NAME = 'AS_2024'
+"""ifc_import"""
+PROPERTY_SET_NAME = 'EngeneeringDesign'

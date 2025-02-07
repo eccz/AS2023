@@ -1,6 +1,7 @@
 import tkinter as tk
-from tkinter import filedialog, messagebox
+from tkinter import messagebox
 import openpyxl
+from ui.file_handler import choose_file
 
 from report_profile.report_profile import xml_report_profile_build
 from d_parser.d_parser import parse
@@ -22,22 +23,26 @@ def process_file(file_path):
 
 
 def create_report_profile_tab(notebook):
-    def choose_file():
-        filename = filedialog.askopenfilename(
-            title="!Выберите файл",
-            filetypes=(("Файлы excel", "*.xlsx"), ("Файлы excel", "*.xlsm*"))
-        )
-        file_path.set(filename)
-
     tab = tk.Frame(notebook)
     file_path = tk.StringVar()
-    frame = tk.Frame(notebook, padx=10, pady=10)
-    frame.pack(padx=0, pady=50)
+
+    frame_0 = tk.Frame(tab, padx=0, pady=0)
+    frame_0.pack(padx=0, pady=10)
+
+    frame = tk.Frame(tab, padx=0, pady=0)
+    frame.pack(padx=0, pady=0)
+
+    info_text = (
+        "Формирование профиля отчета для CadLib на основе доработанного приложения Д."
+    )
+
+    tk.Label(frame_0, text=info_text, font=("Arial", 10), justify=tk.LEFT).grid(row=2, column=0, pady=0)
 
     tk.Label(frame, text="Выберите файл:").grid(row=0, column=0, sticky="w")
     file_entry = tk.Entry(frame, textvariable=file_path, width=60)
     file_entry.grid(row=0, column=1, padx=5, pady=5, sticky='w')
-    tk.Button(frame, text="Обзор", command=choose_file).grid(row=0, column=2, padx=5, pady=5, sticky="w")
+    tk.Button(frame, text="Обзор", command=lambda n=file_path: choose_file(n)).grid(row=0, column=2, padx=5, pady=5,
+                                                                                    sticky="w")
 
     tk.Button(frame, text='Создать профиль отчета', command=lambda m=file_path: process_file(m)).grid(row=1,
                                                                                                       column=0,
