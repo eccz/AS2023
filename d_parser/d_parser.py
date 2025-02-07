@@ -46,7 +46,7 @@ def el_sheet_processor(sheet):
                     if isinstance(row_2[4], str) and not row_2[4].startswith('-'):
                         element[element_name]['LOI400'].append(row_2[1])
 
-                    # используется для составления списка параметров
+                    # используется для составления списка параметров: ['SPECIALITY', 'Специализация']
                     element[element_name]['el_attr_list'].append([row_2[1], row_2[0]])
 
                 if len(element[element_name]['LOI400']) < len(element[element_name]['LOI300']):
@@ -69,9 +69,9 @@ def gr_sheet_processor(sheet, el_name):
     # print(res)
 
 
-def parse(input_file, to_json=False, to_term=False):
+def parse(wb, to_json=False, to_term=False):
     res = {}
-    wb = openpyxl.load_workbook(input_file)
+
     for sheet in wb.sheetnames:
         if sheet in SHEET_NAMES:
             res.update(el_sheet_processor(wb[sheet]))
@@ -94,4 +94,5 @@ def parse(input_file, to_json=False, to_term=False):
 
 
 if __name__ == '__main__':
-    parse("../src/add_D.xlsx", to_term=True)
+    workbook = openpyxl.load_workbook("../src/add_D.xlsx")
+    parse(workbook, to_term=True)

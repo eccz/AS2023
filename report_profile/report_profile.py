@@ -3,7 +3,7 @@ from config import TASK_TYPE_ATTR_NAME, TYPE_ATTR_NAME, SPECIALITY_ATTR_NAME
 from d_parser.d_parser import parse
 import xml.etree.ElementTree as ET
 from ifc_import.ifc_import import indent
-
+import openpyxl
 
 def cond_generator(loi):
     """
@@ -233,7 +233,8 @@ def xml_report_profile_build(source):
 
 
 if __name__ == '__main__':
-    src = parse("../src/add_D.xlsx", to_term=True, to_json=False)
+    workbook = openpyxl.load_workbook("../src/add_D.xlsx")
+    src = parse(workbook, to_term=True, to_json=False)
     xml_report_profile_build(src)
 
     # a = parse("../src/add_D.xlsx", to_term=True)

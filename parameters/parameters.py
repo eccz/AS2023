@@ -56,7 +56,6 @@ def new_parameter(attr_name, attr_comment, cat_name):
 
 
 def parameters_root_build():
-
     return ET.Element('PARAMETERS')
 
 
@@ -73,6 +72,7 @@ def parameters_build(src: dict, c_name):
 
     return root
 
+
 def parameters_xml_output(el, filename):
     indent(el)
     mydata = ET.tostring(el, encoding="utf-8", method="xml")
@@ -82,43 +82,46 @@ def parameters_xml_output(el, filename):
         f.write(mydata.decode(encoding="utf-8"))
 
 
-def main(interface=True):
-    if interface:
-        while True:
-            print(f'{"#" * 30}\nCкрипт для создания xml-профиля параметров для CADLib\n{"#" * 30}\n')
+def parameters_maker_console():
+    # с интерфейсом берет данные из файла zadanie.csv
+    while True:
+        print(f'{"#" * 30}\nCкрипт для создания xml-профиля параметров для CADLib\n{"#" * 30}\n')
 
-            print(f'Убедись, что в папке присутствует файл zadanie.csv с именами атрибутов\n'
-                  f'Список файлов в папке "/parameters":')
-            [print(f'{i + 1}. {e}') for i, e in enumerate(os.listdir())]
-            input()
+        print(f'Убедись, что в папке присутствует файл zadanie.csv с именами атрибутов\n'
+              f'Список файлов в папке "/parameters":')
+        [print(f'{i + 1}. {e}') for i, e in enumerate(os.listdir())]
+        input()
 
-            print(f'Введите наименование группы параметров\n'
-                  f'По умолчанию AS_2024')
+        print(f'Введите наименование группы параметров\n'
+              f'По умолчанию AS_2024')
 
-            c_name = input()
+        c_name = input()
 
-            src = csv_input()
-            root = parameters_build(src, c_name)
-            output_filename = 'param_profile_1.xml'
-            parameters_xml_output(root, output_filename)
-
-            print(r'Файл param_profile.xml создан по адресу "/parameters"')
-            print('Окно нужно закрыть')
-
-            while True:
-                input()
-    else:
-        src = dict()
-        inp = [j['el_attr_list'] for j in parse("../src/add_D.xlsx", to_term=False).values()]
-
-        for m in inp:
-            for n in m:
-                src.update({n[0]: n[1]})
-
-        root = parameters_build(src, PARAMETER_GROUP_NAME)
+        src = csv_input()
+        root = parameters_build(src, c_name)
         output_filename = 'param_profile_1.xml'
         parameters_xml_output(root, output_filename)
 
+        print(r'Файл param_profile.xml создан по адресу "/parameters"')
+        print('Окно нужно закрыть')
+
+        while True:
+            input()
+
+
+def parameters_maker_no_interface(src_path='../src/add_D.xlsx', output_filename='param_profile_1.xml'):
+    # без интерфейса работает на основе парсинга приложения Д, см d_parser.py
+    src = dict()
+    inp = [j['el_attr_list'] for j in parse(src_path, to_term=False).values()]
+
+    for m in inp:
+        for n in m:
+            src.update({n[0]: n[1]})
+
+    root = parameters_build(src, PARAMETER_GROUP_NAME)
+    output_filename = output_filename
+    parameters_xml_output(root, output_filename)
+
 
 if __name__ == '__main__':
-    main(interface=False)
+    parameters_maker_no_interface()
