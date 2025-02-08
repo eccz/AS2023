@@ -9,6 +9,7 @@ def el_sheet_processor(sheet):
     elements = {}
     element = {}
     element_name = ''
+    table_num = ''
 
     cnt = 1
     for row in sheet.iter_rows(min_row=0, max_row=sheet.max_row, min_col=1, max_col=sheet.max_column, values_only=True):
@@ -17,13 +18,15 @@ def el_sheet_processor(sheet):
             if row[0].startswith('Таблица'):
                 table_num = row[0].strip()
                 element_name = row[1].strip()
-                element = {element_name: {'table_num': table_num, 'IFC': [], 'LOI200': [], 'LOI300': [], 'LOI400': [], 'el_attr_list': []}}
+                element = {
+                    table_num: {'element_name': element_name, 'IFC': [], 'LOI200': [], 'LOI300': [], 'LOI400': [],
+                                'el_attr_list': []}}
                 # print(element)
 
             if row[0].startswith('Класс IFC'):
                 ifc = [i.strip() for i in row[2].replace(',', '').strip().split(' ') if
                        all(map(lambda c: c in ascii_letters, i))]
-                element[element_name]['IFC'].extend(ifc)
+                element[table_num]['IFC'].extend(ifc)
 
             if 'атрибут' in row[0].lower():
                 for row_2 in sheet.iter_rows(min_row=cnt + 1, max_row=sheet.max_row, min_col=1,
@@ -33,24 +36,24 @@ def el_sheet_processor(sheet):
                     if not isinstance(row_2[0], str): break
                     if row_2[0].startswith('Таблица') or row_2[0].startswith('Примечание'): break
                     if row_2[1].strip() == TYPE_ATTR_NAME or row_2[1].strip() == TASK_TYPE_ATTR_NAME:
-                        element[element_name][row_2[1].strip()] = row_2[2].strip()
+                        element[table_num][row_2[1].strip()] = row_2[2].strip()
 
                     if isinstance(row_2[2], str):
-                        element[element_name]['LOI200'].append(row_2[1])
-                        # element[element_name]['LOI300'].append(row_2[1])
-                        # element[element_name]['LOI400'].append(row_2[1])
+                        element[table_num]['LOI200'].append(row_2[1])
+                        # element[table_num]['LOI300'].append(row_2[1])
+                        # element[table_num]['LOI400'].append(row_2[1])
 
                     if isinstance(row_2[3], str):
-                        element[element_name]['LOI300'].append(row_2[1])
+                        element[table_num]['LOI300'].append(row_2[1])
 
                     if isinstance(row_2[4], str) and not row_2[4].startswith('-'):
-                        element[element_name]['LOI400'].append(row_2[1])
+                        element[table_num]['LOI400'].append(row_2[1])
 
                     # используется для составления списка параметров: ['SPECIALITY', 'Специализация']
-                    element[element_name]['el_attr_list'].append([row_2[1], row_2[0]])
+                    element[table_num]['el_attr_list'].append([row_2[1], row_2[0]])
 
-                if len(element[element_name]['LOI400']) < len(element[element_name]['LOI300']):
-                    element[element_name].pop('LOI400')
+                if len(element[table_num]['LOI400']) < len(element[table_num]['LOI300']):
+                    element[table_num].pop('LOI400')
                 elements.update(element)
 
                 # print(element)
@@ -73,6 +76,14 @@ def gr_sheet_processor(sheet, el_name):
     return res
 
 
+def attr_sheet_processor(sheet):
+    res = {}
+    for row in sheet.iter_rows(min_row=0, max_row=sheet.max_row, min_col=1, max_col=sheet.max_column, values_only=True):
+        if isinstance(row[1], str):
+            res[row[1].strip()] = row[2].strip()
+    return res
+
+
 def parse(wb, to_json=False, to_term=False):
     res = {}
 
@@ -80,11 +91,16 @@ def parse(wb, to_json=False, to_term=False):
         if sheet in SHEET_NAMES:
             res.update(el_sheet_processor(wb[sheet]))
 
-    for el_name, el_props in res.items():
+    for table_num, el_props in res.items():
         # print(el_name, el_props)
         # print(len(el_props['IFC']))
         if len(el_props['IFC']) > 1:
-            el_props['IFC'] = gr_sheet_processor(wb['AEC_GR'], el_name)
+            el_props['IFC'] = gr_sheet_processor(wb['AEC_GR'], el_props['element_name'])
+
+    try:
+        res['full_attr_list'] = attr_sheet_processor(wb['ATTRIBUTES'])
+    except Exception as e:
+        pass
 
     if to_term:
         print(res)
@@ -99,4 +115,4 @@ def parse(wb, to_json=False, to_term=False):
 
 if __name__ == '__main__':
     workbook = openpyxl.load_workbook("../src/add_D.xlsx")
-    parse(workbook, to_term=True)
+    parse(workbook, to_term=True, to_json=True)

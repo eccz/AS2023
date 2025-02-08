@@ -45,9 +45,10 @@ def ifc_par_record_maker(param, ifc_property_set):
     # value.text = f'if([{ifc_property_set}.{param}]="[{param}]", "", [{ifc_property_set}.{param}])'
     value.text = f'if([{ifc_property_set}.{param}]="[{param}]" or [{ifc_property_set}.{param}]="0", "", [{ifc_property_set}.{param}])'
 
-
     comment = ET.Element('Comment')
+
     param_category = ET.Element('ParamCategory')
+    param_category.text = ifc_property_set
 
     value_is_function = ET.Element('ValueIsFunction')
     value_is_function.text = 'true'
@@ -133,10 +134,10 @@ def ifc_import_maker_console():
             input()
 
 
-def ifc_import_maker_no_interface(source, property_set='EngeneeringDesign'):
-    # без интерфейса работает на основе парсинга приложения Д, см d_parser.py
+def ifc_import_maker_no_interface_d(source, property_set='EngeneeringDesign'):
+    # без интерфейса работает на основе парсинга элементов приложения Д, см d_parser.py
     params = dict()
-    inp = [j['el_attr_list'] for j in source.values()]
+    inp = [j.get('el_attr_list') for j in source.values() if j.get('el_attr_list')]
 
     for m in inp:
         for n in m:
@@ -145,10 +146,16 @@ def ifc_import_maker_no_interface(source, property_set='EngeneeringDesign'):
     return ifc_import_profile_build(params, ifc_property_set=property_set)
 
 
+def ifc_import_maker_no_interface_full(source, property_set='EngeneeringDesign'):
+    # без интерфейса работает на основе парсинга вкладки ATTRIBUTES приложения Д, см d_parser.py
+    params = source['full_attr_list']
+    return ifc_import_profile_build(params, ifc_property_set=property_set)
+
 
 if __name__ == '__main__':
     # ifc_import_maker_console()
 
     workbook = openpyxl.load_workbook("../src/add_D.xlsx")
     src = parse(workbook, to_term=True, to_json=False)
-    ifc_input_xml_output(ifc_import_maker_no_interface(src), '123.xml')
+    ifc_input_xml_output(ifc_import_maker_no_interface_d(src), 'ifc_import_2.xml')
+    # ifc_input_xml_output(ifc_import_maker_no_interface_full(src), 'ifc_import_3.xml')

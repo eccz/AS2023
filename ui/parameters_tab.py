@@ -3,22 +3,27 @@ import tkinter as tk
 from tkinter import messagebox
 
 from ui.tk_file_utils import choose_file
-from parameters.parameters import parameters_maker_no_interface, parameters_xml_output
+from parameters.parameters import parameters_maker_no_interface_d, parameters_maker_no_interface_full, parameters_xml_output
 from d_parser.d_parser import parse
 from ui.tk_file_utils import to_xml_tk
 
 
-def process_file(file_path, entry):
+def process_file(file_path, entry, choice):
     if not file_path.get():
         messagebox.showwarning("Ошибка", "Выберите файл для обработки")
         return
 
     try:
+        res = None
         workbook = openpyxl.load_workbook(file_path.get())
         src = parse(workbook, to_term=True)
 
         param_group_name = entry.get()
-        res = parameters_maker_no_interface(src, param_group_name)
+        if choice.get() == "one":
+            res = parameters_maker_no_interface_d(src, param_group_name)
+        if choice.get() == "two":
+            res = parameters_maker_no_interface_full(src, param_group_name)
+
         to_xml_tk(res, parameters_xml_output, filename='parameters')
 
     except Exception as e:
@@ -38,6 +43,10 @@ def create_parameters_tab(notebook):
     frame_2 = tk.Frame(tab, padx=0, pady=0)
     frame_2.pack(padx=0, pady=0)
 
+    frame_3 = tk.Frame(tab, padx=0, pady=0)
+    frame_3.pack(padx=0, pady=0)
+    choice = tk.StringVar(value="one")
+
     info_text = (
         "Формирование xml для импорта параметров для CadLib на основе доработанного приложения Д."
     )
@@ -52,11 +61,15 @@ def create_parameters_tab(notebook):
     tk.Label(frame_2, text="Выберите файл:").grid(row=0, column=0, sticky="w")
     file_entry = tk.Entry(frame_2, textvariable=file_path, width=60)
     file_entry.grid(row=0, column=1, padx=5, pady=5, sticky='w')
-    tk.Button(frame_2, text="Обзор", command=lambda n=file_path: choose_file(n)).grid(row=0, column=2, padx=5, pady=5,
-                                                                                      sticky="w")
+    tk.Button(frame_2, text="Обзор", command=lambda n=file_path: choose_file(n)).grid(row=0, column=2, padx=5, pady=5, sticky="w")
     tk.Button(frame_2,
               text='Создать файл импорта параметров',
-              command=lambda m=file_path, n=param_gr_name_entry: process_file(m, n)
+              command=lambda m=file_path, n=param_gr_name_entry, q=choice: process_file(m, n, q)
               ).grid(row=1, column=0, columnspan=3, pady=2)
+
+
+    tk.Label(frame_3, text="Выберите опцию (по умолчанию 'На основе элементов'):").grid(row=0, column=0, sticky="w")
+    tk.Radiobutton(frame_3, text="На основе элементов", variable=choice, value="one").grid(row=1, column=0, pady=0, sticky="w")
+    tk.Radiobutton(frame_3, text="На основе вкладки Attributes", variable=choice, value="two").grid(row=2, column=0, pady=0, sticky="w")
 
     return tab

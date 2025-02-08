@@ -199,7 +199,7 @@ def xml_report_profile_build(source):
     for k, v in source.items():
         dataset = report_dataset_build()
 
-        table_num = v['table_num']
+        table_num = k
         type_attr_name = config.TYPE_ATTR_NAME if v.get(config.TYPE_ATTR_NAME) else config.TASK_TYPE_ATTR_NAME
         type_attr = v[type_attr_name]
         table = report_table_build(table_num, type_attr_name, type_attr)
@@ -238,9 +238,9 @@ def xml_report_profile_build(source):
 
 
 if __name__ == '__main__':
-    workbook = openpyxl.load_workbook("../src/PREF_AS-2024.xlsm")
+    workbook = openpyxl.load_workbook("../src/add_D.xlsx")
     src = parse(workbook, to_term=True, to_json=False)
-    report_profile_xml_output(xml_report_profile_build(src), '123.xml')
+    report_profile_xml_output(xml_report_profile_build(src), 'report_profile_2.xml')
 
     # a = parse("../src/add_D.xlsx", to_term=True)
     # name = 'Объемный элемент'

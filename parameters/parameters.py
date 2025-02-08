@@ -52,7 +52,7 @@ def parameters_build(source: dict, c_name):
     root = parameters_root_build()
 
     for key, value in source.items():
-        root.append(new_parameter(f'{key}', f'{key}', c_name))
+        root.append(new_parameter(f'{value}', f'{value}', c_name))
 
     root.append(ET.Element('MEASUREMENTS'))
 
@@ -95,23 +95,29 @@ def parameters_maker_console():
             input()
 
 
-def parameters_maker_no_interface(source, param_group_name):
+def parameters_maker_no_interface_d(source, param_group_name):
     # без интерфейса работает на основе парсинга приложения Д, см d_parser.py
     res = dict()
-    inp = [j['el_attr_list'] for j in source.values()]
+    inp = [j.get('el_attr_list') for j in source.values() if j.get('el_attr_list')]
 
     for m in inp:
+
         for n in m:
-            res.update({n[0]: n[1]})
+            res.update({n[1]: n[0]})
 
     return parameters_build(res, param_group_name)
 
 
+def parameters_maker_no_interface_full(source, param_group_name):
+    # без интерфейса работает на основе парсинга приложения Д, см d_parser.py
+    params = source['full_attr_list']
+
+    return parameters_build(params, param_group_name)
 
 if __name__ == '__main__':
     workbook = openpyxl.load_workbook("../src/add_D.xlsx")
     src = parse(workbook, to_term=True, to_json=False)
-    res_xml = parameters_maker_no_interface(src, 'AS_2025')
+    res_xml = parameters_maker_no_interface_d(src, 'AS_2025')
+    # res_xml = parameters_maker_no_interface_full(src, 'AS_2025')
 
-    output_file = '123.xml'
-    parameters_xml_output(res_xml, output_file)
+    parameters_xml_output(res_xml, 'parameters_2.xml')
