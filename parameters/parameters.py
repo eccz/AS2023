@@ -47,7 +47,7 @@ def parameters_root_build():
 
 def parameters_build(source: dict, c_name):
     if not c_name:
-        c_name = PARAMETER_GROUP_NAME
+        c_name = 'AS_2024'
 
     root = parameters_root_build()
 
@@ -59,11 +59,11 @@ def parameters_build(source: dict, c_name):
     return root
 
 
-def parameters_xml_output(el, filename):
+def parameters_xml_output(el, filepath):
     indent(el)
     mydata = ET.tostring(el, encoding="utf-8", method="xml")
 
-    with open(filename, 'w', encoding="utf-8") as f:
+    with open(filepath, 'w', encoding="utf-8") as f:
         f.write('<?xml version="1.0" encoding="utf-8"?>\n')
         f.write(mydata.decode(encoding="utf-8"))
 
@@ -95,24 +95,23 @@ def parameters_maker_console():
             input()
 
 
-def parameters_maker_no_interface(source, param_group_name, output_filename='param_profile_1.xml'):
+def parameters_maker_no_interface(source, param_group_name):
     # без интерфейса работает на основе парсинга приложения Д, см d_parser.py
     res = dict()
     inp = [j['el_attr_list'] for j in source.values()]
-
 
     for m in inp:
         for n in m:
             res.update({n[0]: n[1]})
 
-    print(res)
+    return parameters_build(res, param_group_name)
 
-    root = parameters_build(res, param_group_name)
-    output_filename = output_filename
-    parameters_xml_output(root, output_filename)
 
 
 if __name__ == '__main__':
     workbook = openpyxl.load_workbook("../src/add_D.xlsx")
     src = parse(workbook, to_term=True, to_json=False)
-    parameters_maker_no_interface(src, 'AS_2036')
+    res_xml = parameters_maker_no_interface(src, 'AS_2025')
+
+    output_file = '123.xml'
+    parameters_xml_output(res_xml, output_file)

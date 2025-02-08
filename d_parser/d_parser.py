@@ -65,8 +65,12 @@ def gr_sheet_processor(sheet, el_name):
     for row in sheet.iter_rows(min_row=0, max_row=sheet.max_row, min_col=1, max_col=sheet.max_column, values_only=True):
         if isinstance(row[2], str) and row[2].strip() == el_name:
             res.append([el_name, row[5].strip(), row[12].strip()])
+
+        # for WSHT2024:
+        # if isinstance(row[1], str) and row[1].strip() == el_name:
+        #     res.append([el_name, row[3].strip(), row[10].strip()])
+
     return res
-    # print(res)
 
 
 def parse(wb, to_json=False, to_term=False):

@@ -6,11 +6,11 @@ import openpyxl
 from d_parser.d_parser import parse
 
 
-def ifc_input_xml_output(el, filename):
+def ifc_input_xml_output(el, filepath):
     indent(el)
     mydata = ET.tostring(el, encoding="utf-8", method="xml")
 
-    with open(filename, 'w', encoding="utf-8") as f:
+    with open(filepath, 'w', encoding="utf-8") as f:
         f.write('<?xml version="1.0" encoding="utf-8"?>\n')
         f.write(mydata.decode(encoding="utf-8"))
 
@@ -41,8 +41,10 @@ def ifc_par_record_maker(param, ifc_property_set):
     caption.text = f'{param}'
 
     value = ET.Element('Value')
-    value.text = f'[{ifc_property_set}.{param}])'
+    # value.text = f'[{ifc_property_set}.{param}])'
     # value.text = f'if([{ifc_property_set}.{param}]="[{param}]", "", [{ifc_property_set}.{param}])'
+    value.text = f'if([{ifc_property_set}.{param}]="[{param}]" or [{ifc_property_set}.{param}]="0", "", [{ifc_property_set}.{param}])'
+
 
     comment = ET.Element('Comment')
     param_category = ET.Element('ParamCategory')
@@ -131,7 +133,7 @@ def ifc_import_maker_console():
             input()
 
 
-def ifc_import_maker_no_interface(source, property_set='EngeneeringDesign', output_filename='ifc_import_profile_1.xml'):
+def ifc_import_maker_no_interface(source, property_set='EngeneeringDesign'):
     # без интерфейса работает на основе парсинга приложения Д, см d_parser.py
     params = dict()
     inp = [j['el_attr_list'] for j in source.values()]
@@ -140,8 +142,8 @@ def ifc_import_maker_no_interface(source, property_set='EngeneeringDesign', outp
         for n in m:
             params.update({n[1]: n[0]})
 
-    res = ifc_import_profile_build(params, ifc_property_set=property_set)
-    ifc_input_xml_output(res, output_filename)
+    return ifc_import_profile_build(params, ifc_property_set=property_set)
+
 
 
 if __name__ == '__main__':
@@ -149,4 +151,4 @@ if __name__ == '__main__':
 
     workbook = openpyxl.load_workbook("../src/add_D.xlsx")
     src = parse(workbook, to_term=True, to_json=False)
-    ifc_import_maker_no_interface(src)
+    ifc_input_xml_output(ifc_import_maker_no_interface(src), '123.xml')

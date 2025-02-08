@@ -5,6 +5,16 @@ import xml.etree.ElementTree as ET
 from ifc_import.ifc_import import indent
 import openpyxl
 
+
+def report_profile_xml_output(el, filepath):
+    indent(el)
+    mydata = ET.tostring(el, encoding="utf-8", method="xml")
+
+    with open(filepath, 'w', encoding="utf-8") as f:
+        f.write('<?xml version="1.0"?>\n')
+        f.write(mydata.decode(encoding="utf-8"))
+
+
 def cond_generator(loi):
     """
     Функция генерирует if-условие для CadLib на базе списка наименований атрибутов для определенного LOI
@@ -224,18 +234,13 @@ def xml_report_profile_build(source):
     root.append(report_format_build())
     root.append(report_extended_build())
 
-    indent(root)
-    mydata = ET.tostring(root, encoding="utf-8", method="xml")
-
-    with open(r'report_profile.xml', 'w', encoding="utf-8") as f:
-        f.write('<?xml version="1.0"?>\n')
-        f.write(mydata.decode(encoding="utf-8"))
+    return root
 
 
 if __name__ == '__main__':
-    workbook = openpyxl.load_workbook("../src/add_D.xlsx")
+    workbook = openpyxl.load_workbook("../src/PREF_AS-2024.xlsm")
     src = parse(workbook, to_term=True, to_json=False)
-    xml_report_profile_build(src)
+    report_profile_xml_output(xml_report_profile_build(src), '123.xml')
 
     # a = parse("../src/add_D.xlsx", to_term=True)
     # name = 'Объемный элемент'

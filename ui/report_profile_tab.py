@@ -1,10 +1,11 @@
+import openpyxl
 import tkinter as tk
 from tkinter import messagebox
-import openpyxl
-from ui.file_handler import choose_file
 
-from report_profile.report_profile import xml_report_profile_build
+from ui.tk_file_utils import choose_file
+from report_profile.report_profile import xml_report_profile_build, report_profile_xml_output
 from d_parser.d_parser import parse
+from ui.tk_file_utils import to_xml_tk
 
 
 def process_file(file_path):
@@ -15,8 +16,8 @@ def process_file(file_path):
     try:
         workbook = openpyxl.load_workbook(file_path.get())
         src = parse(workbook, to_term=True)
-        xml_report_profile_build(src)
-        messagebox.showinfo('Успех', 'Файл создан!')
+        res = xml_report_profile_build(src)
+        to_xml_tk(res, report_profile_xml_output, filename='report_profile')
 
     except Exception as e:
         messagebox.showerror("Ошибка", f"Не удалось обработать файл: {e}")
@@ -36,7 +37,7 @@ def create_report_profile_tab(notebook):
         "Формирование профиля отчета для CadLib на основе доработанного приложения Д."
     )
 
-    tk.Label(frame_0, text=info_text, font=("Arial", 10), justify=tk.LEFT).grid(row=2, column=0, pady=0)
+    tk.Label(frame_0, text=info_text, font=("Arial", 10, 'bold'), wraplength=600).grid(row=2, column=0, pady=0)
 
     tk.Label(frame, text="Выберите файл:").grid(row=0, column=0, sticky="w")
     file_entry = tk.Entry(frame, textvariable=file_path, width=60)

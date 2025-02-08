@@ -1,9 +1,11 @@
-import tkinter as tk
 import openpyxl
+import tkinter as tk
 from tkinter import messagebox
-from ui.file_handler import choose_file
-from parameters.parameters import parameters_maker_no_interface
+
+from ui.tk_file_utils import choose_file
+from parameters.parameters import parameters_maker_no_interface, parameters_xml_output
 from d_parser.d_parser import parse
+from ui.tk_file_utils import to_xml_tk
 
 
 def process_file(file_path, entry):
@@ -16,8 +18,8 @@ def process_file(file_path, entry):
         src = parse(workbook, to_term=True)
 
         param_group_name = entry.get()
-        parameters_maker_no_interface(src, param_group_name)
-        messagebox.showinfo('Успех', 'Файл импорта параметров создан!')
+        res = parameters_maker_no_interface(src, param_group_name)
+        to_xml_tk(res, parameters_xml_output, filename='parameters')
 
     except Exception as e:
         messagebox.showerror("Ошибка", f"Не удалось обработать файл: {e}")
@@ -37,10 +39,10 @@ def create_parameters_tab(notebook):
     frame_2.pack(padx=0, pady=0)
 
     info_text = (
-        "Формирование xml импорта параметров для CadLib на основе доработанного приложения Д."
+        "Формирование xml для импорта параметров для CadLib на основе доработанного приложения Д."
     )
 
-    tk.Label(frame_0, text=info_text, font=("Arial", 10)).grid(row=0, column=0, pady=0)
+    tk.Label(frame_0, text=info_text, font=("Arial", 10, 'bold'), wraplength=600).grid(row=0, column=0, pady=0)
 
     tk.Label(frame_1, text="Наименование группы параметров:").grid(row=0, column=0, pady=0)
     param_gr_name_entry = tk.Entry(frame_1, width=40)
@@ -55,6 +57,6 @@ def create_parameters_tab(notebook):
     tk.Button(frame_2,
               text='Создать файл импорта параметров',
               command=lambda m=file_path, n=param_gr_name_entry: process_file(m, n)
-              ).grid(row=1,column=0, columnspan=3,pady=2)
+              ).grid(row=1, column=0, columnspan=3, pady=2)
 
     return tab
