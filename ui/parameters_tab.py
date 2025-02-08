@@ -56,7 +56,7 @@ def create_parameters_tab(notebook):
     tk.Label(frame_1, text="Наименование группы параметров:").grid(row=0, column=0, pady=0)
     param_gr_name_entry = tk.Entry(frame_1, width=40)
     param_gr_name_entry.grid(row=0, column=1, padx=5, pady=5, sticky='w')
-    param_gr_name_entry.insert(0, "YS_2025")  # Значение по умолчанию
+    param_gr_name_entry.insert(0, "EngeneeringDesign")  # Значение по умолчанию
 
     tk.Label(frame_2, text="Выберите файл:").grid(row=0, column=0, sticky="w")
     file_entry = tk.Entry(frame_2, textvariable=file_path, width=60)

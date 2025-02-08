@@ -125,7 +125,7 @@ def report_dataset_build():
 
 
 def report_table_build(table_num, type_attr, _type):
-    ns = {'caption': f"{table_num} [{_type}]".strip(), 'filter': f'"[{type_attr}]="{_type}"', 'result.filter': "",
+    ns = {'caption': f"{table_num} [{_type}]".strip(), 'filter': f'[{type_attr}]="{_type}"', 'result.filter': "",
           'aggregated': "0"}
     return ET.Element('Table', **ns)
 
@@ -138,10 +138,10 @@ def report_types_build():
     return types
 
 
-def report_field_build(caption, data, unknown=False):
+def report_field_build(caption, data, type_='0',unknown=False):
     if unknown:
         return ET.Element('Field', caption=caption, data=data, type="1", aggregate="0", visible="1", format='')
-    return ET.Element('Field', caption=caption, data=data, type="0", aggregate="0", visible="1", format='')
+    return ET.Element('Field', caption=caption, data=data, type=type_, aggregate="0", visible="1", format='')
 
 
 def report_fields_build(table_data, loi_data, ifc_flag_data, unknown=False):
@@ -150,9 +150,9 @@ def report_fields_build(table_data, loi_data, ifc_flag_data, unknown=False):
     fields.append(report_field_build(caption="SYS_OBJECT_NAME", data="@NAME"))
     fields.append(report_field_build(caption="IFC_TYPE", data="IFC_TYPE"))
     fields.append(report_field_build(caption="IfcGlobalId", data="IfcGlobalId"))
-    fields.append(report_field_build(caption="TABLE", data=table_data, unknown=unknown))
-    fields.append(report_field_build(caption="LOI", data=loi_data, unknown=unknown))
-    fields.append(report_field_build(caption="IFC_TYPE_FLAG", data=ifc_flag_data, unknown=unknown))
+    fields.append(report_field_build(caption="TABLE", data=table_data, type_='1', unknown=unknown))
+    fields.append(report_field_build(caption="LOI", data=loi_data, type_='1', unknown=unknown))
+    fields.append(report_field_build(caption="IFC_TYPE_FLAG", data=ifc_flag_data, type_='1', unknown=unknown))
     fields.append(report_field_build(caption=SPECIALITY_ATTR_NAME, data=SPECIALITY_ATTR_NAME))
     fields.append(report_field_build(caption=TYPE_ATTR_NAME, data=TYPE_ATTR_NAME))
     fields.append(report_field_build(caption=TASK_TYPE_ATTR_NAME, data=TASK_TYPE_ATTR_NAME))
@@ -201,11 +201,13 @@ def xml_report_profile_build(source):
 
         table_num = k
         type_attr_name = config.TYPE_ATTR_NAME if v.get(config.TYPE_ATTR_NAME) else config.TASK_TYPE_ATTR_NAME
-        type_attr = v[type_attr_name]
+
+        if v.get(type_attr_name):
+            type_attr = v.get(type_attr_name)
+        else: continue
+
         table = report_table_build(table_num, type_attr_name, type_attr)
-
         types_list.append([type_attr_name, type_attr])
-
         table.append(types)
 
         loi200 = v.get('LOI200')

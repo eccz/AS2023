@@ -55,7 +55,7 @@ def create_ifc_import_tab(notebook):
     tk.Label(frame_1, text="Наименование property_set:").grid(row=0, column=0, pady=0)
     pset_name_entry = tk.Entry(frame_1, width=40)
     pset_name_entry.grid(row=0, column=1, padx=5, pady=5, sticky='w')
-    pset_name_entry.insert(0, "EngeneeringDesing")  # Значение по умолчанию
+    pset_name_entry.insert(0, "EngeneeringDesign")  # Значение по умолчанию
 
     tk.Label(frame_2, text="Выберите файл:").grid(row=0, column=0, sticky="w")
     file_entry = tk.Entry(frame_2, textvariable=file_path, width=60)
