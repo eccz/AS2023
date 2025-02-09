@@ -138,7 +138,7 @@ def report_types_build():
     return types
 
 
-def report_field_build(caption, data, type_='0',unknown=False):
+def report_field_build(caption, data, type_='0', unknown=False):
     if unknown:
         return ET.Element('Field', caption=caption, data=data, type="1", aggregate="0", visible="1", format='')
     return ET.Element('Field', caption=caption, data=data, type=type_, aggregate="0", visible="1", format='')
@@ -150,7 +150,7 @@ def report_fields_build(table_data, loi_data, ifc_flag_data, unknown=False):
     fields.append(report_field_build(caption="SYS_OBJECT_NAME", data="@NAME"))
     fields.append(report_field_build(caption="IFC_TYPE", data="IFC_TYPE"))
     fields.append(report_field_build(caption="IfcGlobalId", data="IfcGlobalId"))
-    fields.append(report_field_build(caption="TABLE", data=table_data, type_='1', unknown=unknown))
+    fields.append(report_field_build(caption="TABLE", data=f'"{table_data}"', type_='1', unknown=unknown))
     fields.append(report_field_build(caption="LOI", data=loi_data, type_='1', unknown=unknown))
     fields.append(report_field_build(caption="IFC_TYPE_FLAG", data=ifc_flag_data, type_='1', unknown=unknown))
     fields.append(report_field_build(caption=SPECIALITY_ATTR_NAME, data=SPECIALITY_ATTR_NAME))
@@ -240,7 +240,7 @@ def xml_report_profile_build(source):
 
 
 if __name__ == '__main__':
-    workbook = openpyxl.load_workbook("../src/add_D.xlsx")
+    workbook = openpyxl.load_workbook("../src/add_D_v17.xlsx")
     src = parse(workbook, to_term=True, to_json=False)
     report_profile_xml_output(xml_report_profile_build(src), 'report_profile_2.xml')
 

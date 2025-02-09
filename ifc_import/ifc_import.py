@@ -155,7 +155,7 @@ def ifc_import_maker_no_interface_full(source, property_set='EngeneeringDesign')
 if __name__ == '__main__':
     # ifc_import_maker_console()
 
-    workbook = openpyxl.load_workbook("../src/add_D.xlsx")
+    workbook = openpyxl.load_workbook("../src/add_D_v17.xlsx")
     src = parse(workbook, to_term=True, to_json=False)
     ifc_input_xml_output(ifc_import_maker_no_interface_d(src), 'ifc_import_2.xml')
     # ifc_input_xml_output(ifc_import_maker_no_interface_full(src), 'ifc_import_3.xml')

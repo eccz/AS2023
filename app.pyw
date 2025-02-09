@@ -1,6 +1,7 @@
 import tkinter as tk
 from ui.notebook import create_notebook
 
+
 def main():
     root = tk.Tk()
     root.title("Atomskills")
@@ -12,6 +13,7 @@ def main():
     notebook.pack(fill="both", expand=True)
 
     root.mainloop()
+
 
 if __name__ == "__main__":
     main()
