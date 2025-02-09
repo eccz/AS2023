@@ -138,21 +138,19 @@ def report_types_build():
     return types
 
 
-def report_field_build(caption, data, type_='0', unknown=False):
-    if unknown:
-        return ET.Element('Field', caption=caption, data=data, type="1", aggregate="0", visible="1", format='')
+def report_field_build(caption, data, type_='0'):
     return ET.Element('Field', caption=caption, data=data, type=type_, aggregate="0", visible="1", format='')
 
 
-def report_fields_build(table_data, loi_data, ifc_flag_data, unknown=False):
+def report_fields_build(table_data, loi_data, ifc_flag_data):
     fields = ET.Element('Fields')
     fields.append(report_field_build(caption="SYS_OBJECT_CATEGORY", data="SYS_OBJECT_CATEGORY"))
     fields.append(report_field_build(caption="SYS_OBJECT_NAME", data="@NAME"))
     fields.append(report_field_build(caption="IFC_TYPE", data="IFC_TYPE"))
     fields.append(report_field_build(caption="IfcGlobalId", data="IfcGlobalId"))
-    fields.append(report_field_build(caption="TABLE", data=f'"{table_data}"', type_='1', unknown=unknown))
-    fields.append(report_field_build(caption="LOI", data=loi_data, type_='1', unknown=unknown))
-    fields.append(report_field_build(caption="IFC_TYPE_FLAG", data=ifc_flag_data, type_='1', unknown=unknown))
+    fields.append(report_field_build(caption="TABLE", data=f'"{table_data}"', type_='1'))
+    fields.append(report_field_build(caption="LOI", data=loi_data, type_='1'))
+    fields.append(report_field_build(caption="IFC_TYPE_FLAG", data=ifc_flag_data, type_='1'))
     fields.append(report_field_build(caption=SPECIALITY_ATTR_NAME, data=SPECIALITY_ATTR_NAME))
     fields.append(report_field_build(caption=TYPE_ATTR_NAME, data=TYPE_ATTR_NAME))
     fields.append(report_field_build(caption=TASK_TYPE_ATTR_NAME, data=TASK_TYPE_ATTR_NAME))
@@ -183,7 +181,7 @@ def unknown_dataset_build(types_list):
     table = ET.Element('Table', **ns)
     table.append(report_types_build())
     table.append(
-        report_fields_build(table_data='"UNKNOWN"', loi_data='"UNKNOWN"', ifc_flag_data='"UNKNOWN"', unknown=True))
+        report_fields_build(table_data='UNKNOWN', loi_data='"UNKNOWN"', ifc_flag_data='"UNKNOWN"'))
     unknown_dataset.append(table)
 
     return unknown_dataset
@@ -222,8 +220,7 @@ def xml_report_profile_build(source):
                                                                loi200=loi200,
                                                                loi300=loi300,
                                                                loi400=loi400),
-                                     ifc_flag_data=ifc_if_generator(ifc_list=v.get('IFC')),
-                                     unknown=False)
+                                     ifc_flag_data=ifc_if_generator(ifc_list=v.get('IFC')))
 
         table.append(fields)
         dataset.append(table)
