@@ -2,7 +2,7 @@ import openpyxl
 import json
 from string import ascii_letters
 from datetime import datetime
-from config import SHEET_NAMES, TASK_TYPE_ATTR_NAME, TYPE_ATTR_NAME
+from config import SHEET_NAMES, TASK_TYPE_ATTR_NAME, TYPE_ATTR_NAME, SPECIALITY_ATTR_NAME
 
 
 def el_sheet_processor(sheet):
@@ -35,7 +35,11 @@ def el_sheet_processor(sheet):
 
                     if not isinstance(row_2[0], str): break
                     if row_2[0].startswith('Таблица') or row_2[0].startswith('Примечание'): break
+
                     if row_2[1].strip() == TYPE_ATTR_NAME or row_2[1].strip() == TASK_TYPE_ATTR_NAME:
+                        element[table_num][row_2[1].strip()] = row_2[2].strip()
+
+                    if row_2[1].strip() == SPECIALITY_ATTR_NAME:
                         element[table_num][row_2[1].strip()] = row_2[2].strip()
 
                     if isinstance(row_2[2], str):
@@ -114,5 +118,5 @@ def parse(wb, to_json=False, to_term=False):
 
 
 if __name__ == '__main__':
-    workbook = openpyxl.load_workbook("../src/add_D.xlsx")
+    workbook = openpyxl.load_workbook("../src/2025_add_D.xlsx")
     parse(workbook, to_term=True, to_json=True)

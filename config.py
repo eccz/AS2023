@@ -33,7 +33,8 @@ PROJECT_MARK_ATTR_NAME = "ED_PROJECT_MARK"
 SYSTEM_TAG_ATTR_NAME = "ED_SYSTEM_TAG"
 EL_LINE_TAG_ATTR_NAME = "ED_EL_LINE_TAG"
 TASK_AUTHOR_ATTR_NAME ="ED_TASK_AUTHOR"
-TASK_USER_ATTR_NAME = "ED_TASK_AUTHOR"
+TASK_USER_ATTR_NAME = "ED_TASK_USER"
+SPECIALITIES = ['Строительная_часть', 'Технологическая_часть', 'Электротехническая_часть']
 
 """report_profile"""
 # REPORT_TYPES - набор для формирования блока Types в xml-схеме отчета для CadLib

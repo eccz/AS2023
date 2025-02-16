@@ -1,5 +1,5 @@
 import config
-from config import TASK_TYPE_ATTR_NAME, TYPE_ATTR_NAME, SPECIALITY_ATTR_NAME
+from config import TASK_TYPE_ATTR_NAME, TYPE_ATTR_NAME, SPECIALITY_ATTR_NAME, SPECIALITIES
 from d_parser.d_parser import parse
 import xml.etree.ElementTree as ET
 from ifc_import.ifc_import import indent
@@ -58,6 +58,14 @@ def ifc_if_generator(ifc_attr_name=config.IFC_ATTR_NAME, asm_attr_name=config.AS
 
     elif isinstance(ifc_list[0], str):
         return f'if(instr("{ifc_list[0]}", [IFC_TYPE])>=0, "CORRECT", "INCORRECT")'
+
+
+def speciality_data_generator():
+    specialities = SPECIALITIES
+    speciality_attr_name = SPECIALITY_ATTR_NAME
+
+    res = ' or '.join([f'[{speciality_attr_name}]="{i}"' for i in specialities])
+    return f'if({res}, "CORRECT", "INCORRECT")'
 
 
 def report_root_build():
@@ -142,7 +150,7 @@ def report_field_build(caption, data, type_='0'):
     return ET.Element('Field', caption=caption, data=data, type=type_, aggregate="0", visible="1", format='')
 
 
-def report_fields_build(table_data, loi_data, ifc_flag_data):
+def report_fields_build(table_data, loi_data, ifc_flag_data, speciality_flag_data):
     fields = ET.Element('Fields')
     fields.append(report_field_build(caption="SYS_OBJECT_CATEGORY", data="SYS_OBJECT_CATEGORY"))
     fields.append(report_field_build(caption="SYS_OBJECT_NAME", data="@NAME"))
@@ -151,6 +159,7 @@ def report_fields_build(table_data, loi_data, ifc_flag_data):
     fields.append(report_field_build(caption="TABLE", data=f'"{table_data}"', type_='1'))
     fields.append(report_field_build(caption="LOI", data=loi_data, type_='1'))
     fields.append(report_field_build(caption="IFC_TYPE_FLAG", data=ifc_flag_data, type_='1'))
+    fields.append(report_field_build(caption="SPECIALITY_FLAG", data=speciality_flag_data, type_='1'))
     fields.append(report_field_build(caption=SPECIALITY_ATTR_NAME, data=SPECIALITY_ATTR_NAME))
     fields.append(report_field_build(caption=TYPE_ATTR_NAME, data=TYPE_ATTR_NAME))
     fields.append(report_field_build(caption=TASK_TYPE_ATTR_NAME, data=TASK_TYPE_ATTR_NAME))
@@ -174,14 +183,17 @@ def report_view_build():
     return view
 
 
-def unknown_dataset_build(types_list):
+def unknown_type_dataset_build(types_list):
     unknown_dataset = report_dataset_build()
     ftr = ' and '.join([f'[{i}]<>"{j}"' for i, j in types_list])
     ns = {'caption': "[НЕИЗВЕСТНЫЙ_ТИП]", 'filter': ftr, 'result.filter': "", 'aggregated': "0"}
     table = ET.Element('Table', **ns)
     table.append(report_types_build())
     table.append(
-        report_fields_build(table_data='UNKNOWN', loi_data='"UNKNOWN"', ifc_flag_data='"UNKNOWN"'))
+        report_fields_build(table_data='UNKNOWN_TYPE',
+                            loi_data='"UNKNOWN_TYPE"',
+                            ifc_flag_data='"UNKNOWN_TYPE"',
+                            speciality_flag_data=speciality_data_generator()))
     unknown_dataset.append(table)
 
     return unknown_dataset
@@ -220,14 +232,16 @@ def xml_report_profile_build(source):
                                                                loi200=loi200,
                                                                loi300=loi300,
                                                                loi400=loi400),
-                                     ifc_flag_data=ifc_if_generator(ifc_list=v.get('IFC')))
+                                     ifc_flag_data=ifc_if_generator(ifc_list=v.get('IFC')),
+                                     speciality_flag_data=speciality_data_generator())
 
         table.append(fields)
         dataset.append(table)
         dataset.append(report_view_build())
         report_dataset_profile.append(dataset)
 
-    report_dataset_profile.append(unknown_dataset_build(types_list))
+    report_dataset_profile.append(unknown_type_dataset_build(types_list))
+
     root.append(report_dataset_profile)
 
     root.append(report_format_build())
@@ -237,7 +251,7 @@ def xml_report_profile_build(source):
 
 
 if __name__ == '__main__':
-    workbook = openpyxl.load_workbook("../src/add_D_v17.xlsx")
+    workbook = openpyxl.load_workbook("../src/YS_2025_add_D_v20.xlsx")
     src = parse(workbook, to_term=True, to_json=False)
     report_profile_xml_output(xml_report_profile_build(src), 'report_profile_2.xml')
 
