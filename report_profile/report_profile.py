@@ -125,7 +125,7 @@ def report_dataset_build():
 
 
 def report_table_build(table_num, type_attr, _type):
-    ns = {'caption': f"{table_num} [{_type}]".strip(), 'filter': f'[{type_attr}]="{_type}"', 'result.filter': "",
+    ns = {'caption': f"{table_num} [{_type}]", 'filter': f'[{type_attr}]="{_type}"', 'result.filter': "",
           'aggregated': "0"}
     return ET.Element('Table', **ns)
 
