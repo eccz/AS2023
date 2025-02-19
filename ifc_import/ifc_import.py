@@ -2,7 +2,6 @@ import xml.etree.ElementTree as ET
 import csv
 import os
 from utils import indent
-import openpyxl
 from d_parser.d_parser import parse
 
 
@@ -153,9 +152,11 @@ def ifc_import_maker_no_interface_full(source, property_set='EngeneeringDesign')
 
 
 if __name__ == '__main__':
+    import openpyxl
+
     # ifc_import_maker_console()
 
     workbook = openpyxl.load_workbook("../src/add_D_v20.xlsx")
     src = parse(workbook, to_term=True, to_json=True)
-    ifc_input_xml_output(ifc_import_maker_no_interface_d(src), 'ifc_import_2.xml')
-    # ifc_input_xml_output(ifc_import_maker_no_interface_full(src), 'ifc_import_3.xml')
+    # ifc_input_xml_output(ifc_import_maker_no_interface_d(src), 'ifc_import_2.xml')
+    ifc_input_xml_output(ifc_import_maker_no_interface_full(src), 'ifc_import_3.xml')

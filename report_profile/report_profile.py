@@ -3,7 +3,6 @@ from config import TASK_TYPE_ATTR_NAME, TYPE_ATTR_NAME, SPECIALITY_ATTR_NAME, SP
 from d_parser.d_parser import parse
 import xml.etree.ElementTree as ET
 from ifc_import.ifc_import import indent
-import openpyxl
 
 
 def report_profile_xml_output(el, filepath):
@@ -251,6 +250,8 @@ def xml_report_profile_build(source):
 
 
 if __name__ == '__main__':
+    import openpyxl
+
     workbook = openpyxl.load_workbook("../src/YS_2025_add_D_v20.xlsx")
     src = parse(workbook, to_term=True, to_json=False)
     report_profile_xml_output(xml_report_profile_build(src), 'report_profile_2.xml')

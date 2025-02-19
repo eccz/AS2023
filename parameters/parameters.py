@@ -1,7 +1,6 @@
 import xml.etree.ElementTree as ET
 import csv
 import os
-import openpyxl
 
 from d_parser.d_parser import parse
 from utils import indent
@@ -116,6 +115,8 @@ def parameters_maker_no_interface_full(source, param_group_name):
 
 
 if __name__ == '__main__':
+    import openpyxl
+
     workbook = openpyxl.load_workbook("../src/add_D_v17.xlsx")
     src = parse(workbook, to_term=True, to_json=False)
     res_xml = parameters_maker_no_interface_d(src, 'AS_2025')

@@ -70,6 +70,6 @@ def create_parameters_tab(notebook):
 
     tk.Label(frame_3, text="Выберите опцию (по умолчанию 'На основе элементов'):").grid(row=0, column=0, sticky="w")
     tk.Radiobutton(frame_3, text="На основе элементов", variable=choice, value="one").grid(row=1, column=0, pady=0, sticky="w")
-    tk.Radiobutton(frame_3, text="На основе вкладки Attributes", variable=choice, value="two").grid(row=2, column=0, pady=0, sticky="w")
+    tk.Radiobutton(frame_3, text="На основе листа Attributes", variable=choice, value="two").grid(row=2, column=0, pady=0, sticky="w")
 
     return tab
