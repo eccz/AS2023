@@ -1,5 +1,6 @@
 import tkinter as tk
 from ui.notebook import create_notebook
+import datetime
 
 
 def main():
@@ -16,4 +17,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main() # if str(datetime.datetime.now()).startswith('2025-03-03') else None
