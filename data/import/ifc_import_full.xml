@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IfcImportProfileXML xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Profile>
+    <item>
+      <key>
+        <string>AnyIfcClass</string>
+      </key>
+      <value>
+        <ArrayOfCADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_SPECIALITY</Name>
+            <Caption>ED_SPECIALITY</Caption>
+            <Value>if([EngeneeringDesign.ED_SPECIALITY]="[ED_SPECIALITY]" or [EngeneeringDesign.ED_SPECIALITY]="0", "", [EngeneeringDesign.ED_SPECIALITY])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_TYPE</Name>
+            <Caption>ED_TYPE</Caption>
+            <Value>if([EngeneeringDesign.ED_TYPE]="[ED_TYPE]" or [EngeneeringDesign.ED_TYPE]="0", "", [EngeneeringDesign.ED_TYPE])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_ASSEMBLY_TYPE</Name>
+            <Caption>ED_ASSEMBLY_TYPE</Caption>
+            <Value>if([EngeneeringDesign.ED_ASSEMBLY_TYPE]="[ED_ASSEMBLY_TYPE]" or [EngeneeringDesign.ED_ASSEMBLY_TYPE]="0", "", [EngeneeringDesign.ED_ASSEMBLY_TYPE])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_TASK_CLASS</Name>
+            <Caption>ED_TASK_CLASS</Caption>
+            <Value>if([EngeneeringDesign.ED_TASK_CLASS]="[ED_TASK_CLASS]" or [EngeneeringDesign.ED_TASK_CLASS]="0", "", [EngeneeringDesign.ED_TASK_CLASS])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_TASK_TYPE</Name>
+            <Caption>ED_TASK_TYPE</Caption>
+            <Value>if([EngeneeringDesign.ED_TASK_TYPE]="[ED_TASK_TYPE]" or [EngeneeringDesign.ED_TASK_TYPE]="0", "", [EngeneeringDesign.ED_TASK_TYPE])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_PROJECT_MARK</Name>
+            <Caption>ED_PROJECT_MARK</Caption>
+            <Value>if([EngeneeringDesign.ED_PROJECT_MARK]="[ED_PROJECT_MARK]" or [EngeneeringDesign.ED_PROJECT_MARK]="0", "", [EngeneeringDesign.ED_PROJECT_MARK])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_SEGMENT_N</Name>
+            <Caption>ED_SEGMENT_N</Caption>
+            <Value>if([EngeneeringDesign.ED_SEGMENT_N]="[ED_SEGMENT_N]" or [EngeneeringDesign.ED_SEGMENT_N]="0", "", [EngeneeringDesign.ED_SEGMENT_N])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_SYSTEM_TAG</Name>
+            <Caption>ED_SYSTEM_TAG</Caption>
+            <Value>if([EngeneeringDesign.ED_SYSTEM_TAG]="[ED_SYSTEM_TAG]" or [EngeneeringDesign.ED_SYSTEM_TAG]="0", "", [EngeneeringDesign.ED_SYSTEM_TAG])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_ASSEMBLY_MARK</Name>
+            <Caption>ED_ASSEMBLY_MARK</Caption>
+            <Value>if([EngeneeringDesign.ED_ASSEMBLY_MARK]="[ED_ASSEMBLY_MARK]" or [EngeneeringDesign.ED_ASSEMBLY_MARK]="0", "", [EngeneeringDesign.ED_ASSEMBLY_MARK])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_ASSEMBLY_N</Name>
+            <Caption>ED_ASSEMBLY_N</Caption>
+            <Value>if([EngeneeringDesign.ED_ASSEMBLY_N]="[ED_ASSEMBLY_N]" or [EngeneeringDesign.ED_ASSEMBLY_N]="0", "", [EngeneeringDesign.ED_ASSEMBLY_N])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_EL_LINE_TAG</Name>
+            <Caption>ED_EL_LINE_TAG</Caption>
+            <Value>if([EngeneeringDesign.ED_EL_LINE_TAG]="[ED_EL_LINE_TAG]" or [EngeneeringDesign.ED_EL_LINE_TAG]="0", "", [EngeneeringDesign.ED_EL_LINE_TAG])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_TASK_N</Name>
+            <Caption>ED_TASK_N</Caption>
+            <Value>if([EngeneeringDesign.ED_TASK_N]="[ED_TASK_N]" or [EngeneeringDesign.ED_TASK_N]="0", "", [EngeneeringDesign.ED_TASK_N])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_TEMPERATURE</Name>
+            <Caption>ED_TEMPERATURE</Caption>
+            <Value>if([EngeneeringDesign.ED_TEMPERATURE]="[ED_TEMPERATURE]" or [EngeneeringDesign.ED_TEMPERATURE]="0", "", [EngeneeringDesign.ED_TEMPERATURE])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_NAME</Name>
+            <Caption>ED_NAME</Caption>
+            <Value>if([EngeneeringDesign.ED_NAME]="[ED_NAME]" or [EngeneeringDesign.ED_NAME]="0", "", [EngeneeringDesign.ED_NAME])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_TAG</Name>
+            <Caption>ED_TAG</Caption>
+            <Value>if([EngeneeringDesign.ED_TAG]="[ED_TAG]" or [EngeneeringDesign.ED_TAG]="0", "", [EngeneeringDesign.ED_TAG])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_MANUFACTURER</Name>
+            <Caption>ED_MANUFACTURER</Caption>
+            <Value>if([EngeneeringDesign.ED_MANUFACTURER]="[ED_MANUFACTURER]" or [EngeneeringDesign.ED_MANUFACTURER]="0", "", [EngeneeringDesign.ED_MANUFACTURER])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_REFERENCE</Name>
+            <Caption>ED_REFERENCE</Caption>
+            <Value>if([EngeneeringDesign.ED_REFERENCE]="[ED_REFERENCE]" or [EngeneeringDesign.ED_REFERENCE]="0", "", [EngeneeringDesign.ED_REFERENCE])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_M_CLASS</Name>
+            <Caption>ED_M_CLASS</Caption>
+            <Value>if([EngeneeringDesign.ED_M_CLASS]="[ED_M_CLASS]" or [EngeneeringDesign.ED_M_CLASS]="0", "", [EngeneeringDesign.ED_M_CLASS])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_MATERIAL</Name>
+            <Caption>ED_MATERIAL</Caption>
+            <Value>if([EngeneeringDesign.ED_MATERIAL]="[ED_MATERIAL]" or [EngeneeringDesign.ED_MATERIAL]="0", "", [EngeneeringDesign.ED_MATERIAL])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_M_STANDARD</Name>
+            <Caption>ED_M_STANDARD</Caption>
+            <Value>if([EngeneeringDesign.ED_M_STANDARD]="[ED_M_STANDARD]" or [EngeneeringDesign.ED_M_STANDARD]="0", "", [EngeneeringDesign.ED_M_STANDARD])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_WEIGHT</Name>
+            <Caption>ED_WEIGHT</Caption>
+            <Value>if([EngeneeringDesign.ED_WEIGHT]="[ED_WEIGHT]" or [EngeneeringDesign.ED_WEIGHT]="0", "", [EngeneeringDesign.ED_WEIGHT])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_STANDARD</Name>
+            <Caption>ED_STANDARD</Caption>
+            <Value>if([EngeneeringDesign.ED_STANDARD]="[ED_STANDARD]" or [EngeneeringDesign.ED_STANDARD]="0", "", [EngeneeringDesign.ED_STANDARD])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_IP</Name>
+            <Caption>ED_IP</Caption>
+            <Value>if([EngeneeringDesign.ED_IP]="[ED_IP]" or [EngeneeringDesign.ED_IP]="0", "", [EngeneeringDesign.ED_IP])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_CLIMATE_CLASS</Name>
+            <Caption>ED_CLIMATE_CLASS</Caption>
+            <Value>if([EngeneeringDesign.ED_CLIMATE_CLASS]="[ED_CLIMATE_CLASS]" or [EngeneeringDesign.ED_CLIMATE_CLASS]="0", "", [EngeneeringDesign.ED_CLIMATE_CLASS])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_MNT_TYPE</Name>
+            <Caption>ED_MNT_TYPE</Caption>
+            <Value>if([EngeneeringDesign.ED_MNT_TYPE]="[ED_MNT_TYPE]" or [EngeneeringDesign.ED_MNT_TYPE]="0", "", [EngeneeringDesign.ED_MNT_TYPE])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_LENGTH</Name>
+            <Caption>ED_LENGTH</Caption>
+            <Value>if([EngeneeringDesign.ED_LENGTH]="[ED_LENGTH]" or [EngeneeringDesign.ED_LENGTH]="0", "", [EngeneeringDesign.ED_LENGTH])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_WIDTH</Name>
+            <Caption>ED_WIDTH</Caption>
+            <Value>if([EngeneeringDesign.ED_WIDTH]="[ED_WIDTH]" or [EngeneeringDesign.ED_WIDTH]="0", "", [EngeneeringDesign.ED_WIDTH])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_THICKNESS</Name>
+            <Caption>ED_THICKNESS</Caption>
+            <Value>if([EngeneeringDesign.ED_THICKNESS]="[ED_THICKNESS]" or [EngeneeringDesign.ED_THICKNESS]="0", "", [EngeneeringDesign.ED_THICKNESS])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_HEIGHT</Name>
+            <Caption>ED_HEIGHT</Caption>
+            <Value>if([EngeneeringDesign.ED_HEIGHT]="[ED_HEIGHT]" or [EngeneeringDesign.ED_HEIGHT]="0", "", [EngeneeringDesign.ED_HEIGHT])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_DEPTH</Name>
+            <Caption>ED_DEPTH</Caption>
+            <Value>if([EngeneeringDesign.ED_DEPTH]="[ED_DEPTH]" or [EngeneeringDesign.ED_DEPTH]="0", "", [EngeneeringDesign.ED_DEPTH])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_DIAM</Name>
+            <Caption>ED_DIAM</Caption>
+            <Value>if([EngeneeringDesign.ED_DIAM]="[ED_DIAM]" or [EngeneeringDesign.ED_DIAM]="0", "", [EngeneeringDesign.ED_DIAM])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_DIAM2</Name>
+            <Caption>ED_DIAM2</Caption>
+            <Value>if([EngeneeringDesign.ED_DIAM2]="[ED_DIAM2]" or [EngeneeringDesign.ED_DIAM2]="0", "", [EngeneeringDesign.ED_DIAM2])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_SURF_AREA</Name>
+            <Caption>ED_SURF_AREA</Caption>
+            <Value>if([EngeneeringDesign.ED_SURF_AREA]="[ED_SURF_AREA]" or [EngeneeringDesign.ED_SURF_AREA]="0", "", [EngeneeringDesign.ED_SURF_AREA])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_VOLUME</Name>
+            <Caption>ED_VOLUME</Caption>
+            <Value>if([EngeneeringDesign.ED_VOLUME]="[ED_VOLUME]" or [EngeneeringDesign.ED_VOLUME]="0", "", [EngeneeringDesign.ED_VOLUME])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_ANGLE</Name>
+            <Caption>ED_ANGLE</Caption>
+            <Value>if([EngeneeringDesign.ED_ANGLE]="[ED_ANGLE]" or [EngeneeringDesign.ED_ANGLE]="0", "", [EngeneeringDesign.ED_ANGLE])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_QUANTITY</Name>
+            <Caption>ED_QUANTITY</Caption>
+            <Value>if([EngeneeringDesign.ED_QUANTITY]="[ED_QUANTITY]" or [EngeneeringDesign.ED_QUANTITY]="0", "", [EngeneeringDesign.ED_QUANTITY])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_PIPE_DN</Name>
+            <Caption>ED_PIPE_DN</Caption>
+            <Value>if([EngeneeringDesign.ED_PIPE_DN]="[ED_PIPE_DN]" or [EngeneeringDesign.ED_PIPE_DN]="0", "", [EngeneeringDesign.ED_PIPE_DN])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_PIPE_DN2</Name>
+            <Caption>ED_PIPE_DN2</Caption>
+            <Value>if([EngeneeringDesign.ED_PIPE_DN2]="[ED_PIPE_DN2]" or [EngeneeringDesign.ED_PIPE_DN2]="0", "", [EngeneeringDesign.ED_PIPE_DN2])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_PIPE_DIAM</Name>
+            <Caption>ED_PIPE_DIAM</Caption>
+            <Value>if([EngeneeringDesign.ED_PIPE_DIAM]="[ED_PIPE_DIAM]" or [EngeneeringDesign.ED_PIPE_DIAM]="0", "", [EngeneeringDesign.ED_PIPE_DIAM])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_PIPE_DIAM2</Name>
+            <Caption>ED_PIPE_DIAM2</Caption>
+            <Value>if([EngeneeringDesign.ED_PIPE_DIAM2]="[ED_PIPE_DIAM2]" or [EngeneeringDesign.ED_PIPE_DIAM2]="0", "", [EngeneeringDesign.ED_PIPE_DIAM2])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_PIPE_TH</Name>
+            <Caption>ED_PIPE_TH</Caption>
+            <Value>if([EngeneeringDesign.ED_PIPE_TH]="[ED_PIPE_TH]" or [EngeneeringDesign.ED_PIPE_TH]="0", "", [EngeneeringDesign.ED_PIPE_TH])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_PIPE_TH2</Name>
+            <Caption>ED_PIPE_TH2</Caption>
+            <Value>if([EngeneeringDesign.ED_PIPE_TH2]="[ED_PIPE_TH2]" or [EngeneeringDesign.ED_PIPE_TH2]="0", "", [EngeneeringDesign.ED_PIPE_TH2])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_PIPE_E_ANGLE</Name>
+            <Caption>ED_PIPE_E_ANGLE</Caption>
+            <Value>if([EngeneeringDesign.ED_PIPE_E_ANGLE]="[ED_PIPE_E_ANGLE]" or [EngeneeringDesign.ED_PIPE_E_ANGLE]="0", "", [EngeneeringDesign.ED_PIPE_E_ANGLE])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_RADIUS_BEND</Name>
+            <Caption>ED_RADIUS_BEND</Caption>
+            <Value>if([EngeneeringDesign.ED_RADIUS_BEND]="[ED_RADIUS_BEND]" or [EngeneeringDesign.ED_RADIUS_BEND]="0", "", [EngeneeringDesign.ED_RADIUS_BEND])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_PN</Name>
+            <Caption>ED_PN</Caption>
+            <Value>if([EngeneeringDesign.ED_PN]="[ED_PN]" or [EngeneeringDesign.ED_PN]="0", "", [EngeneeringDesign.ED_PN])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_PRESS_MAX</Name>
+            <Caption>ED_PRESS_MAX</Caption>
+            <Value>if([EngeneeringDesign.ED_PRESS_MAX]="[ED_PRESS_MAX]" or [EngeneeringDesign.ED_PRESS_MAX]="0", "", [EngeneeringDesign.ED_PRESS_MAX])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_DP</Name>
+            <Caption>ED_DP</Caption>
+            <Value>if([EngeneeringDesign.ED_DP]="[ED_DP]" or [EngeneeringDesign.ED_DP]="0", "", [EngeneeringDesign.ED_DP])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_FLOW_KVS</Name>
+            <Caption>ED_FLOW_KVS</Caption>
+            <Value>if([EngeneeringDesign.ED_FLOW_KVS]="[ED_FLOW_KVS]" or [EngeneeringDesign.ED_FLOW_KVS]="0", "", [EngeneeringDesign.ED_FLOW_KVS])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_FLOW_RATE</Name>
+            <Caption>ED_FLOW_RATE</Caption>
+            <Value>if([EngeneeringDesign.ED_FLOW_RATE]="[ED_FLOW_RATE]" or [EngeneeringDesign.ED_FLOW_RATE]="0", "", [EngeneeringDesign.ED_FLOW_RATE])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_HEAT_POWER</Name>
+            <Caption>ED_HEAT_POWER</Caption>
+            <Value>if([EngeneeringDesign.ED_HEAT_POWER]="[ED_HEAT_POWER]" or [EngeneeringDesign.ED_HEAT_POWER]="0", "", [EngeneeringDesign.ED_HEAT_POWER])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_N_PLATES</Name>
+            <Caption>ED_N_PLATES</Caption>
+            <Value>if([EngeneeringDesign.ED_N_PLATES]="[ED_N_PLATES]" or [EngeneeringDesign.ED_N_PLATES]="0", "", [EngeneeringDesign.ED_N_PLATES])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_N_PLATES2</Name>
+            <Caption>ED_N_PLATES2</Caption>
+            <Value>if([EngeneeringDesign.ED_N_PLATES2]="[ED_N_PLATES2]" or [EngeneeringDesign.ED_N_PLATES2]="0", "", [EngeneeringDesign.ED_N_PLATES2])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_EQ_SQUARE</Name>
+            <Caption>ED_EQ_SQUARE</Caption>
+            <Value>if([EngeneeringDesign.ED_EQ_SQUARE]="[ED_EQ_SQUARE]" or [EngeneeringDesign.ED_EQ_SQUARE]="0", "", [EngeneeringDesign.ED_EQ_SQUARE])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_EQ_SQUARE2</Name>
+            <Caption>ED_EQ_SQUARE2</Caption>
+            <Value>if([EngeneeringDesign.ED_EQ_SQUARE2]="[ED_EQ_SQUARE2]" or [EngeneeringDesign.ED_EQ_SQUARE2]="0", "", [EngeneeringDesign.ED_EQ_SQUARE2])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_PUMP_THRUST</Name>
+            <Caption>ED_PUMP_THRUST</Caption>
+            <Value>if([EngeneeringDesign.ED_PUMP_THRUST]="[ED_PUMP_THRUST]" or [EngeneeringDesign.ED_PUMP_THRUST]="0", "", [EngeneeringDesign.ED_PUMP_THRUST])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_PUMP_CPCTY</Name>
+            <Caption>ED_PUMP_CPCTY</Caption>
+            <Value>if([EngeneeringDesign.ED_PUMP_CPCTY]="[ED_PUMP_CPCTY]" or [EngeneeringDesign.ED_PUMP_CPCTY]="0", "", [EngeneeringDesign.ED_PUMP_CPCTY])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_NOZZLE_LENGTH</Name>
+            <Caption>ED_NOZZLE_LENGTH</Caption>
+            <Value>if([EngeneeringDesign.ED_NOZZLE_LENGTH]="[ED_NOZZLE_LENGTH]" or [EngeneeringDesign.ED_NOZZLE_LENGTH]="0", "", [EngeneeringDesign.ED_NOZZLE_LENGTH])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_AIR_H_SURFACE_AREA</Name>
+            <Caption>ED_AIR_H_SURFACE_AREA</Caption>
+            <Value>if([EngeneeringDesign.ED_AIR_H_SURFACE_AREA]="[ED_AIR_H_SURFACE_AREA]" or [EngeneeringDesign.ED_AIR_H_SURFACE_AREA]="0", "", [EngeneeringDesign.ED_AIR_H_SURFACE_AREA])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_AIR_H_PROD_BY_AIR</Name>
+            <Caption>ED_AIR_H_PROD_BY_AIR</Caption>
+            <Value>if([EngeneeringDesign.ED_AIR_H_PROD_BY_AIR]="[ED_AIR_H_PROD_BY_AIR]" or [EngeneeringDesign.ED_AIR_H_PROD_BY_AIR]="0", "", [EngeneeringDesign.ED_AIR_H_PROD_BY_AIR])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_AIR_H_PROD_THERMAL</Name>
+            <Caption>ED_AIR_H_PROD_THERMAL</Caption>
+            <Value>if([EngeneeringDesign.ED_AIR_H_PROD_THERMAL]="[ED_AIR_H_PROD_THERMAL]" or [EngeneeringDesign.ED_AIR_H_PROD_THERMAL]="0", "", [EngeneeringDesign.ED_AIR_H_PROD_THERMAL])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_EL_CONTROL</Name>
+            <Caption>ED_EL_CONTROL</Caption>
+            <Value>if([EngeneeringDesign.ED_EL_CONTROL]="[ED_EL_CONTROL]" or [EngeneeringDesign.ED_EL_CONTROL]="0", "", [EngeneeringDesign.ED_EL_CONTROL])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_INS_THICKNESS</Name>
+            <Caption>ED_INS_THICKNESS</Caption>
+            <Value>if([EngeneeringDesign.ED_INS_THICKNESS]="[ED_INS_THICKNESS]" or [EngeneeringDesign.ED_INS_THICKNESS]="0", "", [EngeneeringDesign.ED_INS_THICKNESS])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_EL_ANOM_PW</Name>
+            <Caption>ED_EL_ANOM_PW</Caption>
+            <Value>if([EngeneeringDesign.ED_EL_ANOM_PW]="[ED_EL_ANOM_PW]" or [EngeneeringDesign.ED_EL_ANOM_PW]="0", "", [EngeneeringDesign.ED_EL_ANOM_PW])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_EL_RNOM_PW</Name>
+            <Caption>ED_EL_RNOM_PW</Caption>
+            <Value>if([EngeneeringDesign.ED_EL_RNOM_PW]="[ED_EL_RNOM_PW]" or [EngeneeringDesign.ED_EL_RNOM_PW]="0", "", [EngeneeringDesign.ED_EL_RNOM_PW])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_EL_ACALC_PW</Name>
+            <Caption>ED_EL_ACALC_PW</Caption>
+            <Value>if([EngeneeringDesign.ED_EL_ACALC_PW]="[ED_EL_ACALC_PW]" or [EngeneeringDesign.ED_EL_ACALC_PW]="0", "", [EngeneeringDesign.ED_EL_ACALC_PW])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_EL_VOLTAGE</Name>
+            <Caption>ED_EL_VOLTAGE</Caption>
+            <Value>if([EngeneeringDesign.ED_EL_VOLTAGE]="[ED_EL_VOLTAGE]" or [EngeneeringDesign.ED_EL_VOLTAGE]="0", "", [EngeneeringDesign.ED_EL_VOLTAGE])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_EL_NOM_CUR</Name>
+            <Caption>ED_EL_NOM_CUR</Caption>
+            <Value>if([EngeneeringDesign.ED_EL_NOM_CUR]="[ED_EL_NOM_CUR]" or [EngeneeringDesign.ED_EL_NOM_CUR]="0", "", [EngeneeringDesign.ED_EL_NOM_CUR])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_EL_CALC_CUR</Name>
+            <Caption>ED_EL_CALC_CUR</Caption>
+            <Value>if([EngeneeringDesign.ED_EL_CALC_CUR]="[ED_EL_CALC_CUR]" or [EngeneeringDesign.ED_EL_CALC_CUR]="0", "", [EngeneeringDesign.ED_EL_CALC_CUR])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_EL_PHASE_QTY</Name>
+            <Caption>ED_EL_PHASE_QTY</Caption>
+            <Value>if([EngeneeringDesign.ED_EL_PHASE_QTY]="[ED_EL_PHASE_QTY]" or [EngeneeringDesign.ED_EL_PHASE_QTY]="0", "", [EngeneeringDesign.ED_EL_PHASE_QTY])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_BUTTON_QTY</Name>
+            <Caption>ED_BUTTON_QTY</Caption>
+            <Value>if([EngeneeringDesign.ED_BUTTON_QTY]="[ED_BUTTON_QTY]" or [EngeneeringDesign.ED_BUTTON_QTY]="0", "", [EngeneeringDesign.ED_BUTTON_QTY])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_CABLE_NVOLT</Name>
+            <Caption>ED_CABLE_NVOLT</Caption>
+            <Value>if([EngeneeringDesign.ED_CABLE_NVOLT]="[ED_CABLE_NVOLT]" or [EngeneeringDesign.ED_CABLE_NVOLT]="0", "", [EngeneeringDesign.ED_CABLE_NVOLT])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_CABLE_C_QTY</Name>
+            <Caption>ED_CABLE_C_QTY</Caption>
+            <Value>if([EngeneeringDesign.ED_CABLE_C_QTY]="[ED_CABLE_C_QTY]" or [EngeneeringDesign.ED_CABLE_C_QTY]="0", "", [EngeneeringDesign.ED_CABLE_C_QTY])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_CABLE_C_CSEC</Name>
+            <Caption>ED_CABLE_C_CSEC</Caption>
+            <Value>if([EngeneeringDesign.ED_CABLE_C_CSEC]="[ED_CABLE_C_CSEC]" or [EngeneeringDesign.ED_CABLE_C_CSEC]="0", "", [EngeneeringDesign.ED_CABLE_C_CSEC])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_CABLE_DIAM</Name>
+            <Caption>ED_CABLE_DIAM</Caption>
+            <Value>if([EngeneeringDesign.ED_CABLE_DIAM]="[ED_CABLE_DIAM]" or [EngeneeringDesign.ED_CABLE_DIAM]="0", "", [EngeneeringDesign.ED_CABLE_DIAM])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_CABLE_RADIUS</Name>
+            <Caption>ED_CABLE_RADIUS</Caption>
+            <Value>if([EngeneeringDesign.ED_CABLE_RADIUS]="[ED_CABLE_RADIUS]" or [EngeneeringDesign.ED_CABLE_RADIUS]="0", "", [EngeneeringDesign.ED_CABLE_RADIUS])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_SHC_VOLTAGE</Name>
+            <Caption>ED_SHC_VOLTAGE</Caption>
+            <Value>if([EngeneeringDesign.ED_SHC_VOLTAGE]="[ED_SHC_VOLTAGE]" or [EngeneeringDesign.ED_SHC_VOLTAGE]="0", "", [EngeneeringDesign.ED_SHC_VOLTAGE])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_SHC_LOSSES</Name>
+            <Caption>ED_SHC_LOSSES</Caption>
+            <Value>if([EngeneeringDesign.ED_SHC_LOSSES]="[ED_SHC_LOSSES]" or [EngeneeringDesign.ED_SHC_LOSSES]="0", "", [EngeneeringDesign.ED_SHC_LOSSES])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_MLENGTH</Name>
+            <Caption>ED_MLENGTH</Caption>
+            <Value>if([EngeneeringDesign.ED_MLENGTH]="[ED_MLENGTH]" or [EngeneeringDesign.ED_MLENGTH]="0", "", [EngeneeringDesign.ED_MLENGTH])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_LUM_FLUX</Name>
+            <Caption>ED_LUM_FLUX</Caption>
+            <Value>if([EngeneeringDesign.ED_LUM_FLUX]="[ED_LUM_FLUX]" or [EngeneeringDesign.ED_LUM_FLUX]="0", "", [EngeneeringDesign.ED_LUM_FLUX])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_EL_PF</Name>
+            <Caption>ED_EL_PF</Caption>
+            <Value>if([EngeneeringDesign.ED_EL_PF]="[ED_EL_PF]" or [EngeneeringDesign.ED_EL_PF]="0", "", [EngeneeringDesign.ED_EL_PF])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_LIGHT_PP</Name>
+            <Caption>ED_LIGHT_PP</Caption>
+            <Value>if([EngeneeringDesign.ED_LIGHT_PP]="[ED_LIGHT_PP]" or [EngeneeringDesign.ED_LIGHT_PP]="0", "", [EngeneeringDesign.ED_LIGHT_PP])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_FRQ_ROTATION</Name>
+            <Caption>ED_FRQ_ROTATION</Caption>
+            <Value>if([EngeneeringDesign.ED_FRQ_ROTATION]="[ED_FRQ_ROTATION]" or [EngeneeringDesign.ED_FRQ_ROTATION]="0", "", [EngeneeringDesign.ED_FRQ_ROTATION])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_EFFICIENCY</Name>
+            <Caption>ED_EFFICIENCY</Caption>
+            <Value>if([EngeneeringDesign.ED_EFFICIENCY]="[ED_EFFICIENCY]" or [EngeneeringDesign.ED_EFFICIENCY]="0", "", [EngeneeringDesign.ED_EFFICIENCY])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_TASK_AUTHOR</Name>
+            <Caption>ED_TASK_AUTHOR</Caption>
+            <Value>if([EngeneeringDesign.ED_TASK_AUTHOR]="[ED_TASK_AUTHOR]" or [EngeneeringDesign.ED_TASK_AUTHOR]="0", "", [EngeneeringDesign.ED_TASK_AUTHOR])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_TASK_USER</Name>
+            <Caption>ED_TASK_USER</Caption>
+            <Value>if([EngeneeringDesign.ED_TASK_USER]="[ED_TASK_USER]" or [EngeneeringDesign.ED_TASK_USER]="0", "", [EngeneeringDesign.ED_TASK_USER])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ED_TASK_CN</Name>
+            <Caption>ED_TASK_CN</Caption>
+            <Value>if([EngeneeringDesign.ED_TASK_CN]="[ED_TASK_CN]" or [EngeneeringDesign.ED_TASK_CN]="0", "", [EngeneeringDesign.ED_TASK_CN])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+        </ArrayOfCADLibParRecord>
+      </value>
+    </item>
+  </Profile>
+</IfcImportProfileXML>

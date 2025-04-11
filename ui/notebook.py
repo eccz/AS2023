@@ -1,9 +1,9 @@
 from tkinter import ttk
-from ui.report_profile_tab import create_report_profile_tab
-from ui.parameters_tab import create_parameters_tab
-from ui.ifc_import_tab import create_ifc_import_tab
-from ui.ifc_export_tab import create_ifc_export_tab
-from ui.info_tab import create_info_tab
+from ui.tabs.report_profile_tab import create_report_profile_tab
+from ui.tabs.parameters_tab import create_parameters_tab
+from ui.tabs.ifc_import_tab import create_ifc_import_tab
+from ui.tabs.ifc_export_tab import create_ifc_export_tab
+from ui.tabs.info_tab import create_info_tab
 
 def create_notebook(root):
     notebook = ttk.Notebook(root)

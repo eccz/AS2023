@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PARAMETERS>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_SPECIALITY</NAME>
+    <COMMENT>ED_SPECIALITY</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_TYPE</NAME>
+    <COMMENT>ED_TYPE</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_ASSEMBLY_TYPE</NAME>
+    <COMMENT>ED_ASSEMBLY_TYPE</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_TASK_CLASS</NAME>
+    <COMMENT>ED_TASK_CLASS</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_TASK_TYPE</NAME>
+    <COMMENT>ED_TASK_TYPE</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_PROJECT_MARK</NAME>
+    <COMMENT>ED_PROJECT_MARK</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_SEGMENT_N</NAME>
+    <COMMENT>ED_SEGMENT_N</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_SYSTEM_TAG</NAME>
+    <COMMENT>ED_SYSTEM_TAG</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_ASSEMBLY_MARK</NAME>
+    <COMMENT>ED_ASSEMBLY_MARK</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_ASSEMBLY_N</NAME>
+    <COMMENT>ED_ASSEMBLY_N</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_EL_LINE_TAG</NAME>
+    <COMMENT>ED_EL_LINE_TAG</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_TASK_N</NAME>
+    <COMMENT>ED_TASK_N</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_TEMPERATURE</NAME>
+    <COMMENT>ED_TEMPERATURE</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_NAME</NAME>
+    <COMMENT>ED_NAME</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_TAG</NAME>
+    <COMMENT>ED_TAG</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_MANUFACTURER</NAME>
+    <COMMENT>ED_MANUFACTURER</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_REFERENCE</NAME>
+    <COMMENT>ED_REFERENCE</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_M_CLASS</NAME>
+    <COMMENT>ED_M_CLASS</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_MATERIAL</NAME>
+    <COMMENT>ED_MATERIAL</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_M_STANDARD</NAME>
+    <COMMENT>ED_M_STANDARD</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_WEIGHT</NAME>
+    <COMMENT>ED_WEIGHT</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_STANDARD</NAME>
+    <COMMENT>ED_STANDARD</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_IP</NAME>
+    <COMMENT>ED_IP</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_CLIMATE_CLASS</NAME>
+    <COMMENT>ED_CLIMATE_CLASS</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_MNT_TYPE</NAME>
+    <COMMENT>ED_MNT_TYPE</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_LENGTH</NAME>
+    <COMMENT>ED_LENGTH</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_WIDTH</NAME>
+    <COMMENT>ED_WIDTH</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_THICKNESS</NAME>
+    <COMMENT>ED_THICKNESS</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_HEIGHT</NAME>
+    <COMMENT>ED_HEIGHT</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_DEPTH</NAME>
+    <COMMENT>ED_DEPTH</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_DIAM</NAME>
+    <COMMENT>ED_DIAM</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_DIAM2</NAME>
+    <COMMENT>ED_DIAM2</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_SURF_AREA</NAME>
+    <COMMENT>ED_SURF_AREA</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_VOLUME</NAME>
+    <COMMENT>ED_VOLUME</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_ANGLE</NAME>
+    <COMMENT>ED_ANGLE</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_QUANTITY</NAME>
+    <COMMENT>ED_QUANTITY</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_PIPE_DN</NAME>
+    <COMMENT>ED_PIPE_DN</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_PIPE_DN2</NAME>
+    <COMMENT>ED_PIPE_DN2</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_PIPE_DIAM</NAME>
+    <COMMENT>ED_PIPE_DIAM</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_PIPE_DIAM2</NAME>
+    <COMMENT>ED_PIPE_DIAM2</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_PIPE_TH</NAME>
+    <COMMENT>ED_PIPE_TH</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_PIPE_TH2</NAME>
+    <COMMENT>ED_PIPE_TH2</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_PIPE_E_ANGLE</NAME>
+    <COMMENT>ED_PIPE_E_ANGLE</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_RADIUS_BEND</NAME>
+    <COMMENT>ED_RADIUS_BEND</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_PN</NAME>
+    <COMMENT>ED_PN</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_PRESS_MAX</NAME>
+    <COMMENT>ED_PRESS_MAX</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_DP</NAME>
+    <COMMENT>ED_DP</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_FLOW_KVS</NAME>
+    <COMMENT>ED_FLOW_KVS</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_FLOW_RATE</NAME>
+    <COMMENT>ED_FLOW_RATE</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_HEAT_POWER</NAME>
+    <COMMENT>ED_HEAT_POWER</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_N_PLATES</NAME>
+    <COMMENT>ED_N_PLATES</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_N_PLATES2</NAME>
+    <COMMENT>ED_N_PLATES2</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_EQ_SQUARE</NAME>
+    <COMMENT>ED_EQ_SQUARE</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_EQ_SQUARE2</NAME>
+    <COMMENT>ED_EQ_SQUARE2</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_PUMP_THRUST</NAME>
+    <COMMENT>ED_PUMP_THRUST</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_PUMP_CPCTY</NAME>
+    <COMMENT>ED_PUMP_CPCTY</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_NOZZLE_LENGTH</NAME>
+    <COMMENT>ED_NOZZLE_LENGTH</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_AIR_H_SURFACE_AREA</NAME>
+    <COMMENT>ED_AIR_H_SURFACE_AREA</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_AIR_H_PROD_BY_AIR</NAME>
+    <COMMENT>ED_AIR_H_PROD_BY_AIR</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_AIR_H_PROD_THERMAL</NAME>
+    <COMMENT>ED_AIR_H_PROD_THERMAL</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_EL_CONTROL</NAME>
+    <COMMENT>ED_EL_CONTROL</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_INS_THICKNESS</NAME>
+    <COMMENT>ED_INS_THICKNESS</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_EL_ANOM_PW</NAME>
+    <COMMENT>ED_EL_ANOM_PW</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_EL_RNOM_PW</NAME>
+    <COMMENT>ED_EL_RNOM_PW</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_EL_ACALC_PW</NAME>
+    <COMMENT>ED_EL_ACALC_PW</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_EL_VOLTAGE</NAME>
+    <COMMENT>ED_EL_VOLTAGE</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_EL_NOM_CUR</NAME>
+    <COMMENT>ED_EL_NOM_CUR</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_EL_CALC_CUR</NAME>
+    <COMMENT>ED_EL_CALC_CUR</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_EL_PHASE_QTY</NAME>
+    <COMMENT>ED_EL_PHASE_QTY</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_BUTTON_QTY</NAME>
+    <COMMENT>ED_BUTTON_QTY</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_CABLE_NVOLT</NAME>
+    <COMMENT>ED_CABLE_NVOLT</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_CABLE_C_QTY</NAME>
+    <COMMENT>ED_CABLE_C_QTY</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_CABLE_C_CSEC</NAME>
+    <COMMENT>ED_CABLE_C_CSEC</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_CABLE_DIAM</NAME>
+    <COMMENT>ED_CABLE_DIAM</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_CABLE_RADIUS</NAME>
+    <COMMENT>ED_CABLE_RADIUS</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_SHC_VOLTAGE</NAME>
+    <COMMENT>ED_SHC_VOLTAGE</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_SHC_LOSSES</NAME>
+    <COMMENT>ED_SHC_LOSSES</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_MLENGTH</NAME>
+    <COMMENT>ED_MLENGTH</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_LUM_FLUX</NAME>
+    <COMMENT>ED_LUM_FLUX</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_EL_PF</NAME>
+    <COMMENT>ED_EL_PF</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_LIGHT_PP</NAME>
+    <COMMENT>ED_LIGHT_PP</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_FRQ_ROTATION</NAME>
+    <COMMENT>ED_FRQ_ROTATION</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_EFFICIENCY</NAME>
+    <COMMENT>ED_EFFICIENCY</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_TASK_AUTHOR</NAME>
+    <COMMENT>ED_TASK_AUTHOR</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_TASK_USER</NAME>
+    <COMMENT>ED_TASK_USER</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ED_TASK_CN</NAME>
+    <COMMENT>ED_TASK_CN</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <MEASUREMENTS />
+</PARAMETERS>
