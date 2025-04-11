@@ -6,6 +6,12 @@ from ifc_import.ifc_import import indent
 
 
 def report_profile_xml_output(el, filepath):
+    """
+    Сохраняет XML-элемент в файл с форматированием.
+
+    :param el: Корневой XML-элемент.
+    :param filepath: Путь к файлу для сохранения.
+    """
     indent(el)
     mydata = ET.tostring(el, encoding="utf-8", method="xml")
 
@@ -17,6 +23,8 @@ def report_profile_xml_output(el, filepath):
 def cond_generator(loi):
     """
     Функция генерирует if-условие для CadLib на базе списка наименований атрибутов для определенного LOI
+    :param loi: Список атрибутов LOI.
+    :return: Строка условия.
     """
     res = []
     for i in loi:
@@ -27,9 +35,14 @@ def cond_generator(loi):
 
 def loi_if_generator(type_attr_name, type_attr, loi200=None, loi300=None, loi400=None):
     """
-    Функция генерирует полное if-условие для CadLib по проверке LOI, с учетом наличия требований на LOI300 и LOI400.
-    type_attr_name - наименование атрибута CadLib для фильтра, например TYPE
-    type_attr - значение атрибута "TYPE" для фильтра в CadLib
+    Функция генерирует полное вложенное if-условие для CadLib по проверке LOI, с учетом наличия требований на LOI300 и LOI400.
+
+    :param type_attr_name: Имя атрибута CadLib для фильтра, например TYPE.
+    :param type_attr: Значение атрибута "TYPE" для фильтра в CadLib.
+    :param loi200: Список атрибутов для LOI200.
+    :param loi300: Список атрибутов для LOI300.
+    :param loi400: Список атрибутов для LOI400.
+    :return: Строка с выражением if.
     """
     if loi200 and loi300 and loi400:
         return f'if([{type_attr_name}]="{type_attr}", if({cond_generator(loi200)}, if({cond_generator(loi300)}, if({cond_generator(loi400)}, "LOI400", "LOI300"), "LOI200"), "LOI000"), "")'
@@ -43,10 +56,12 @@ def ifc_if_generator(ifc_attr_name=config.IFC_ATTR_NAME, asm_attr_name=config.AS
     """
     Функция генерирует полное if-условие для CadLib по проверке правильности IFC-класса.
     Учитывает результаты парсинга приложения Д - учитывает требования по сборкам.
-    ifc_list - список списков для разных требований по сборкам либо список с одним элементом.
-    ifc_attr_name - наименование атрибута CadLib, содержащего класс IFC
     type_attr - значение атрибута "TYPE" для фильтра в CadLib
-    asm_attr_name - наименование атрибута CadLib, содержащего тип сборки.
+
+    :param ifc_list: список списков для разных требований по сборкам либо список с одним элементом.
+    :param ifc_attr_name: наименование атрибута CadLib, содержащего класс IFC
+    :param asm_attr_name: наименование атрибута CadLib, содержащего тип сборки.
+    :return: Строка с выражением if.
     """
     res = []
     if isinstance(ifc_list[0], list):
@@ -60,6 +75,10 @@ def ifc_if_generator(ifc_attr_name=config.IFC_ATTR_NAME, asm_attr_name=config.AS
 
 
 def speciality_data_generator():
+    """
+    Генерирует проверку SPECIALITY через выражение if.
+    :return: Строка условия.
+    """
     specialities = SPECIALITIES
     speciality_attr_name = SPECIALITY_ATTR_NAME
 
@@ -199,6 +218,12 @@ def unknown_type_dataset_build(types_list):
 
 
 def xml_report_profile_build(source):
+    """
+    Формирует XML-структуру отчёта из словаря данных.
+
+    :param source: Словарь с результатами парсинга приложения Д из Excel.
+    :return: Корневой XML-элемент.
+    """
     types_list = []
     types = report_types_build()
 
@@ -211,7 +236,7 @@ def xml_report_profile_build(source):
         table_num = k
         type_attr_name = config.TYPE_ATTR_NAME if v.get(config.TYPE_ATTR_NAME) else config.TASK_TYPE_ATTR_NAME
 
-        if v.get(type_attr_name):
+        if v.get(type_attr_name) and v.get('element_name'):
             type_attr = v.get(type_attr_name)
         else: continue
 
@@ -252,7 +277,7 @@ def xml_report_profile_build(source):
 if __name__ == '__main__':
     import openpyxl
 
-    workbook = openpyxl.load_workbook("../src/YS_2025_add_D_v20.xlsx")
+    workbook = openpyxl.load_workbook("../src/ADD_D_AS_2025_cleaned.xlsx")
     src = parse(workbook, to_term=True, to_json=False)
     report_profile_xml_output(xml_report_profile_build(src), 'report_profile_2.xml')
 

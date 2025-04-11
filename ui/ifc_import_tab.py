@@ -3,7 +3,7 @@ import tkinter as tk
 from tkinter import messagebox
 
 from ui.tk_file_utils import choose_file
-from ifc_import.ifc_import import ifc_import_maker_no_interface_d,ifc_import_maker_no_interface_full, ifc_input_xml_output
+from ifc_import.ifc_import import ifc_import_maker_no_interface_d,ifc_import_maker_no_interface_full, ifc_import_xml_output
 from d_parser.d_parser import parse
 from ui.tk_file_utils import to_xml_tk
 
@@ -24,7 +24,7 @@ def process_file(file_path, entry, choice):
         if choice.get() == "two":
             res = ifc_import_maker_no_interface_full(src, property_set=pset_name)
 
-        to_xml_tk(res, ifc_input_xml_output, filename='ifc_import')
+        to_xml_tk(res, ifc_import_xml_output, filename='ifc_import')
 
     except Exception as e:
         messagebox.showerror("Ошибка", f"Не удалось обработать файл: {e}")
@@ -63,7 +63,7 @@ def create_ifc_import_tab(notebook):
     tk.Button(frame_2, text="Обзор", command=lambda n=file_path: choose_file(n)).grid(row=0, column=2, padx=5, pady=5,
                                                                                       sticky="w")
 
-    tk.Button(frame_2, text='Создать файл импорта IFC',
+    tk.Button(frame_2, text='Создать профиль импорта IFC',
               command=lambda m=file_path, n=pset_name_entry, q=choice: process_file(m, n, q)).grid(row=1,
                                                                                       column=0,
                                                                                       columnspan=3,

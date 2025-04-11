@@ -117,7 +117,7 @@ if __name__ == '__main__':
     workbook = openpyxl.load_workbook("../src/YS_2025_add_D_v20.xlsx")
     src = parse(workbook, to_term=True, to_json=False)
 
-    print(filter_condition_maker(cursor, src['Таблица 1.0.4'], 'LOIhkjkh400'))
+    print(filter_condition_maker(cursor, src['Таблица 1.0.4'], 'LOI400'))
     create_main_pset_folder(cursor, '!EngineeringDesign')
     # delete_folder(cursor, 29)
     cursor.commit()
