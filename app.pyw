@@ -5,7 +5,7 @@ import datetime
 
 def main():
     root = tk.Tk()
-    root.title("Atomskills")
+    root.title("Atomskills Automation v1.0")
     root.geometry("700x350")
     root.resizable(False, False)
 

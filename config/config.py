@@ -56,9 +56,5 @@ TASK_AUTHOR_ATTR_NAME = config["TASK_AUTHOR_ATTR_NAME"]
 TASK_USER_ATTR_NAME = config["TASK_USER_ATTR_NAME"]
 SPECIALITIES = config['SPECIALITIES']
 
-"""report_profile"""
-# REPORT_TYPES - набор для формирования блока Types в xml-схеме отчета для CadLib
-REPORT_TYPES = config['REPORT_TYPES']
-
 """d_parser"""
 SHEET_NAMES = config['SHEET_NAMES']

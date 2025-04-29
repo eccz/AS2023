@@ -3,6 +3,22 @@ from src.d_parser import parse
 import xml.etree.ElementTree as ET
 from src.ifc_import.ifc_import import indent
 
+REPORT_TYPES = ["AEC_SURF", "COLLISIONS", "Cable_ETS", "HVAC", "HVACAxis", "HVACPipeItems", "IFCElement", "Insulation",
+                "Materials", "OptionsList", "REINFORCEMENT", "TRAYS", "TowerSettings", "WireDefault", "WorkItem",
+                "WorkList",
+                "WorkResource", "aec_elements", "aec_layer_groups", "aec_layer_material", "assemblies", "assembly",
+                "bolts",
+                "cabinet", "cables", "cat160", "cat161", "cat47", "catDiameterList", "catLineSystems", "catMaterial",
+                "catMaterials", "catPipeSupportStepData", "cat_clash", "climate", "commonLinks", "concreteware",
+                "decoration",
+                "device", "foundation", "garlandMisc", "garlands", "gesnCategoryList", "gesnResourceItem", "ground",
+                "hierarchical_list", "iron_assemblies", "label", "metalware", "metalwarenode", "modifiers", "node",
+                "nodes",
+                "panels", "pipeAxis", "pipeCategoryList", "pipeItems", "pipeLineNumberList", "pipeMaterialList",
+                "report",
+                "routeConstructions", "routeConstructionsAssemblies", "structure_data", "suppressor", "symbol",
+                "tank_eq_schm",
+                "tank_equip", "towerequipment", "units", "valve_prototype", "wire", "wires", "zoneList"]
 
 def report_profile_xml_output(el, filepath):
     """
@@ -49,6 +65,7 @@ def loi_if_generator(type_attr_name, type_attr, loi200=None, loi300=None, loi400
         return f'if([{type_attr_name}]="{type_attr}", if({cond_generator(loi200)}, if({cond_generator(loi300)}, "LOI300", "LOI200"),"LOI000"), "")'
     elif loi200:
         return f'if([{type_attr_name}]="{type_attr}", if({cond_generator(loi200)}, "LOI200","LOI000"), "")'
+    return None
 
 
 def ifc_if_generator(ifc_attr_name=cfg.IFC_ATTR_NAME, asm_attr_name=cfg.ASM_TYPE_ATTR_NAME, ifc_list=None):
@@ -71,6 +88,7 @@ def ifc_if_generator(ifc_attr_name=cfg.IFC_ATTR_NAME, asm_attr_name=cfg.ASM_TYPE
 
     elif isinstance(ifc_list[0], str):
         return f'if(instr("{ifc_list[0]}", [IFC_TYPE])>=0, "CORRECT", "INCORRECT")'
+    return None
 
 
 def speciality_data_generator():
@@ -157,7 +175,7 @@ def report_table_build(table_num, type_attr, _type):
 
 def report_types_build():
     types = ET.Element('Types')
-    for i in cfg.REPORT_TYPES:
+    for i in REPORT_TYPES:
         types.append(ET.Element('Type', name=i))
 
     return types
@@ -237,7 +255,8 @@ def xml_report_profile_build(source):
 
         if v.get(type_attr_name) and v.get('element_name'):
             type_attr = v.get(type_attr_name)
-        else: continue
+        else:
+            continue
 
         table = report_table_build(table_num, type_attr_name, type_attr)
         types_list.append([type_attr_name, type_attr])
