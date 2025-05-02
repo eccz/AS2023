@@ -781,6 +781,123 @@
             <ValueIsFunction>true</ValueIsFunction>
             <ValueIsParam>false</ValueIsParam>
           </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>SYSTEM_N</Name>
+            <Caption>SYSTEM_N</Caption>
+            <Value>if([EngeneeringDesign.SYSTEM_N]="[SYSTEM_N]" or [EngeneeringDesign.SYSTEM_N]="0", "", [EngeneeringDesign.SYSTEM_N])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>SUBSYS_N</Name>
+            <Caption>SUBSYS_N</Caption>
+            <Value>if([EngeneeringDesign.SUBSYS_N]="[SUBSYS_N]" or [EngeneeringDesign.SUBSYS_N]="0", "", [EngeneeringDesign.SUBSYS_N])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ELEMENT_N</Name>
+            <Caption>ELEMENT_N</Caption>
+            <Value>if([EngeneeringDesign.ELEMENT_N]="[ELEMENT_N]" or [EngeneeringDesign.ELEMENT_N]="0", "", [EngeneeringDesign.ELEMENT_N])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>SYSTEM_ID</Name>
+            <Caption>SYSTEM_ID</Caption>
+            <Value>if([EngeneeringDesign.SYSTEM_ID]="[SYSTEM_ID]" or [EngeneeringDesign.SYSTEM_ID]="0", "", [EngeneeringDesign.SYSTEM_ID])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>SUBSYS_ID</Name>
+            <Caption>SUBSYS_ID</Caption>
+            <Value>if([EngeneeringDesign.SUBSYS_ID]="[SUBSYS_ID]" or [EngeneeringDesign.SUBSYS_ID]="0", "", [EngeneeringDesign.SUBSYS_ID])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ELEMENT_ID</Name>
+            <Caption>ELEMENT_ID</Caption>
+            <Value>if([EngeneeringDesign.ELEMENT_ID]="[ELEMENT_ID]" or [EngeneeringDesign.ELEMENT_ID]="0", "", [EngeneeringDesign.ELEMENT_ID])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ELEMENT_F_ID</Name>
+            <Caption>ELEMENT_F_ID</Caption>
+            <Value>if([EngeneeringDesign.ELEMENT_F_ID]="[ELEMENT_F_ID]" or [EngeneeringDesign.ELEMENT_F_ID]="0", "", [EngeneeringDesign.ELEMENT_F_ID])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>SYSTEM</Name>
+            <Caption>SYSTEM</Caption>
+            <Value>if([EngeneeringDesign.SYSTEM]="[SYSTEM]" or [EngeneeringDesign.SYSTEM]="0", "", [EngeneeringDesign.SYSTEM])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>SUBSYS</Name>
+            <Caption>SUBSYS</Caption>
+            <Value>if([EngeneeringDesign.SUBSYS]="[SUBSYS]" or [EngeneeringDesign.SUBSYS]="0", "", [EngeneeringDesign.SUBSYS])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ELEMENT</Name>
+            <Caption>ELEMENT</Caption>
+            <Value>if([EngeneeringDesign.ELEMENT]="[ELEMENT]" or [EngeneeringDesign.ELEMENT]="0", "", [EngeneeringDesign.ELEMENT])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>SYSTEM_TAG</Name>
+            <Caption>SYSTEM_TAG</Caption>
+            <Value>if([EngeneeringDesign.SYSTEM_TAG]="[SYSTEM_TAG]" or [EngeneeringDesign.SYSTEM_TAG]="0", "", [EngeneeringDesign.SYSTEM_TAG])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>SUBSYS_TAG</Name>
+            <Caption>SUBSYS_TAG</Caption>
+            <Value>if([EngeneeringDesign.SUBSYS_TAG]="[SUBSYS_TAG]" or [EngeneeringDesign.SUBSYS_TAG]="0", "", [EngeneeringDesign.SUBSYS_TAG])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
+          <CADLibParRecord>
+            <Name>ELEMENT_TAG</Name>
+            <Caption>ELEMENT_TAG</Caption>
+            <Value>if([EngeneeringDesign.ELEMENT_TAG]="[ELEMENT_TAG]" or [EngeneeringDesign.ELEMENT_TAG]="0", "", [EngeneeringDesign.ELEMENT_TAG])</Value>
+            <Comment />
+            <ParamCategory>EngeneeringDesign</ParamCategory>
+            <ValueIsFunction>true</ValueIsFunction>
+            <ValueIsParam>false</ValueIsParam>
+          </CADLibParRecord>
         </ArrayOfCADLibParRecord>
       </value>
     </item>

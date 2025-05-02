@@ -4,6 +4,7 @@ from tkinter import messagebox
 
 from utils.tk_file_utils import choose_file
 from src.parameters.parameters import parameters_maker_no_interface_d, parameters_maker_no_interface_full, parameters_xml_output
+from src.parameters.params_db_lt_app import open_sql_window
 from src.d_parser import parse
 from utils.tk_file_utils import to_xml_tk
 
@@ -22,13 +23,14 @@ def process_file(file_path, entry, choice):
         if choice.get() == "one":
             res = parameters_maker_no_interface_d(src, param_group_name)
         if choice.get() == "two":
-            res = parameters_maker_no_interface_full(src, param_group_name)
+            res = parameters_maker_no_interface_full(src, param_group_name, pset_mapping=False)
+        if choice.get() == "three":
+            res = parameters_maker_no_interface_full(src, param_group_name, pset_mapping=True)
 
         to_xml_tk(res, parameters_xml_output, filename='parameters')
 
     except Exception as e:
         messagebox.showerror("Ошибка", f"Не удалось обработать файл: {e}")
-
 
 def create_parameters_tab(notebook):
     tab = tk.Frame(notebook)
@@ -46,6 +48,9 @@ def create_parameters_tab(notebook):
     frame_3 = tk.Frame(tab, padx=0, pady=0)
     frame_3.pack(padx=0, pady=0)
     choice = tk.StringVar(value="one")
+
+    frame_4 = tk.Frame(tab, padx=10, pady=0)
+    frame_4.pack(padx=0, pady=0, anchor="e")
 
     info_text = (
         "Формирование xml для импорта параметров для CadLib на основе доработанного приложения Д."
@@ -68,8 +73,11 @@ def create_parameters_tab(notebook):
               ).grid(row=1, column=0, columnspan=3, pady=2)
 
 
-    tk.Label(frame_3, text="Выберите опцию (по умолчанию 'На основе элементов'):").grid(row=0, column=0, sticky="w")
+    tk.Label(frame_3, text="Выберите опцию (по умолчанию 'На основе элементов'):", font=("Arial", 8, 'bold')).grid(row=0, column=0, sticky="w")
     tk.Radiobutton(frame_3, text="На основе элементов", variable=choice, value="one").grid(row=1, column=0, pady=0, sticky="w")
     tk.Radiobutton(frame_3, text="На основе листа Attributes", variable=choice, value="two").grid(row=2, column=0, pady=0, sticky="w")
+    tk.Radiobutton(frame_3, text="На основе листа Attributes c учетом маппинга property set-ов", variable=choice, value="three").grid(row=3, column=0, pady=0, sticky="w")
+
+    tk.Button(frame_4, text="Открыть окно SQL", command=lambda: open_sql_window(tab)).pack(pady=5)
 
     return tab

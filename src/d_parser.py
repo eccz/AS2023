@@ -112,13 +112,15 @@ def attr_sheet_processor(sheet):
     Returns:
         tuple: (словарь всех атрибутов, словарь маппинга MS <-> параметры)
     """
-    full_list, map_list = {}, {}
+    full_list, ms_map_list, pset_mapping = {}, {}, {}
     for row in sheet.iter_rows(min_row=0, max_row=sheet.max_row, min_col=1, max_col=sheet.max_column, values_only=True):
         if isinstance(row[1], str):
             full_list[row[1].strip()] = row[2].strip()
             if len(row) > 5:
-                map_list[row[2].strip()] = row[5].strip()
-    return full_list, map_list
+                ms_map_list[row[2].strip()] = row[5].strip()
+            if len(row) > 6:
+                pset_mapping[row[2].strip()] = row[6].strip()
+    return full_list, ms_map_list, pset_mapping
 
 
 def parse(wb, to_json=False, to_term=False):
@@ -147,7 +149,7 @@ def parse(wb, to_json=False, to_term=False):
 
     # Обрабатываем лист атрибутов
     try:
-        res['full_attr_list'], res['ms_attr_mapping'] = attr_sheet_processor(wb['ATTRIBUTES'])
+        res['full_attr_list'], res['ms_attr_mapping'], res['pset_mapping'] = attr_sheet_processor(wb['ATTRIBUTES'])
     except Exception as e:
         print(f'Не удается обработать столбец маппинга на листе с атрибутами --- {e}')
 

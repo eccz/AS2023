@@ -8,7 +8,7 @@ from src.d_parser import parse
 from utils.tk_file_utils import to_xml_tk
 
 
-def process_file(file_path, entry, choice_mapping, choice_class):
+def process_file(file_path, entry, choice_mapping, choice_class, choice_pset_mapping):
     if not file_path.get():
         messagebox.showwarning("Ошибка", "Выберите файл для обработки")
         return
@@ -19,17 +19,11 @@ def process_file(file_path, entry, choice_mapping, choice_class):
         src = parse(workbook, to_term=False)
 
         pset_name = entry.get()
-        ch1, ch2 = True, True
-        if choice_mapping.get() == 'one':
-            ch1 = True
-        elif choice_mapping.get() == 'two':
-            ch1 = False
-        if choice_class.get() == 'one':
-            ch2 = True
-        if choice_class.get() == 'two':
-            ch2 = False
+        ch1 = choice_mapping.get()
+        ch2 = choice_class.get()
+        ch3 = choice_pset_mapping.get()
 
-        res = ifc_export_xml_build(pset_name, src, ms_mapping=ch1, class2025=ch2)
+        res = ifc_export_xml_build(pset_name, src, ms_mapping=ch1, class2025=ch2, pset_mapping=ch3)
         to_xml_tk(res, ifc_export_xml_output, filename='ifc_export')
 
     except Exception as e:
@@ -49,10 +43,12 @@ def create_ifc_export_tab(notebook):
     frame_2 = tk.Frame(tab, padx=0, pady=0)
     frame_2.pack(padx=0, pady=0)
 
-    frame_3 = tk.Frame(tab, padx=0, pady=0)
+    frame_3 = tk.Frame(tab, padx=0, pady=10)
     frame_3.pack(padx=0, pady=0)
-    choice_mapping = tk.StringVar(value="one")
-    choice_class = tk.StringVar(value="one")
+
+    choice_mapping = tk.BooleanVar(value=False)
+    choice_class = tk.BooleanVar(value=False)
+    choice_pset_mapping = tk.BooleanVar(value=False)
 
     info_text = (
         "Формирование xml-профиля экспорта IFC для CadLib на основе доработанного приложения Д."
@@ -67,21 +63,18 @@ def create_ifc_export_tab(notebook):
     tk.Label(frame_2, text="Выберите файл:").grid(row=0, column=0, sticky="w")
     file_entry = tk.Entry(frame_2, textvariable=file_path, width=60)
     file_entry.grid(row=0, column=1, padx=5, pady=5, sticky='w')
-    tk.Button(frame_2, text="Обзор", command=lambda n=file_path: choose_file(n)).grid(row=0, column=2, padx=5, pady=5,
-                                                                                      sticky="w")
+    tk.Button(frame_2, text="Обзор", command=lambda n=file_path: choose_file(n)).grid(row=0, column=2, padx=5, pady=5, sticky="w")
 
     tk.Button(frame_2, text='Создать профиль экспорта IFC',
               command=lambda m=file_path,
                              n=pset_name_entry,
                              q=choice_mapping,
-                             d=choice_class:
-                        process_file(m, n, q, d)).grid(row=1,column=0,columnspan=3, pady=2)
+                             d=choice_class,
+                             p=choice_pset_mapping:
+                        process_file(m, n, q, d, p)).grid(row=1, column=0, columnspan=3, pady=2)
 
-    tk.Label(frame_3, text="Выберите опцию по использованию столбца маппинга с атрибутами MS (по умолчанию 'True'):", font=("Arial", 8, 'bold')).grid(row=1, column=0, sticky="w")
-    tk.Radiobutton(frame_3, text="Использовать столбец маппинга MS", variable=choice_mapping, value="one").grid(row=2, column=0, pady=0, sticky="w")
-    tk.Radiobutton(frame_3, text="Не использовать столбец маппинга MS", variable=choice_mapping, value="two").grid(row=3, column=0, pady=0, sticky="w")
-    tk.Label(frame_3, text="Выберите опцию по использованию классификатора AS2025(по умолчанию 'True'):", font=("Arial", 8, 'bold')).grid(row=4, column=0, sticky="w")
-    tk.Radiobutton(frame_3, text="Использовать классификатор AS2025", variable=choice_class, value="one").grid(row=5, column=0, pady=0, sticky="w")
-    tk.Radiobutton(frame_3, text="Не использовать классификатор AS2025", variable=choice_class, value="two").grid(row=6, column=0, pady=0, sticky="w")
+    tk.Checkbutton(frame_3, text="Использовать столбец маппинга MS", variable=choice_mapping).grid(row=2, column=0, pady=0, sticky="w")
+    tk.Checkbutton(frame_3, text="Использовать маппинг property set-ов из листа Attributes", variable=choice_pset_mapping).grid(row=3, column=0, pady=0, sticky="w")
+    tk.Checkbutton(frame_3, text="Использовать классификатор AS2025", variable=choice_class).grid(row=4, column=0, pady=0, sticky="w")
 
     return tab

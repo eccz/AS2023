@@ -17,7 +17,7 @@ def ifc_export_xml_output(el, filepath):
         f.write(data.decode(encoding="utf-8"))
 
 
-def ifc_param_filter_record_build(par_name, par_caption, par_value, f_records=None, ifc_params=None, ms_mapping=None):
+def ifc_param_filter_record_build(par_name, par_caption, par_value, f_records=None, ifc_params=None, ms_mapping_dict=None):
     """
     Строит XML-узел `ParamFilterRecord`, описывающий параметр фильтрации IFC.
     Аргументы:
@@ -29,10 +29,10 @@ def ifc_param_filter_record_build(par_name, par_caption, par_value, f_records=No
     param_filter_record = ET.Element('ParamFilterRecord')
 
     cadlib_par_name = ET.Element('CADLibParName')
-    cadlib_par_name.text = ms_mapping.get(par_name) if ms_mapping else par_name
+    cadlib_par_name.text = ms_mapping_dict.get(par_name) if ms_mapping_dict else par_name
 
     cadlib_par_caption = ET.Element('CADLibParCaption')
-    cadlib_par_caption.text = ms_mapping.get(par_caption) if ms_mapping else par_caption
+    cadlib_par_caption.text = ms_mapping_dict.get(par_caption) if ms_mapping_dict else par_caption
 
     cadlib_par_value = ET.Element('CADLibParValue')
     cadlib_par_value.text = par_value
@@ -90,7 +90,7 @@ def ifc_property_record_build(ifc_property_set, param, value, ifc=False):
     return ifc_property_record
 
 
-def ifc_params_build(el, ifc_property_set, ms_mapping):
+def ifc_params_build(src, el, ifc_property_set, ms_mapping_dict, pset_mapping_dict):
     """
     Строит XML-элемент `IfcParams` на основе списка атрибутов и IFC-класса.
     """
@@ -98,15 +98,25 @@ def ifc_params_build(el, ifc_property_set, ms_mapping):
     if len(el['IFC']) == 1:
         ifc_class = el.get('IFC')[0]
         ifc_params.append(ifc_property_record_build(ifc_property_set, ifc_class, ifc_class, ifc=True))
-    for prop in el['el_attr_list']:
-        if ms_mapping:
-            ifc_params.append(ifc_property_record_build(ifc_property_set, prop[0], ms_mapping[prop[0]]))
-        else:
-            ifc_params.append(ifc_property_record_build(ifc_property_set, prop[0], prop[0]))
+
+    if pset_mapping_dict:
+        for prop in src['full_attr_list'].values():
+            if pset_mapping_dict:
+                ifc_property_set = pset_mapping_dict.get(prop)
+            if ms_mapping_dict:
+                ifc_params.append(ifc_property_record_build(ifc_property_set, prop, ms_mapping_dict[prop]))
+            else:
+                ifc_params.append(ifc_property_record_build(ifc_property_set, prop, prop))
+    else:
+        for prop in el['el_attr_list']:
+            if ms_mapping_dict:
+                ifc_params.append(ifc_property_record_build(ifc_property_set, prop[0], ms_mapping_dict[prop[0]]))
+            else:
+                ifc_params.append(ifc_property_record_build(ifc_property_set, prop[0], prop[0]))
     return ifc_params
 
 
-def ifc_filter_records_build(el, ifc_property_set, ms_mapping=None):
+def ifc_filter_records_build(el, ifc_property_set, ms_mapping_dict=None):
     """
     Создаёт вложенные записи фильтрации (`FilterRecords`) для случая,
     когда объект имеет несколько IFC-классов.
@@ -117,7 +127,7 @@ def ifc_filter_records_build(el, ifc_property_set, ms_mapping=None):
             ifc_class = n[1]
             ifc_params = ET.Element('IfcParams')
             ifc_params.append(ifc_property_record_build(ifc_property_set, ifc_class, ifc_class, ifc=True))
-            par_name = ms_mapping.get(ASSEMBLY_TYPE_ATTR_NAME) if ms_mapping else ASSEMBLY_TYPE_ATTR_NAME
+            par_name = ms_mapping_dict.get(ASSEMBLY_TYPE_ATTR_NAME) if ms_mapping_dict else ASSEMBLY_TYPE_ATTR_NAME
             par_caption = par_name
             p_record = ifc_param_filter_record_build(par_name=par_name, par_caption=par_caption, par_value=n[2], ifc_params=ifc_params)
             f_records.append(p_record)
@@ -137,7 +147,7 @@ def ifc_root_build():
     return ET.Element('IfcExportProfileXML', **ns)
 
 
-def ifc_export_xml_build(property_set, src, ms_mapping=True, class2025=True):
+def ifc_export_xml_build(property_set, src, ms_mapping=True, pset_mapping=True, class2025=False):
     """
     Строит полный XML-документ экспорта IFC.
     Аргументы:
@@ -153,7 +163,7 @@ def ifc_export_xml_build(property_set, src, ms_mapping=True, class2025=True):
     if class2025:
         class_ifc_params = ET.Element('IfcParams')
         classification = {'ED_Classification':['SYSTEM', 'SUBSYS', 'ELEMENT', 'SYSTEM_TAG', 'SUBSYS_TAG', 'ELEMENT_TAG'],
-                          'ED_Encoding': ['SYSTEM_ID', 'SUBSYS_ID', 'ELEMENT_ID', 'SYSTEM_N', 'SUBSYS_N', 'ELEMENT_N', 'ELEMENT_F_N']}
+                          'ED_Encoding': ['SYSTEM_ID', 'SUBSYS_ID', 'ELEMENT_ID', 'SYSTEM_N', 'SUBSYS_N', 'ELEMENT_N', 'ELEMENT_F_ID']}
         for p_set, par_list in classification.items():
             for par in par_list:
                 class_ifc_params.append(ifc_property_record_build(p_set, par, par, ifc=False))
@@ -172,21 +182,26 @@ def ifc_export_xml_build(property_set, src, ms_mapping=True, class2025=True):
 
     # Определение соответствий имён параметров, если есть
     if ms_mapping and src.get('ms_attr_mapping'):
-        ms_mapping_list = src['ms_attr_mapping']
+        ms_mapping_dict = src['ms_attr_mapping']
     else:
-        ms_mapping_list = None
+        ms_mapping_dict = None
+
+    if pset_mapping and src.get('pset_mapping'):
+        pset_mapping_dict = src['pset_mapping']
+    else:
+        pset_mapping_dict = None
 
     # Построение записей фильтрации для каждой таблицы
     for table, data in src.items():
         if table.startswith('Таблица'):
             el_type_attr = TYPE_ATTR_NAME if data.get(TYPE_ATTR_NAME) else TASK_TYPE_ATTR_NAME
             el_type = data.get(TYPE_ATTR_NAME) if data.get(TYPE_ATTR_NAME) else data.get(TASK_TYPE_ATTR_NAME)
-            ifc_params = ifc_params_build(data, property_set, ms_mapping=ms_mapping_list)
-            ifc_f_records = ifc_filter_records_build(data, property_set, ms_mapping=ms_mapping_list)
+            ifc_params = ifc_params_build(src, data, property_set, ms_mapping_dict=ms_mapping_dict, pset_mapping_dict=pset_mapping_dict)
+            ifc_f_records = ifc_filter_records_build(data, property_set, ms_mapping_dict=ms_mapping_dict)
 
             param_filter_record = ifc_param_filter_record_build(el_type_attr, el_type_attr, el_type,
-                                                                f_records=ifc_f_records,ifc_params=ifc_params,
-                                                                ms_mapping=ms_mapping_list)
+                                                                f_records=ifc_f_records, ifc_params=ifc_params,
+                                                                ms_mapping_dict=ms_mapping_dict)
             filter_records.append(param_filter_record)
 
     # Финальное добавление элементов в корень
@@ -203,6 +218,6 @@ if __name__ == '__main__':
     source = parse(workbook, to_term=False, to_json=False)
 
     pset = 'EngeneeringDesign'
-    res = ifc_export_xml_build(pset, source, ms_mapping=True, class2025=True)
+    res = ifc_export_xml_build(pset, source, ms_mapping=True, pset_mapping=True, class2025=True)
 
-    ifc_export_xml_output(res, '../../data/export/ifc_profile_NEW.xml')
+    ifc_export_xml_output(res, '../../data/export/ifc_profile_TTT.xml')

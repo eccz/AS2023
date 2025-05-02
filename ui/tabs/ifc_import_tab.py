@@ -22,7 +22,9 @@ def process_file(file_path, entry, choice):
         if choice.get() == "one":
             res = ifc_import_maker_no_interface_d(src, property_set=pset_name)
         if choice.get() == "two":
-            res = ifc_import_maker_no_interface_full(src, property_set=pset_name)
+            res = ifc_import_maker_no_interface_full(src, property_set=pset_name, pset_mapping=False)
+        if choice.get() == "three":
+            res = ifc_import_maker_no_interface_full(src, property_set=pset_name, pset_mapping=True)
 
         to_xml_tk(res, ifc_import_xml_output, filename='ifc_import')
 
@@ -60,17 +62,19 @@ def create_ifc_import_tab(notebook):
     tk.Label(frame_2, text="Выберите файл:").grid(row=0, column=0, sticky="w")
     file_entry = tk.Entry(frame_2, textvariable=file_path, width=60)
     file_entry.grid(row=0, column=1, padx=5, pady=5, sticky='w')
-    tk.Button(frame_2, text="Обзор", command=lambda n=file_path: choose_file(n)).grid(row=0, column=2, padx=5, pady=5,
-                                                                                      sticky="w")
+    tk.Button(frame_2,
+              text="Обзор",
+              command=lambda n=file_path:
+              choose_file(n)).grid(row=0, column=2, padx=5, pady=5, sticky="w")
 
-    tk.Button(frame_2, text='Создать профиль импорта IFC',
-              command=lambda m=file_path, n=pset_name_entry, q=choice: process_file(m, n, q)).grid(row=1,
-                                                                                      column=0,
-                                                                                      columnspan=3,
-                                                                                     pady=2)
-    tk.Label(frame_3, text="Выберите опцию (по умолчанию 'На основе элементов'):").grid(row=0, column=0, sticky="w")
+    tk.Button(frame_2,
+              text='Создать профиль импорта IFC',
+              command=lambda m=file_path, n=pset_name_entry, q=choice:
+              process_file(m, n, q)).grid(row=1, column=0, columnspan=3, pady=2)
 
+    tk.Label(frame_3, text="Выберите опцию (по умолчанию 'На основе элементов'):", font=("Arial", 8, 'bold')).grid(row=0, column=0, sticky="w")
     tk.Radiobutton(frame_3, text="На основе элементов", variable=choice, value="one").grid(row=1, column=0, pady=0, sticky="w")
     tk.Radiobutton(frame_3, text="На основе листа Attributes", variable=choice, value="two").grid(row=2, column=0, pady=0, sticky="w")
+    tk.Radiobutton(frame_3, text="На основе листа Attributes c учетом маппинга property set-ов", variable=choice, value="three").grid(row=3, column=0, pady=0, sticky="w")
 
     return tab

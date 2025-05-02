@@ -66,7 +66,7 @@ def ifc_par_record_maker(param, ifc_property_set):
     return ifc_par_record
 
 
-def ifc_import_profile_build(inp: dict, ifc_property_set: str):
+def ifc_import_profile_build(inp: dict, ifc_property_set: str, pset_mapping_dict):
     root = ifc_root_build()
     profile = ET.Element('Profile')
     item = ET.Element('item')
@@ -81,7 +81,10 @@ def ifc_import_profile_build(inp: dict, ifc_property_set: str):
 
     # print(inp)
     for k, v in inp.items():
-        array_of_cadlib_par_records.append(ifc_par_record_maker(v, f'{ifc_property_set}'))
+        if pset_mapping_dict:
+            array_of_cadlib_par_records.append(ifc_par_record_maker(v, pset_mapping_dict.get(v)))
+        else:
+            array_of_cadlib_par_records.append(ifc_par_record_maker(v, ifc_property_set))
 
     key.append(string)
     item.append(key)
@@ -115,7 +118,7 @@ def ifc_import_maker_console():
         prettify = input()
 
         inp = csv_input()
-        res = ifc_import_profile_build(inp, ifc_property_set=property_set)
+        res = ifc_import_profile_build(inp, ifc_property_set=property_set, pset_mapping_dict=None)
 
         if prettify and prettify.lower() != 'false':
             indent(res)
@@ -142,13 +145,18 @@ def ifc_import_maker_no_interface_d(source, property_set='EngeneeringDesign'):
         for n in m:
             params.update({n[1]: n[0]})
 
-    return ifc_import_profile_build(params, ifc_property_set=property_set)
+    return ifc_import_profile_build(params, ifc_property_set=property_set, pset_mapping_dict=None)
 
 
-def ifc_import_maker_no_interface_full(source, property_set='EngeneeringDesign'):
+def ifc_import_maker_no_interface_full(source, property_set='EngeneeringDesign', pset_mapping=True):
     # без интерфейса работает на основе парсинга вкладки ATTRIBUTES приложения Д, см d_parser.py
+    if pset_mapping:
+        pset_mapping_dict = source['pset_mapping']
+    else:
+        pset_mapping_dict = None
+
     params = source['full_attr_list']
-    return ifc_import_profile_build(params, ifc_property_set=property_set)
+    return ifc_import_profile_build(params, ifc_property_set=property_set, pset_mapping_dict=pset_mapping_dict)
 
 
 if __name__ == '__main__':
@@ -158,6 +166,6 @@ if __name__ == '__main__':
 
     workbook = openpyxl.load_workbook("../../data/ADD_D_AS_2025_cleaned.xlsx")
     src = parse(workbook, to_term=True, to_json=False)
-    ifc_import_xml_output(ifc_import_maker_console(), '../../data/import/ifc_import_console.xml')
+    # ifc_import_xml_output(ifc_import_maker_console(), '../../data/import/ifc_import_console.xml')
     # ifc_import_xml_output(ifc_import_maker_no_interface_d(src), '../../data/import/ifc_import_d.xml')
-    # ifc_import_xml_output(ifc_import_maker_no_interface_full(src), '../../data/import/ifc_import_full.xml')
+    ifc_import_xml_output(ifc_import_maker_no_interface_full(src, pset_mapping=False), '../../data/import/ifc_import_full.xml')

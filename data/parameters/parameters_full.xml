@@ -688,5 +688,109 @@
       <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
     </CATEGORIES>
   </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>SYSTEM_N</NAME>
+    <COMMENT>SYSTEM_N</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>SUBSYS_N</NAME>
+    <COMMENT>SUBSYS_N</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ELEMENT_N</NAME>
+    <COMMENT>ELEMENT_N</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>SYSTEM_ID</NAME>
+    <COMMENT>SYSTEM_ID</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>SUBSYS_ID</NAME>
+    <COMMENT>SUBSYS_ID</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ELEMENT_ID</NAME>
+    <COMMENT>ELEMENT_ID</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ELEMENT_F_ID</NAME>
+    <COMMENT>ELEMENT_F_ID</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>SYSTEM</NAME>
+    <COMMENT>SYSTEM</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>SUBSYS</NAME>
+    <COMMENT>SUBSYS</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ELEMENT</NAME>
+    <COMMENT>ELEMENT</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>SYSTEM_TAG</NAME>
+    <COMMENT>SYSTEM_TAG</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>SUBSYS_TAG</NAME>
+    <COMMENT>SUBSYS_TAG</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
+  <PARAMETER type="1" prescision="-1" readonly="0" accuracy="-1" valueType="1" sysNameMeasureUnitBase="" sysNameMeasureUnit="">
+    <NAME>ELEMENT_TAG</NAME>
+    <COMMENT>ELEMENT_TAG</COMMENT>
+    <DEFAULT />
+    <CATEGORIES>
+      <CATEGORY order="1" categoryOrder="2147483647">AS_2025</CATEGORY>
+    </CATEGORIES>
+  </PARAMETER>
   <MEASUREMENTS />
 </PARAMETERS>

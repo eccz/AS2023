@@ -44,14 +44,17 @@ def parameters_root_build():
     return ET.Element('PARAMETERS')
 
 
-def parameters_build(source: dict, c_name):
+def parameters_build(source: dict, c_name, pset_mapping_dict=None):
     if not c_name:
         c_name = 'AS_2024'
 
     root = parameters_root_build()
 
     for key, value in source.items():
-        root.append(new_parameter(f'{value}', f'{value}', c_name))
+        if pset_mapping_dict:
+            root.append(new_parameter(f'{value}', f'{value}', pset_mapping_dict.get(value)))
+        else:
+            root.append(new_parameter(f'{value}', f'{value}', c_name))
 
     root.append(ET.Element('MEASUREMENTS'))
 
@@ -108,11 +111,15 @@ def parameters_maker_no_interface_d(source, param_group_name):
     return parameters_build(res, param_group_name)
 
 
-def parameters_maker_no_interface_full(source, param_group_name):
+def parameters_maker_no_interface_full(source, param_group_name, pset_mapping):
     # без интерфейса работает на основе парсинга приложения Д, см d_parser.py
+    if pset_mapping:
+        pset_mapping_dict = source['pset_mapping']
+    else:
+        pset_mapping_dict = None
     params = source['full_attr_list']
 
-    return parameters_build(params, param_group_name)
+    return parameters_build(params, param_group_name, pset_mapping_dict)
 
 
 if __name__ == '__main__':
@@ -122,4 +129,4 @@ if __name__ == '__main__':
     src = parse(workbook, to_term=True, to_json=False)
     # res_xml = parameters_maker_console()
     # parameters_xml_output(parameters_maker_no_interface_d(src, 'AS_2025'), '../../data/parameters/parameters_d.xml')
-    parameters_xml_output(parameters_maker_no_interface_full(src, 'AS_2025'), '../../data/parameters/parameters_full.xml')
+    parameters_xml_output(parameters_maker_no_interface_full(src, 'AS_2025', pset_mapping=False), '../../data/parameters/parameters_full.xml')

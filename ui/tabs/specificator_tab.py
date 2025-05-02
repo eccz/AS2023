@@ -96,11 +96,10 @@ def create_specificator_tab(notebook: ttk.Notebook) -> tk.Frame:
              ).grid(row=1, column=0, columnspan=3, pady=10)
 
     # --- Выбор использования маппинга ---
-    frame_mapping = tk.Frame(tab)
-    frame_mapping.pack()
+    frame_mapping = tk.Frame(tab, padx=0, pady=0)
+    frame_mapping.pack(padx=0, pady=0)
 
-    tk.Label(frame_mapping, text="Выберите опцию по использованию столбца маппинга с атрибутами MS (по умолчанию 'True'):", font=("Arial", 8, 'bold')).pack(anchor="w")
-    tk.Radiobutton(frame_mapping, text="Использовать столбец маппинга MS", variable=choice_mapping, value="one").pack(anchor="w")
-    tk.Radiobutton(frame_mapping, text="Не использовать столбец маппинга MS", variable=choice_mapping, value="two").pack(anchor="w")
-
+    tk.Label(frame_mapping, text="Выберите опцию по использованию столбца маппинга с атрибутами MS (по умолчанию 'True'):", font=("Arial", 8, 'bold')).grid(row=0, column=0, pady=0, sticky="w")
+    tk.Radiobutton(frame_mapping, text="Использовать столбец маппинга MS", variable=choice_mapping, value="one").grid(row=1, column=0, pady=0, sticky="w")
+    tk.Radiobutton(frame_mapping, text="Не использовать столбец маппинга MS", variable=choice_mapping, value="two").grid(row=2, column=0, pady=0, sticky="w")
     return tab

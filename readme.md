@@ -18,7 +18,7 @@
 
 ## Сборка 
 Для сборки приложения с помощью PyInstaller:\
-```pyinstaller --name "AS_Automation_v1.0" --add-data "config\config.json;." --add-data "readme.md;." app.pyw```
+```pyinstaller --name "AS_Automation_v1.1" --add-data "config\config.json;." --add-data "readme.md;." --add-data "data\ADD_D_AS_2025_cleaned.xlsx:." app.pyw```
 
 ## To do
 - [x] Добавить крутое README

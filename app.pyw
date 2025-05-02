@@ -5,8 +5,8 @@ import datetime
 
 def main():
     root = tk.Tk()
-    root.title("Atomskills Automation v1.0")
-    root.geometry("700x350")
+    root.title("Atomskills Automation v1.1")
+    root.geometry("700x320")
     root.resizable(False, False)
 
     # Создаем вкладки через функцию из модуля
