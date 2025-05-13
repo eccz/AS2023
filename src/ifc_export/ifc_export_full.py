@@ -17,7 +17,38 @@ def ifc_export_xml_output(el, filepath):
         f.write(data.decode(encoding="utf-8"))
 
 
-def ifc_param_filter_record_build(par_name, par_caption, par_value, f_records=None, ifc_params=None, ms_mapping_dict=None):
+def create_element(tag: str, text: str = None) -> ET.Element:
+    el = ET.Element(tag)
+    if text is not None:
+        el.text = text
+    return el
+
+
+def ifc_property_record_build(p_set: str, param: str, value: str, ifc: bool = False) -> ET.Element:
+    """
+    Строит XML-элемент `IfcPropertyRecord`, описывающий свойство IFC.
+    - ifc: если True — создаётся элемент для IFC-класса
+    """
+    record = ET.Element('IfcPropertyRecord')
+    ifc_name = 'IFC_ENTITY_CLASS' if ifc else f'{p_set}.{param}'
+    value_text = value if ifc else f'[{value}]'
+
+    elements = [
+        create_element('Name', ifc_name),
+        create_element('Caption'),
+        create_element('Value', value_text),
+        create_element('Comment'),
+        create_element('PropertySet', 'CADLib_pset'),
+        create_element('ValueIsFunction', 'true'),
+        create_element('ValueIsParam', 'false')
+    ]
+    record.extend(elements)
+    return record
+
+
+def ifc_param_filter_record_build(par_name: str, par_caption: str, par_value: str,
+                                  f_records: ET.Element = None, ifc_params: ET.Element = None,
+                                  ms_mapping_dict: dict = None) -> ET.Element:
     """
     Строит XML-узел `ParamFilterRecord`, описывающий параметр фильтрации IFC.
     Аргументы:
@@ -26,117 +57,59 @@ def ifc_param_filter_record_build(par_name, par_caption, par_value, f_records=No
     - ifc_params — параметры IFC (опционально)
     - ms_mapping — словарь для сопоставления параметров с принятыми в Model Studio и библиотеках элементов
     """
-    param_filter_record = ET.Element('ParamFilterRecord')
+    record = ET.Element('ParamFilterRecord')
 
-    cadlib_par_name = ET.Element('CADLibParName')
-    cadlib_par_name.text = ms_mapping_dict.get(par_name) if ms_mapping_dict else par_name
+    name = ms_mapping_dict.get(par_name, par_name) if ms_mapping_dict else par_name
+    caption = ms_mapping_dict.get(par_caption, par_caption) if ms_mapping_dict else par_caption
 
-    cadlib_par_caption = ET.Element('CADLibParCaption')
-    cadlib_par_caption.text = ms_mapping_dict.get(par_caption) if ms_mapping_dict else par_caption
-
-    cadlib_par_value = ET.Element('CADLibParValue')
-    cadlib_par_value.text = par_value
-
-    el_filter_records = ET.Element('FilterRecords') if not f_records else f_records
-    el_ifc_params = ET.Element('IfcParams') if not ifc_params else ifc_params
-
-    param_filter_record.append(cadlib_par_name)
-    param_filter_record.append(cadlib_par_caption)
-    param_filter_record.append(cadlib_par_value)
-    param_filter_record.append(el_filter_records)
-    param_filter_record.append(el_ifc_params)
-
-    return param_filter_record
+    record.extend([
+        create_element('CADLibParName', name),
+        create_element('CADLibParCaption', caption),
+        create_element('CADLibParValue', par_value),
+        f_records if f_records is not None else ET.Element('FilterRecords'),
+        ifc_params if ifc_params is not None else ET.Element('IfcParams')
+    ])
+    return record
 
 
-def ifc_property_record_build(ifc_property_set, param, value, ifc=False):
-    """
-    Строит XML-элемент `IfcPropertyRecord`, описывающий свойство IFC.
-    - ifc: если True — создаётся элемент для IFC-класса
-    """
-    ifc_property_record = ET.Element('IfcPropertyRecord')
-    name = ET.Element('Name')
-    if ifc:
-        name.text = f'IFC_ENTITY_CLASS'
-        caption = ET.Element('Caption')
-        value_ = ET.Element('Value')
-        value_.text = f'{value}'
-    else:
-        name.text = f'{ifc_property_set}.{param}'
-        caption = ET.Element('Caption')
-        value_ = ET.Element('Value')
-        value_.text = f'[{value}]'
-
-    comment = ET.Element('Comment')
-
-    property_set = ET.Element('PropertySet')
-    property_set.text = 'CADLib_pset'
-
-    value_is_function = ET.Element('ValueIsFunction')
-    value_is_function.text = 'true'
-
-    value_is_param = ET.Element('ValueIsParam')
-    value_is_param.text = 'false'
-
-    ifc_property_record.append(name)
-    ifc_property_record.append(caption)
-
-    ifc_property_record.append(value_)
-    ifc_property_record.append(comment)
-    ifc_property_record.append(property_set)
-    ifc_property_record.append(value_is_function)
-    ifc_property_record.append(value_is_param)
-
-    return ifc_property_record
-
-
-def ifc_params_build(src, el, ifc_property_set, ms_mapping_dict, pset_mapping_dict):
+def ifc_params_build(el: dict, p_set: str, ms_mapping_dict: dict, pset_mapping: bool) -> ET.Element:
     """
     Строит XML-элемент `IfcParams` на основе списка атрибутов и IFC-класса.
     """
     ifc_params = ET.Element('IfcParams')
     if len(el['IFC']) == 1:
         ifc_class = el.get('IFC')[0]
-        ifc_params.append(ifc_property_record_build(ifc_property_set, ifc_class, ifc_class, ifc=True))
-
-    if pset_mapping_dict:
-        for prop in src['full_attr_list'].values():
-            if pset_mapping_dict:
-                ifc_property_set = pset_mapping_dict.get(prop)
-            if ms_mapping_dict:
-                ifc_params.append(ifc_property_record_build(ifc_property_set, prop, ms_mapping_dict[prop]))
-            else:
-                ifc_params.append(ifc_property_record_build(ifc_property_set, prop, prop))
-    else:
+        ifc_params.append(ifc_property_record_build(p_set, ifc_class, ifc_class, ifc=True))
+    if not pset_mapping:
         for prop in el['el_attr_list']:
             if ms_mapping_dict:
-                ifc_params.append(ifc_property_record_build(ifc_property_set, prop[0], ms_mapping_dict[prop[0]]))
+                ifc_params.append(ifc_property_record_build(p_set, prop[0], ms_mapping_dict[prop[0]]))
             else:
-                ifc_params.append(ifc_property_record_build(ifc_property_set, prop[0], prop[0]))
+                ifc_params.append(ifc_property_record_build(p_set, prop[0], prop[0]))
     return ifc_params
 
 
-def ifc_filter_records_build(el, ifc_property_set, ms_mapping_dict=None):
+def ifc_filter_records_build(el: dict, p_set: str, ms_mapping_dict: dict = None) -> ET.Element | None:
     """
     Создаёт вложенные записи фильтрации (`FilterRecords`) для случая,
     когда объект имеет несколько IFC-классов.
     """
     if len(el['IFC']) > 1:
         f_records = ET.Element('FilterRecords')
-        for n in el.get('IFC'):
-            ifc_class = n[1]
+        for _, ifc_class, par_value in el.get('IFC'):
             ifc_params = ET.Element('IfcParams')
-            ifc_params.append(ifc_property_record_build(ifc_property_set, ifc_class, ifc_class, ifc=True))
+            ifc_params.append(ifc_property_record_build(p_set, ifc_class, ifc_class, ifc=True))
             par_name = ms_mapping_dict.get(ASSEMBLY_TYPE_ATTR_NAME) if ms_mapping_dict else ASSEMBLY_TYPE_ATTR_NAME
             par_caption = par_name
-            p_record = ifc_param_filter_record_build(par_name=par_name, par_caption=par_caption, par_value=n[2], ifc_params=ifc_params)
+            p_record = ifc_param_filter_record_build(par_name=par_name, par_caption=par_caption, par_value=par_value,
+                                                     ifc_params=ifc_params)
             f_records.append(p_record)
         return f_records
     else:
         return None
 
 
-def ifc_root_build():
+def ifc_root_build() -> ET.Element:
     """
     Создаёт корневой элемент XML-документа с пространствами имён.
     """
@@ -147,7 +120,19 @@ def ifc_root_build():
     return ET.Element('IfcExportProfileXML', **ns)
 
 
-def ifc_export_xml_build(property_set, src, ms_mapping=True, pset_mapping=True, class2025=False):
+def build_general_params(ms_mapping_dict: dict, pset_mapping_dict: dict, full_attr_list: dict) -> ET.Element:
+    """Создаёт общий блок IfcParams."""
+    params = ET.Element('IfcParams')
+    for prop in full_attr_list.values():
+        prop_set = pset_mapping_dict.get(prop, 'CADLib_pset') if pset_mapping_dict else 'CADLib_pset'
+        value = ms_mapping_dict.get(prop, prop) if ms_mapping_dict else prop
+        params.append(ifc_property_record_build(prop_set, prop, value))
+    return params
+
+
+def ifc_export_xml_build(property_set: str, src: dict,
+                         ms_mapping: bool = True, pset_mapping: bool = True,
+                         class2025: bool = False) -> ET.Element:
     """
     Строит полный XML-документ экспорта IFC.
     Аргументы:
@@ -160,18 +145,26 @@ def ifc_export_xml_build(property_set, src, ms_mapping=True, pset_mapping=True, 
     filter_records = ET.Element('FilterRecords')
 
     # Добавление параметров классификации, если включен классификатор AS2025
+    general_params = ET.Element('IfcParams')
     if class2025:
-        class_ifc_params = ET.Element('IfcParams')
-        classification = {'ED_Classification':['SYSTEM', 'SUBSYS', 'ELEMENT', 'SYSTEM_TAG', 'SUBSYS_TAG', 'ELEMENT_TAG'],
-                          'ED_Encoding': ['SYSTEM_ID', 'SUBSYS_ID', 'ELEMENT_ID', 'SYSTEM_N', 'SUBSYS_N', 'ELEMENT_N', 'ELEMENT_F_ID']}
+        classification = {
+            'ED_Classification': ['SYSTEM', 'SUBSYS', 'ELEMENT', 'SYSTEM_TAG', 'SUBSYS_TAG', 'ELEMENT_TAG'],
+            'ED_Encoding': ['SYSTEM_ID', 'SUBSYS_ID', 'ELEMENT_ID', 'SYSTEM_N', 'SUBSYS_N', 'ELEMENT_N',
+                            'ELEMENT_F_ID']}
         for p_set, par_list in classification.items():
             for par in par_list:
-                class_ifc_params.append(ifc_property_record_build(p_set, par, par, ifc=False))
-    else:
-        class_ifc_params = None
+                general_params.append(ifc_property_record_build(p_set, par, par, ifc=False))
+
+    # Определение соответствий имён параметров, если есть
+    ms_mapping_dict = src.get('ms_attr_mapping') if ms_mapping else None
+
+    pset_mapping_dict = src.get('pset_mapping') if pset_mapping else None
+    if pset_mapping_dict and src.get('full_attr_list'):
+        general_params.extend(build_general_params(ms_mapping_dict, pset_mapping_dict, src['full_attr_list']))
 
     # Добавление записи фильтрации "AllObjects" для всех объектов
-    empty_param_filter_record = ifc_param_filter_record_build('AllObjects', 'AllObjects', 'AllObjects', ifc_params=class_ifc_params)
+    empty_param_filter_record = ifc_param_filter_record_build('AllObjects', 'AllObjects', 'AllObjects',
+                                                              ifc_params=general_params)
     filter_records.append(empty_param_filter_record)
 
     publish_non_prof_params = ET.Element('PublishNonProfParams')
@@ -180,23 +173,13 @@ def ifc_export_xml_build(property_set, src, ms_mapping=True, pset_mapping=True, 
     publish_empty_params = ET.Element('PublishEmptyParams')
     publish_empty_params.text = 'false'
 
-    # Определение соответствий имён параметров, если есть
-    if ms_mapping and src.get('ms_attr_mapping'):
-        ms_mapping_dict = src['ms_attr_mapping']
-    else:
-        ms_mapping_dict = None
-
-    if pset_mapping and src.get('pset_mapping'):
-        pset_mapping_dict = src['pset_mapping']
-    else:
-        pset_mapping_dict = None
-
     # Построение записей фильтрации для каждой таблицы
     for table, data in src.items():
         if table.startswith('Таблица'):
             el_type_attr = TYPE_ATTR_NAME if data.get(TYPE_ATTR_NAME) else TASK_TYPE_ATTR_NAME
-            el_type = data.get(TYPE_ATTR_NAME) if data.get(TYPE_ATTR_NAME) else data.get(TASK_TYPE_ATTR_NAME)
-            ifc_params = ifc_params_build(src, data, property_set, ms_mapping_dict=ms_mapping_dict, pset_mapping_dict=pset_mapping_dict)
+            el_type = data.get(el_type_attr)
+            ifc_params = ifc_params_build(data, property_set, ms_mapping_dict=ms_mapping_dict,
+                                          pset_mapping=pset_mapping)
             ifc_f_records = ifc_filter_records_build(data, property_set, ms_mapping_dict=ms_mapping_dict)
 
             param_filter_record = ifc_param_filter_record_build(el_type_attr, el_type_attr, el_type,
