@@ -104,6 +104,9 @@ def ifc_filter_records_build(el: dict, p_set: str, ms_mapping_dict: dict = None)
             p_record = ifc_param_filter_record_build(par_name=par_name, par_caption=par_caption, par_value=par_value,
                                                      ifc_params=ifc_params)
             f_records.append(p_record)
+
+        nonfiltered = ifc_param_filter_record_build('NonFiltered', 'NonFiltered', 'NonFiltered')
+        f_records.append(nonfiltered)
         return f_records
     else:
         return None
@@ -188,6 +191,8 @@ def ifc_export_xml_build(property_set: str, src: dict,
             filter_records.append(param_filter_record)
 
     # Финальное добавление элементов в корень
+    nonfiltered = ifc_param_filter_record_build('NonFiltered', 'NonFiltered', 'NonFiltered')
+    filter_records.append(nonfiltered)
     root.append(filter_records)
     root.append(publish_non_prof_params)
     root.append(publish_empty_params)
